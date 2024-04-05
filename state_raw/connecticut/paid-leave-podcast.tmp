@@ -1,0 +1,1734 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- uat/version deploy -->
+    <link rel="shortcut icon" href="/ctpl-design-system/img/favicon.ico" type="image/x-icon" />
+    
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-54P36LD');</script>
+<!-- End Google Tag Manager -->
+    
+
+<title>The Paid Leave Podcast</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="robots" content="index, follow" />
+<!-- FACEBOOK -->
+<meta property="og:description" content="" />
+<meta property="og:title" content="The Paid Leave Podcast" />
+<meta property="og:url" content="/resources-and-guides/paid-leave-podcast" />
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="" />
+<!-- TWITTER -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:url" content="/resources-and-guides/paid-leave-podcast" />
+<meta name="twitter:title" content="The Paid Leave Podcast" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:image" content="" />
+<!-- GSC Filters -->
+<meta name="pagetype" content="webpages" />
+
+
+
+
+<link rel="canonical" href="https://www.ctpaidleave.org/resources-and-guides/paid-leave-podcast" />
+
+
+
+<!-- <PageMap>
+       <DataObject type="PageData">
+          <Attribute name="type">webpages</Attribute>
+          <Attribute name="metatitle">The Paid Leave Podcast</Attribute>
+       </DataObject>
+    </PageMap> -->
+
+    <!-- TODO:: Read the sitename from configuration -->
+    <meta property="og:site_name" content="CT.gov" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <link rel="stylesheet" href="/ctpl-design-system/css/global.css?v=20240402234610" />
+
+    
+
+    <script src="/assets/agencyscaffolding/js/acc-bundle.js?v=20240402234610"></script>
+
+    
+
+    <script>
+        /** Google search place holder code */
+        (function () {
+            var cx = '918e002fbe56a4fec';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+
+        var searchPlaceholder = false;
+        function initiatePlaceholder() {
+            var dmvHomeSearchEl = document.getElementById('gsc-i-id2');
+
+            if (dmvHomeSearchEl) {
+                searchPlaceholder = true;
+                dmvHomeSearchEl.placeholder = '';
+            }
+            var dmvHomeSearchEl1 = document.getElementById('gsc-i-id1');
+            if (dmvHomeSearchEl1) {
+                searchPlaceholder = true;
+                dmvHomeSearchEl1.placeholder = 'Search Portal';
+            }
+            if (searchPlaceholder === false) {
+                setTimeout(initiatePlaceholder, 300);
+            }
+
+
+        }
+        setTimeout(initiatePlaceholder, 300);
+
+        /** Google search place holder code */
+    </script>
+
+    
+<meta name="VIcurrentDateTime" content="638477302647447153" />
+<script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script>
+
+
+</head>
+<body>
+    <a class="show-on-focus skip-link" href="#mainContent">Skip to Content</a>
+
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54P36LD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    
+
+    <div class="page-wrap ctgov ctpl-l-theme--primary">
+
+        
+
+
+
+    <div class="ctpl-c-header-top ctpl-c-header-top--size ctpl-c-header-top--color ">
+
+        <div class="ctpl-c-header__topleft dropdown">
+            <a class="ctpl-c-language" aria-label="Change Language" href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://www.ctpaidleave.org/-/media/ctpl/icons/icon-globe.svg?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;la=en&amp;hash=1981EA4901E9C55D3D041B968EB59FCD" class="globe" alt="" />
+                LANGUAGE
+            </a>
+            <ul class="ctpl-c-language__dropdown-menu dropdown-menu notranslate">
+                    <li><a class="ctpl-c-language__dropdown-item dropdown-item" href="#" data-language="ar">Arabic</a></li>
+                    <li><a class="ctpl-c-language__dropdown-item dropdown-item" href="#" data-language="zh-CN">Chinese (Simplified)</a></li>
+                    <li><a class="ctpl-c-language__dropdown-item dropdown-item" href="#" data-language="en_US">English</a></li>
+                    <li><a class="ctpl-c-language__dropdown-item dropdown-item" href="#" data-language="fr">French</a></li>
+                    <li><a class="ctpl-c-language__dropdown-item dropdown-item" href="#" data-language="it">Italian</a></li>
+                    <li><a class="ctpl-c-language__dropdown-item dropdown-item" href="#" data-language="pl">Polish</a></li>
+                    <li><a class="ctpl-c-language__dropdown-item dropdown-item" href="#" data-language="pt">Portuguese</a></li>
+                    <li><a class="ctpl-c-language__dropdown-item dropdown-item" href="#" data-language="ru">Russian</a></li>
+                    <li><a class="ctpl-c-language__dropdown-item dropdown-item" href="#" data-language="es">Spanish</a></li>
+            </ul>
+        </div>
+        <div class="ctpl-c-search">
+            <div class="ctpl-c-search__input d-none">
+                <div class="gcse-searchbox-only" enableAutoComplete="true" data-resultsUrl="https://www.ctpaidleave.org/search" data-enableHistory="true" data-autoCompleteMaxCompletions="5" data-autoCompleteMatchType='any' data-defaultToRefinement="CTPL"></div>
+                <a class="ctpl-c-search__close-btn" aria-label="Close Search Box" href="javascript:void(0);">
+                    &times;
+                </a>
+            </div>
+            <a class="ctpl-c-search__btn" aria-label="Uses Google Custom Search to Search the CT Paid Leave website" href="javascript:void(0);">
+                <img src="https://www.ctpaidleave.org/-/media/ctpl/icons/icon-magnifying-glass.svg?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;la=en&amp;hash=C97A687E327377384C4D45A3604F3962" class="ctpl-c-search__icon" alt="Click to search" />
+                SEARCH
+            </a>
+        </div>
+    </div>
+    <div class="google_translate ml-auto d-flex">
+        <div id="google_translate_element"> </div>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </div>
+    <div class="header-navigation-main">
+        <div class="ctpl-c-header-main ctpl-c-header-main--size ctpl-c-header-main--color ">
+<a href="/" class="" aria-label="CTPL" ><img src="https://www.ctpaidleave.org/-/media/ctpl/global/header/header_logo.png?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;h=69&amp;w=222&amp;la=en&amp;hash=646BCC01EF9EE8516FD42EF4EAD248AA" class="logo" alt="Return to Connecticut Paid Leave Home Page" /></a>
+            <div class="header-main_right">
+
+
+                    <script>
+                        function setCookie(cName, cValue, expDays, domain) {
+                            let date = new Date();
+                            date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+                            const expires = "expires=" + date.toUTCString();
+                            document.cookie = cName + "=" + cValue + "; " + expires + "; path=/; Domain=" + domain + "; Secure; SameSite=None";
+                        }
+                        setCookie("CTPL_user_name", "", 1, ".ctpaidleave.org");
+                    </script>
+
+                    <div id="signUpDiv" class="create_account d-flex align-items-center">
+                        <a target="_self" aria-label="Create An Account With CT.gov" href="/resources-and-guides/how-to-create-an-account">
+                            <img src="https://www.ctpaidleave.org/-/media/ctpl/global/header/create_account.png?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;h=16&amp;w=21&amp;la=en&amp;hash=1CFFFAA8F12B97643C9630ED0FA47B07" alt="" />
+                            <span>Create An Account With CT.gov</span>
+                        </a>
+                    </div>
+
+                    <div class="register_business d-flex align-items-center">
+                        <a target="_self" aria-label="register your business" href="/for-businesses-and-employers/register-your-business">
+                            <img src="https://www.ctpaidleave.org/-/media/ctpl/global/header/register_business.png?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;h=16&amp;w=13&amp;la=en&amp;hash=2FD0393C6A8AEF52D978D6E6A39DF0EA" alt="" />
+                            <span>register your business</span>
+                        </a>
+                    </div>
+
+                    <div class="ctpl-c-signin">
+
+
+
+
+                        <a style="display:none;" id="signInLink" target="_self" type="button" href="/login?ReturnUrl=/resources-and-guides/paid-leave-podcast" class="ctpl-c-signin__btn" aria-label="Sign in">
+                            <img src="https://www.ctpaidleave.org/-/media/ctpl/icons/header/icon-user-white.svg?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;la=en&amp;hash=44CF0FF6D3EF310AAD368D9459603C7F" class="ctpl-c-signin__btn-icon" alt="" />
+                            Sign in
+                        </a>
+
+
+                        <div style="display:none;" id="signInTray" class="ctpl-c-signin__tray">
+                            <a class="ctpl-c-signin__dropdown" href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="/-/media/ctpl/user_icon.png?h=16&amp;w=14&amp;la=en&amp;hash=D6ED9730469C3463F564B05894BA69D8" class="ctpl-c-signin__dropdown-icon" alt="" />
+                                &nbsp;Hello,
+                                <span id="signInTray_name" class="ctpl-c-signin__username notranslate">
+                                    
+                                </span>
+                            </a>
+                            <ul class="ctpl-c-signin__dropdown-menu dropdown-menu ">
+                                    <li>
+                                        <a class="ctpl-c-signin__dropdown-item dropdown-item" aria-label="Aflac Portal" href="https://mygrouplifedisability.aflac.com/personal/s/login/?expid=ctpl" target="">
+                                            Aflac Portal
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a class="ctpl-c-signin__dropdown-item dropdown-item" aria-label="My Account for Business" href="https://service.ctpaidleave.org/s/my-account" target="">
+                                            My Account for Business
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a class="ctpl-c-signin__dropdown-item dropdown-item" aria-label="Resume Business Registrations" href="https://service.ctpaidleave.org/s/my-account#Resume" target="">
+                                            Resume Business Registrations
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a class="ctpl-c-signin__dropdown-item dropdown-item" aria-label="User Settings" href="https://login.ct.gov/ctidentity/profile?goto=https://www.ctpaidleave.org" target="">
+                                            User Settings
+                                        </a>
+                                    </li>
+                                                                                                    <li>
+                                        <a class="ctpl-c-signin__dropdown-item dropdown-item" aria-label="Sign Out" href="/logout?ReturnUrl=/resources-and-guides/paid-leave-podcast" target="">
+                                            
+                                            Sign Out
+                                        </a>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+
+            </div>
+
+                <script>
+                    function isNullOrEmpty(str) {
+                        return !str || str.trim().length === 0;
+                    }
+
+                    var parsedName = '';
+                    var signInLink = document.getElementById('signInLink');
+                    var signInTray = document.getElementById('signInTray');
+
+                    if (!isNullOrEmpty(parsedName)) {
+                        signInTray.style.display = 'block';
+                    }
+                    else {
+                        signInLink.style.display = 'flex';
+                    }
+
+                </script>
+
+            <div class="mobile-header">
+                    <div class="">
+                        <a href="/login" aria-label="Sign in" style="text-decoration: none;">
+                            <button type="button" class="btn button-tablet d-flex align-items-center">
+                                <img src="https://www.ctpaidleave.org/-/media/ctpl/icons/header/icon-user-white.svg?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;la=en&amp;hash=44CF0FF6D3EF310AAD368D9459603C7F" class="" alt="" />
+                            </button>
+                        </a>
+                    </div>
+                    <a id="hamburger" aria-label="Open Menu" style="cursor:pointer">
+                        <img src="/-/media/ctpl/icons/header/hamburger-menu.svg?sc_lang=en&amp;la=en&amp;hash=275B96E7C5FABB4027F8FE3A1659E96F" class="hamburger_menu" alt="Open or Close the menu" />
+                    </a>
+                    <a id="cross" aria-label="Close Menu" style="display:none;cursor:pointer">
+                        <img src="/-/media/ctpl/icons/header/cross.svg?sc_lang=en&amp;la=en&amp;hash=494E764596D1778631C2AF1F5C8C8C7D" class="hamburger_menu" alt="Close" />
+                    </a>
+            </div>
+        </div>
+
+        <nav class="ctpl-c-main-nav" role="navigation" aria-label="Main Navigation">
+            <div class="custom-navbar ">
+                <div class="container-fluid">
+
+                    <div class="ctpl-c-header-mobile-menu-content">
+                        <div id="initial_div" class="header-btns" style="display: none;">
+                            <div class="create_account align-items-center">
+                                    <a href="/resources-and-guides/how-to-create-an-account" aria-label="Create An Account With CT.gov" target="">
+                                        <img src="/-/media/ctpl/global/header/create_account.png?sc_lang=en&amp;h=16&amp;w=21&amp;la=en&amp;hash=697B8457BB2BCE490BE5A787EBA2F17D" alt="" />
+                                        <span></span>
+                                    </a>
+                            </div>
+                            <div class="register_business align-items-center">
+                                <a href="/for-businesses-and-employers/register-your-business" aria-label="register your business" target="">
+                                    <img src="/-/media/ctpl/global/header/register_business.png?sc_lang=en&amp;h=16&amp;w=13&amp;la=en&amp;hash=B1C792E59D4AAF53E7C2729DD7DF86B5" alt="" />
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        
+    <ul class="nav_items" id="initial_div_nav">
+                <li class="nav-item mb-0 has-dropdown">
+                    <a class="nav-link text-white d-lg-block d-md-none d-none d-flex align-items-center" aria-haspopup="true" aria-expanded="false">
+                        How CT Paid Leave Works
+                    </a>
+                    <a class="nav-link d-lg-none nav-link-mobile d-block align-items-center ctpl-c-header-mobile-menu-content-items" data-target="nav_0">
+                        How CT Paid Leave Works
+                    </a>
+                    <img src="-/media/5EA6ECE54BB9464A98AC71CCF5BC2FAC.ashx" alt="Greater" class="greaterthen_symbol" />
+
+                    <div class="dropdown-menu d-xsm-none">
+                        <ul class="dropdown-inner-menu" aria-labelledby="navbarDropdown">
+                            <li class="dropdown-item">
+                                <a class="dropdown-item" href="/how-ct-paid-leave-works">
+                                    How CT Paid Leave Works
+                                </a>
+                            </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/how-ct-paid-leave-works/ct-paid-leave-and-fmla">CT Paid Leave and FMLA</a>
+
+                                    </li>
+                                    <li class="dropdown-item has-dropdown">
+
+                                        <a class="dropdown-item" href="/how-ct-paid-leave-works/coverage-and-eligibility">Coverage and Eligibility</a>
+
+                                            <i class="fa fa-plus plus-menu icon-menu" aria-hidden="true"></i>
+                                            <i class="fa fa-minus minus-menu icon-menu" aria-hidden="true"></i>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarSubDropdown">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/how-ct-paid-leave-works/coverage-and-eligibility/eligibility-questionnaire">
+                                                                Eligibility Questionnaire
+                                                            </a>
+                                                        </li>
+                                            </ul>
+                                    </li>
+                                    <li class="dropdown-item has-dropdown">
+
+                                        <a class="dropdown-item" href="/how-ct-paid-leave-works/qualifying-reasons">Qualifying Reasons</a>
+
+                                            <i class="fa fa-plus plus-menu icon-menu" aria-hidden="true"></i>
+                                            <i class="fa fa-minus minus-menu icon-menu" aria-hidden="true"></i>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarSubDropdown">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/how-ct-paid-leave-works/qualifying-reasons/my-own-serious-health-condition">
+                                                                I am Experiencing my Own Serious Health Condition
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/how-ct-paid-leave-works/qualifying-reasons/i-m-starting-or-expanding-my-family">
+                                                                I am Starting or Expanding my Family
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/how-ct-paid-leave-works/qualifying-reasons/caring-for-a-family-member">
+                                                                I Need to Care for a Family Member
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/how-ct-paid-leave-works/qualifying-reasons/military-family">
+                                                                CT Paid Leave for Military Families
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/how-ct-paid-leave-works/qualifying-reasons/family-violence-leave">
+                                                                CT Paid Leave for Family Violence
+                                                            </a>
+                                                        </li>
+                                            </ul>
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/how-ct-paid-leave-works/contributions">Contributions</a>
+
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/how-ct-paid-leave-works/report-suspected-fraud">Report Suspected Fraud</a>
+
+                                    </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item mb-0 has-dropdown">
+                    <a class="nav-link text-white d-lg-block d-md-none d-none d-flex align-items-center" aria-haspopup="true" aria-expanded="false">
+                        Claims
+                    </a>
+                    <a class="nav-link d-lg-none nav-link-mobile d-block align-items-center ctpl-c-header-mobile-menu-content-items" data-target="nav_12">
+                        Claims
+                    </a>
+                    <img src="-/media/5EA6ECE54BB9464A98AC71CCF5BC2FAC.ashx" alt="Greater" class="greaterthen_symbol" />
+
+                    <div class="dropdown-menu d-xsm-none">
+                        <ul class="dropdown-inner-menu" aria-labelledby="navbarDropdown">
+                            <li class="dropdown-item">
+                                <a class="dropdown-item" href="/claims">
+                                    Claims
+                                </a>
+                            </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/claims/before-you-apply">Before You Apply</a>
+
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/claims/how-to-apply">How to Apply</a>
+
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/claims/after-you-apply">After You Apply</a>
+
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/claims/application-document-checklist">Application Document Checklist</a>
+
+                                    </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item mb-0 has-dropdown">
+                    <a class="nav-link text-white d-lg-block d-md-none d-none d-flex align-items-center" aria-haspopup="true" aria-expanded="false">
+                        For Businesses and Employers
+                    </a>
+                    <a class="nav-link d-lg-none nav-link-mobile d-block align-items-center ctpl-c-header-mobile-menu-content-items" data-target="nav_17">
+                        For Businesses and Employers
+                    </a>
+                    <img src="-/media/5EA6ECE54BB9464A98AC71CCF5BC2FAC.ashx" alt="Greater" class="greaterthen_symbol" />
+
+                    <div class="dropdown-menu d-xsm-none">
+                        <ul class="dropdown-inner-menu" aria-labelledby="navbarDropdown">
+                            <li class="dropdown-item">
+                                <a class="dropdown-item" href="/for-businesses-and-employers">
+                                    For Businesses and Employers
+                                </a>
+                            </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/for-businesses-and-employers/i-am-an-employer">I am an Employer</a>
+
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/for-businesses-and-employers/a-sole-proprietor">I am a Sole Proprietor or Self-employed Individual</a>
+
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/for-businesses-and-employers/tpas">I am a Third-Party Administrator</a>
+
+                                    </li>
+                                    <li class="dropdown-item has-dropdown">
+
+                                        <a class="dropdown-item" href="/for-businesses-and-employers/register-your-business">Register Your Business</a>
+
+                                            <i class="fa fa-plus plus-menu icon-menu" aria-hidden="true"></i>
+                                            <i class="fa fa-minus minus-menu icon-menu" aria-hidden="true"></i>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarSubDropdown">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/for-businesses-and-employers/register-your-business/employers">
+                                                                How to Register as an Employer with CT Paid Leave
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/for-businesses-and-employers/register-your-business/sole-proprietors">
+                                                                How to Register as a Sole Proprietor/Self-Employed Individual with CT Paid Leave
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/for-businesses-and-employers/register-your-business/register-your-business-tpa">
+                                                                How to Register as a Third-Party Administrator with CT Paid Leave
+                                                            </a>
+                                                        </li>
+                                            </ul>
+                                    </li>
+                                    <li class="dropdown-item has-dropdown">
+
+                                        <a class="dropdown-item" href="/for-businesses-and-employers/private-plans">Private Plans</a>
+
+                                            <i class="fa fa-plus plus-menu icon-menu" aria-hidden="true"></i>
+                                            <i class="fa fa-minus minus-menu icon-menu" aria-hidden="true"></i>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarSubDropdown">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/for-businesses-and-employers/private-plans/how-to-apply-for-a-private-plan">
+                                                                How to Apply for a Private Plan
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/for-businesses-and-employers/private-plans/administer-approved-private-plans">
+                                                                Administer Approved Private Plans
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/for-businesses-and-employers/private-plans/termination-of-a-private-plan">
+                                                                Termination of Private Plans
+                                                            </a>
+                                                        </li>
+                                            </ul>
+                                    </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item mb-0 has-dropdown">
+                    <a class="nav-link text-white d-lg-block d-md-none d-none d-flex align-items-center" aria-haspopup="true" aria-expanded="false">
+                        Remit Contributions
+                    </a>
+                    <a class="nav-link d-lg-none nav-link-mobile d-block align-items-center ctpl-c-header-mobile-menu-content-items" data-target="nav_29">
+                        Remit Contributions
+                    </a>
+                    <img src="-/media/5EA6ECE54BB9464A98AC71CCF5BC2FAC.ashx" alt="Greater" class="greaterthen_symbol" />
+
+                    <div class="dropdown-menu d-xsm-none">
+                        <ul class="dropdown-inner-menu" aria-labelledby="navbarDropdown">
+                            <li class="dropdown-item">
+                                <a class="dropdown-item" href="/remit-contributions">
+                                    Remit Contributions
+                                </a>
+                            </li>
+                                    <li class="dropdown-item has-dropdown">
+
+                                        <a class="dropdown-item" href="/remit-contributions/batch-process">Batch Contribution Process</a>
+
+                                            <i class="fa fa-plus plus-menu icon-menu" aria-hidden="true"></i>
+                                            <i class="fa fa-minus minus-menu icon-menu" aria-hidden="true"></i>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarSubDropdown">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/remit-contributions/batch-process/sftp-access">
+                                                                SFTP Server Access
+                                                            </a>
+                                                        </li>
+                                            </ul>
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/remit-contributions/online-portal-process">Online Portal Process</a>
+
+                                    </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item mb-0 has-dropdown">
+                    <a class="nav-link text-white d-lg-block d-md-none d-none d-flex align-items-center" aria-haspopup="true" aria-expanded="false">
+                        Resources and Guides
+                    </a>
+                    <a class="nav-link d-lg-none nav-link-mobile d-block align-items-center ctpl-c-header-mobile-menu-content-items" data-target="nav_33">
+                        Resources and Guides
+                    </a>
+                    <img src="-/media/5EA6ECE54BB9464A98AC71CCF5BC2FAC.ashx" alt="Greater" class="greaterthen_symbol" />
+
+                    <div class="dropdown-menu d-xsm-none">
+                        <ul class="dropdown-inner-menu" aria-labelledby="navbarDropdown">
+                            <li class="dropdown-item">
+                                <a class="dropdown-item" href="/resources-and-guides">
+                                    Resources and Guides
+                                </a>
+                            </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/resources-and-guides/webinars-and-events">Webinars and Events</a>
+
+                                    </li>
+                                    <li class="dropdown-item has-dropdown">
+
+                                        <a class="dropdown-item" href="/resources-and-guides/frequently-asked-questions">Frequently Asked Questions</a>
+
+                                            <i class="fa fa-plus plus-menu icon-menu" aria-hidden="true"></i>
+                                            <i class="fa fa-minus minus-menu icon-menu" aria-hidden="true"></i>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarSubDropdown">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/resources-and-guides/frequently-asked-questions/glossary-of-terms">
+                                                                Glossary of Terms
+                                                            </a>
+                                                        </li>
+                                            </ul>
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/resources-and-guides/paid-leave-podcast">Paid Leave Podcast</a>
+
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/resources-and-guides/paid-leave-spotlight">Paid Leave Spotlight</a>
+
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/resources-and-guides/how-to-create-an-account">Create An Account With CT.gov </a>
+
+                                    </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item mb-0 has-dropdown">
+                    <a class="nav-link text-white d-lg-block d-md-none d-none d-flex align-items-center" aria-haspopup="true" aria-expanded="false">
+                        About Us
+                    </a>
+                    <a class="nav-link d-lg-none nav-link-mobile d-block align-items-center ctpl-c-header-mobile-menu-content-items" data-target="nav_40">
+                        About Us
+                    </a>
+                    <img src="-/media/5EA6ECE54BB9464A98AC71CCF5BC2FAC.ashx" alt="Greater" class="greaterthen_symbol" />
+
+                    <div class="dropdown-menu d-xsm-none">
+                        <ul class="dropdown-inner-menu" aria-labelledby="navbarDropdown">
+                            <li class="dropdown-item">
+                                <a class="dropdown-item" href="/about-us">
+                                    About Us
+                                </a>
+                            </li>
+                                    <li class="dropdown-item has-dropdown">
+
+                                        <a class="dropdown-item" href="/about-us/board-of-directors">Board of Directors</a>
+
+                                            <i class="fa fa-plus plus-menu icon-menu" aria-hidden="true"></i>
+                                            <i class="fa fa-minus minus-menu icon-menu" aria-hidden="true"></i>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarSubDropdown">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/about-us/board-of-directors/board-of-directors-meetings">
+                                                                Board of Directors Meetings
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/about-us/board-of-directors/finance-and-audit-committee-meetings">
+                                                                Finance and Audit Committee Meetings
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/about-us/board-of-directors/outreach-and-engagement-committee-meetings">
+                                                                Outreach and Engagement Committee Meetings
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/about-us/board-of-directors/policy-and-personnel-meetings">
+                                                                Policy and Personnel Committee Meetings
+                                                            </a>
+                                                        </li>
+                                            </ul>
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/about-us/law-and-policies">Law and Policies</a>
+
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/about-us/news-and-media">News and Media</a>
+
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/about-us/information-for-legislators">Information for Legislators</a>
+
+                                    </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item mb-0">
+                    <a class="nav-link text-white d-flex align-items-center" href="/contactus">
+                        Contact Us
+                    </a>
+                </li>
+    </ul>
+            <div class="ctpl-c-header-mobile-menu-content2" id="nav_0">
+            <div class="ctpl-c-header-mobile-menu-content2-back back-mobile" data-close="nav_0">
+                <img src="-/media/145A0C026C154BD49F75A96611C47D44.ashx" alt="Back" class="back_icon" />
+                <span class="back">Back</span>
+            </div>
+            <div class="ctpl-c-header-mobile-menu-content2-back-sub-div">
+                <a href="/how-ct-paid-leave-works">
+                    <p class="ctpl-c-header-mobile-menu-content-items">
+                        How CT Paid Leave Works
+                    </p>
+                </a>
+                            <a href="/how-ct-paid-leave-works/ct-paid-leave-and-fmla">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    CT Paid Leave and FMLA
+                                </p>
+                            </a>
+                            <a href="/how-ct-paid-leave-works/coverage-and-eligibility">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    <span>
+                                        Coverage and Eligibility
+                                    </span>
+                                    <img src="-/media/23EB353D178B40639BADB5383B826D6E.ashx" alt="Back" class="plus_mobile" data-target="subnav_2" />
+                                    <img src="-/media/DF17515FE24242B6BEB984310FB2714A.ashx" alt="Back" class="minus_mobile" data-target="subnav_2" />
+                                </p>
+                            </a>
+                            <div class="ctpl-c-qualifying-reasons-div" id="subnav_2">
+                                <ul style="list-style: none;padding-left:0px;">
+                                            <li>
+                                                <a href="/how-ct-paid-leave-works/coverage-and-eligibility/eligibility-questionnaire">
+                                                    Eligibility Questionnaire
+                                                </a>
+                                            </li>
+                                </ul>
+                            </div>
+                            <a href="/how-ct-paid-leave-works/qualifying-reasons">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    <span>
+                                        Qualifying Reasons
+                                    </span>
+                                    <img src="-/media/23EB353D178B40639BADB5383B826D6E.ashx" alt="Back" class="plus_mobile" data-target="subnav_4" />
+                                    <img src="-/media/DF17515FE24242B6BEB984310FB2714A.ashx" alt="Back" class="minus_mobile" data-target="subnav_4" />
+                                </p>
+                            </a>
+                            <div class="ctpl-c-qualifying-reasons-div" id="subnav_4">
+                                <ul style="list-style: none;padding-left:0px;">
+                                            <li>
+                                                <a href="/how-ct-paid-leave-works/qualifying-reasons/my-own-serious-health-condition">
+                                                    I am Experiencing my Own Serious Health Condition
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/how-ct-paid-leave-works/qualifying-reasons/i-m-starting-or-expanding-my-family">
+                                                    I am Starting or Expanding my Family
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/how-ct-paid-leave-works/qualifying-reasons/caring-for-a-family-member">
+                                                    I Need to Care for a Family Member
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/how-ct-paid-leave-works/qualifying-reasons/military-family">
+                                                    CT Paid Leave for Military Families
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/how-ct-paid-leave-works/qualifying-reasons/family-violence-leave">
+                                                    CT Paid Leave for Family Violence
+                                                </a>
+                                            </li>
+                                </ul>
+                            </div>
+                            <a href="/how-ct-paid-leave-works/contributions">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    Contributions
+                                </p>
+                            </a>
+                            <a href="/how-ct-paid-leave-works/report-suspected-fraud">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    Report Suspected Fraud
+                                </p>
+                            </a>
+            </div>  
+        </div>
+            <div class="ctpl-c-header-mobile-menu-content2" id="nav_12">
+            <div class="ctpl-c-header-mobile-menu-content2-back back-mobile" data-close="nav_12">
+                <img src="-/media/145A0C026C154BD49F75A96611C47D44.ashx" alt="Back" class="back_icon" />
+                <span class="back">Back</span>
+            </div>
+            <div class="ctpl-c-header-mobile-menu-content2-back-sub-div">
+                <a href="/claims">
+                    <p class="ctpl-c-header-mobile-menu-content-items">
+                        Claims
+                    </p>
+                </a>
+                            <a href="/claims/before-you-apply">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    Before You Apply
+                                </p>
+                            </a>
+                            <a href="/claims/how-to-apply">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    How to Apply
+                                </p>
+                            </a>
+                            <a href="/claims/after-you-apply">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    After You Apply
+                                </p>
+                            </a>
+                            <a href="/claims/application-document-checklist">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    Application Document Checklist
+                                </p>
+                            </a>
+            </div>  
+        </div>
+            <div class="ctpl-c-header-mobile-menu-content2" id="nav_17">
+            <div class="ctpl-c-header-mobile-menu-content2-back back-mobile" data-close="nav_17">
+                <img src="-/media/145A0C026C154BD49F75A96611C47D44.ashx" alt="Back" class="back_icon" />
+                <span class="back">Back</span>
+            </div>
+            <div class="ctpl-c-header-mobile-menu-content2-back-sub-div">
+                <a href="/for-businesses-and-employers">
+                    <p class="ctpl-c-header-mobile-menu-content-items">
+                        For Businesses and Employers
+                    </p>
+                </a>
+                            <a href="/for-businesses-and-employers/i-am-an-employer">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    I am an Employer
+                                </p>
+                            </a>
+                            <a href="/for-businesses-and-employers/a-sole-proprietor">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    I am a Sole Proprietor or Self-employed Individual
+                                </p>
+                            </a>
+                            <a href="/for-businesses-and-employers/tpas">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    I am a Third-Party Administrator
+                                </p>
+                            </a>
+                            <a href="/for-businesses-and-employers/register-your-business">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    <span>
+                                        Register Your Business
+                                    </span>
+                                    <img src="-/media/23EB353D178B40639BADB5383B826D6E.ashx" alt="Back" class="plus_mobile" data-target="subnav_21" />
+                                    <img src="-/media/DF17515FE24242B6BEB984310FB2714A.ashx" alt="Back" class="minus_mobile" data-target="subnav_21" />
+                                </p>
+                            </a>
+                            <div class="ctpl-c-qualifying-reasons-div" id="subnav_21">
+                                <ul style="list-style: none;padding-left:0px;">
+                                            <li>
+                                                <a href="/for-businesses-and-employers/register-your-business/employers">
+                                                    How to Register as an Employer with CT Paid Leave
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/for-businesses-and-employers/register-your-business/sole-proprietors">
+                                                    How to Register as a Sole Proprietor/Self-Employed Individual with CT Paid Leave
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/for-businesses-and-employers/register-your-business/register-your-business-tpa">
+                                                    How to Register as a Third-Party Administrator with CT Paid Leave
+                                                </a>
+                                            </li>
+                                </ul>
+                            </div>
+                            <a href="/for-businesses-and-employers/private-plans">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    <span>
+                                        Private Plans
+                                    </span>
+                                    <img src="-/media/23EB353D178B40639BADB5383B826D6E.ashx" alt="Back" class="plus_mobile" data-target="subnav_25" />
+                                    <img src="-/media/DF17515FE24242B6BEB984310FB2714A.ashx" alt="Back" class="minus_mobile" data-target="subnav_25" />
+                                </p>
+                            </a>
+                            <div class="ctpl-c-qualifying-reasons-div" id="subnav_25">
+                                <ul style="list-style: none;padding-left:0px;">
+                                            <li>
+                                                <a href="/for-businesses-and-employers/private-plans/how-to-apply-for-a-private-plan">
+                                                    How to Apply for a Private Plan
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/for-businesses-and-employers/private-plans/administer-approved-private-plans">
+                                                    Administer Approved Private Plans
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/for-businesses-and-employers/private-plans/termination-of-a-private-plan">
+                                                    Termination of Private Plans
+                                                </a>
+                                            </li>
+                                </ul>
+                            </div>
+            </div>  
+        </div>
+            <div class="ctpl-c-header-mobile-menu-content2" id="nav_29">
+            <div class="ctpl-c-header-mobile-menu-content2-back back-mobile" data-close="nav_29">
+                <img src="-/media/145A0C026C154BD49F75A96611C47D44.ashx" alt="Back" class="back_icon" />
+                <span class="back">Back</span>
+            </div>
+            <div class="ctpl-c-header-mobile-menu-content2-back-sub-div">
+                <a href="/remit-contributions">
+                    <p class="ctpl-c-header-mobile-menu-content-items">
+                        Remit Contributions
+                    </p>
+                </a>
+                            <a href="/remit-contributions/batch-process">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    <span>
+                                        Batch Contribution Process
+                                    </span>
+                                    <img src="-/media/23EB353D178B40639BADB5383B826D6E.ashx" alt="Back" class="plus_mobile" data-target="subnav_30" />
+                                    <img src="-/media/DF17515FE24242B6BEB984310FB2714A.ashx" alt="Back" class="minus_mobile" data-target="subnav_30" />
+                                </p>
+                            </a>
+                            <div class="ctpl-c-qualifying-reasons-div" id="subnav_30">
+                                <ul style="list-style: none;padding-left:0px;">
+                                            <li>
+                                                <a href="/remit-contributions/batch-process/sftp-access">
+                                                    SFTP Server Access
+                                                </a>
+                                            </li>
+                                </ul>
+                            </div>
+                            <a href="/remit-contributions/online-portal-process">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    Online Portal Process
+                                </p>
+                            </a>
+            </div>  
+        </div>
+            <div class="ctpl-c-header-mobile-menu-content2" id="nav_33">
+            <div class="ctpl-c-header-mobile-menu-content2-back back-mobile" data-close="nav_33">
+                <img src="-/media/145A0C026C154BD49F75A96611C47D44.ashx" alt="Back" class="back_icon" />
+                <span class="back">Back</span>
+            </div>
+            <div class="ctpl-c-header-mobile-menu-content2-back-sub-div">
+                <a href="/resources-and-guides">
+                    <p class="ctpl-c-header-mobile-menu-content-items">
+                        Resources and Guides
+                    </p>
+                </a>
+                            <a href="/resources-and-guides/webinars-and-events">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    Webinars and Events
+                                </p>
+                            </a>
+                            <a href="/resources-and-guides/frequently-asked-questions">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    <span>
+                                        Frequently Asked Questions
+                                    </span>
+                                    <img src="-/media/23EB353D178B40639BADB5383B826D6E.ashx" alt="Back" class="plus_mobile" data-target="subnav_35" />
+                                    <img src="-/media/DF17515FE24242B6BEB984310FB2714A.ashx" alt="Back" class="minus_mobile" data-target="subnav_35" />
+                                </p>
+                            </a>
+                            <div class="ctpl-c-qualifying-reasons-div" id="subnav_35">
+                                <ul style="list-style: none;padding-left:0px;">
+                                            <li>
+                                                <a href="/resources-and-guides/frequently-asked-questions/glossary-of-terms">
+                                                    Glossary of Terms
+                                                </a>
+                                            </li>
+                                </ul>
+                            </div>
+                            <a href="/resources-and-guides/paid-leave-podcast">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    Paid Leave Podcast
+                                </p>
+                            </a>
+                            <a href="/resources-and-guides/paid-leave-spotlight">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    Paid Leave Spotlight
+                                </p>
+                            </a>
+                            <a href="/resources-and-guides/how-to-create-an-account">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    Create An Account With CT.gov 
+                                </p>
+                            </a>
+            </div>  
+        </div>
+            <div class="ctpl-c-header-mobile-menu-content2" id="nav_40">
+            <div class="ctpl-c-header-mobile-menu-content2-back back-mobile" data-close="nav_40">
+                <img src="-/media/145A0C026C154BD49F75A96611C47D44.ashx" alt="Back" class="back_icon" />
+                <span class="back">Back</span>
+            </div>
+            <div class="ctpl-c-header-mobile-menu-content2-back-sub-div">
+                <a href="/about-us">
+                    <p class="ctpl-c-header-mobile-menu-content-items">
+                        About Us
+                    </p>
+                </a>
+                            <a href="/about-us/board-of-directors">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    <span>
+                                        Board of Directors
+                                    </span>
+                                    <img src="-/media/23EB353D178B40639BADB5383B826D6E.ashx" alt="Back" class="plus_mobile" data-target="subnav_41" />
+                                    <img src="-/media/DF17515FE24242B6BEB984310FB2714A.ashx" alt="Back" class="minus_mobile" data-target="subnav_41" />
+                                </p>
+                            </a>
+                            <div class="ctpl-c-qualifying-reasons-div" id="subnav_41">
+                                <ul style="list-style: none;padding-left:0px;">
+                                            <li>
+                                                <a href="/about-us/board-of-directors/board-of-directors-meetings">
+                                                    Board of Directors Meetings
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/about-us/board-of-directors/finance-and-audit-committee-meetings">
+                                                    Finance and Audit Committee Meetings
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/about-us/board-of-directors/outreach-and-engagement-committee-meetings">
+                                                    Outreach and Engagement Committee Meetings
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/about-us/board-of-directors/policy-and-personnel-meetings">
+                                                    Policy and Personnel Committee Meetings
+                                                </a>
+                                            </li>
+                                </ul>
+                            </div>
+                            <a href="/about-us/law-and-policies">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    Law and Policies
+                                </p>
+                            </a>
+                            <a href="/about-us/news-and-media">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    News and Media
+                                </p>
+                            </a>
+                            <a href="/about-us/information-for-legislators">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    Information for Legislators
+                                </p>
+                            </a>
+            </div>  
+        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    document.querySelectorAll('a[href^="/login?ReturnUrl="]').forEach(link => {
+                        link.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const returnUrl = new URL(link.href).searchParams.get('ReturnUrl');
+                            document.cookie = `ReturnUrl=${returnUrl}; path=/`;
+                            window.location.href = '/login';
+                        });
+                    });
+                });
+
+                function getCookie(name) {
+                    const value = `; ${document.cookie}`;
+                    const parts = value.split(`; ${name}=`);
+                    if (parts.length === 2) return parts.pop().split(';').shift();
+                }
+
+                window.onload = () => {
+                    const returnUrl = getCookie('ReturnUrl');
+                    if (returnUrl) {
+                        document.cookie = 'ReturnUrl=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+                        window.location.href = decodeURIComponent(returnUrl);
+                    }
+                };
+            </script>
+    </div>
+
+
+
+    <div class="ctpl-c-hero-section" style="background-image:url(&#39;/-/media/connecticut-interactive/placeholder/banner-1200x200.png?sc_lang=en&#39;);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 colsection">
+                      <div class="before-you-apply-section">
+                        <div class="hero-text-container ">
+                            <h1 class="heading_section">
+                                The Paid Leave Podcast
+                            </h1>
+                                <p class="para_section">
+                                    New episodes are released twice per month.
+                                </p>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="image-section">
+                <img src="/-/media/ctpl/pages/podcast/podcast-page-hero.jpg?sc_lang=en&amp;h=365&amp;w=708&amp;la=en&amp;hash=805D93791ADFFD5DE75793CCE79AEC6A" alt="Microphone, laptop and headphones" />
+        </div>
+
+     </div>
+
+
+        <div>
+            <div class="master-template">
+                
+    <div class="breadcrumb-section d-none d-lg-flex">
+        <div class="container">
+            <nav class="breadcrumbnav" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/resources-and-guides">Resources and Guides</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Paid Leave Podcast</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+                <main id="mainContent">
+                    
+
+<div class=content-block-section>
+    <div class="container" >
+        <div class="row">
+            <div class="col-lg-12 col-12">
+                
+
+
+    <article class="richtext-content " >
+        <h2 style="text-align: center;">The CT Paid Leave Podcast</h2>
+<p>The United States is the only industrialized nation in the world without a national paid leave policy, and Connecticut is one of only 11 states and the District of Columbia to have a state paid family and medical leave program in place.&nbsp;<br />
+<br />
+In the Paid Leave Podcast, host Nancy Barrow delves into CT Paid Leave - how it started, how it works, and who it helps. You'll hear from elected officials, individuals who have experienced the life events for which CT Paid Leave was designed, and experts in various fields including healthcare, domestic violence, military affairs, and much more.&nbsp;</p>
+    </article>
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="margin-b-40"></div>
+
+                    
+
+<div class=content-block-section>
+    <div class="container" >
+
+        
+
+        <div class="row">
+            <div class="col-lg-8 col-12 cg-l-main-content">
+                
+<div>
+    <!-- Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+
+    <!-- Able Player CSS -->
+    <link rel="stylesheet" href="/assets/Podcast/css/ableplayer.min.css" type="text/css" />
+
+    <!-- Able Player JavaScript -->
+    <script src="/assets/Podcast/js/ableplayer.js"></script>
+    <style>
+        .thumbnail {
+            max-width: 60px;
+        }
+
+        .episode-title {
+            display: flex;
+        }
+
+        .episodes-container {
+            /* max-width: 400px; */
+            width: 100%;
+        }
+
+        .able-player {
+            background: #0045ab;
+        }
+
+        .able-playlist li.able-current {
+            background: #853275;
+        }
+
+        .able-controller {
+            background: #002361;
+        }
+    </style>
+    <main>
+        <!-- use the following markup for each media element -->
+        <audio id="audio1" width="480" preload="auto" data-able-player data-skin="2020" loop>
+            <!-- source elements are optional when there's a playlist. -->
+            <!-- If ommitted, they will be constructed from the first playlist item -->
+        </audio>
+
+        <!-- use the following markup for each playlist -->
+        <!-- an AblePlayer playlist is any <ul> with class="able-playlist" -->
+        <!-- The value of data-player must match the id of the media element -->
+        <!-- Add data-embedded to embed the playlist into the media player -->
+        <!-- see documentation for additional details about markup -->
+        <ul class="able-playlist episodes-container" data-player="audio1" data-embedded>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/14763753-gratitude-from-a-nurse-who-had-two-kidney-transplants.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>Gratitude from a Nurse Who Had Two Kidney Transplants </button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/14667592-the-difficulty-of-diagnosing-and-treating-a-brain-injury.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>The Difficulty of Diagnosing and Treating a Brain Injury</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/14562635-the-complexities-of-diagnosing-and-treating-a-rare-disease.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>The complexities of Diagnosing and Treating a Rare Disease.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/14494156-eating-disorders-and-navigating-recovery.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>Eating Disorders and Navigating Recovery.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/14394108-our-ceo-s-personal-struggle-with-cervical-cancer.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>Our CEO&#39;s Personal Struggle with Cervical Cancer </button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/14307119-how-paid-leave-can-help-support-moms-and-babies-with-complications.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>How Paid Leave Can Help Support Moms and Babies With Complications.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/14206250-endometriosis-is-a-painful-chronic-disease-that-is-difficult-to-diagnose-but-a-new-law-can-help.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>Endometriosis is a painful chronic disease that is difficult to diagnose, but a new law can help.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/14113838-how-to-live-a-healthy-life-with-hiv.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>How to Live a Healthy Life with HIV</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/14040476-living-and-working-with-epilepsy.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>Living and Working With Epilepsy.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/13948284-a-caregiver-used-paid-leave-and-helps-take-care-of-her-sister-out-of-state.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>A Caregiver Used Paid Leave and Helps Take Care of Her Sister Out of State.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/13852346-domestic-violence-and-how-survivors-navigate-the-court-system.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>Domestic Violence and How Survivors Navigate the Court System</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/13773202-a-30-year-old-s-survivor-guide-to-living-and-thriving-with-breast-cancer.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>A 30-year old&#39;s survivor guide to living and thriving with Breast Cancer.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/13655698-an-addict-s-story-from-near-death-to-a-sober-life-and-gratitude-for-it-all.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>An addict&#39;s story from near death to a sober life and gratitude for it all</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/13561218-the-rocky-road-to-addiction-recovery.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>The rocky road to addiction recovery</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/13482541-a-doctor-s-note-about-breastfeeding.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>A Doctor&#39;s note about Breastfeeding</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/13402968-the-struggles-with-new-mothers-and-breastfeeding.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>The struggles with new mothers and breastfeeding.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/13263577-a-national-researcher-focuses-on-paid-leave.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>A national researcher focuses on paid leave.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/13201406-new-parents-and-the-economics-of-paid-leave.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>New Parents and the Economics of Paid Leave.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/13096311-you-can-choose-your-family.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>You Can Choose Your Family.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/13023192-navigating-the-challenges-of-transgender-healthcare.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>Navigating the Challenges of Transgender Healthcare </button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/12926076-kids-and-the-mental-health-crisis.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>Kids and the Mental Health Crisis.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/12793419-minority-men-and-mental-health.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>Minority Men and Mental Health.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/12708266-an-athlete-with-multiple-sclerosis-keeps-on-moving.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>An athlete with Multiple Sclerosis keeps on moving. </button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/12613660-what-is-a-death-doula.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>What is a Death Doula?</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/12500655-the-truth-about-long-covid.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>The Truth about long Covid</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/12415929-heart-health-is-different-for-women.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>Heart health is different for women.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/12336386-parents-worry-about-their-kids-mental-health.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>Parents worry about their kids mental health.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/12225473-what-is-ct-paid-leave-ct-fmla-and-federal-fmla-our-new-ceo-explains.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>What is CT Paid Leave, CT FMLA, and Federal FMLA? Our new CEO explains.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/12132205-what-is-planned-parenthood.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>What is Planned Parenthood?</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/11988717-the-fight-continues-for-national-paid-leave.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>The fight continues for National Paid Leave.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/11924724-minorities-and-organ-donation.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>Minorities and Organ Donation</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/11840495-how-to-face-the-end-of-life-with-grace-and-dignity.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>How to face the end of life with grace and dignity.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/11750318-you-don-t-have-to-be-a-smoker-to-get-lung-cancer.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>You don&#39;t have to be a smoker to get Lung Cancer.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/11670064-als-takes-a-life-every-90-minutes.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>ALS takes a life every 90 minutes.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/11600486-breast-cancer-is-a-beast.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>Breast Cancer is a beast.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/11500385-surviving-domestic-violence-and-learning-to-flyy.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button> Surviving Domestic Violence and learning to FLYY.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/11373163-alzheimer-s-is-a-robber.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button> Alzheimer&#39;s is a robber.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/11302953-one-state-senator-s-passion-for-paid-leave.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>One State Senator&#39;s Passion for Paid Leave.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/11203161-paid-leave-and-caregivers.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button> Paid Leave and caregivers.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/11139517-adoption-can-change-a-life.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>Adoption can change a life.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/11012018-married-to-the-military.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>Married to the Military.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/10931496-the-veterans-affairs-and-paid-leave.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>The Veterans Affairs and Paid Leave.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/10848210-cwealf-and-the-early-fight-to-get-ct-paid-leave-passed.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>CWEALF and the early fight to get CT Paid Leave passed.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/10764562-the-wbdc-and-the-passion-for-paid-leave.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>The WBDC and the passion for Paid Leave.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/10686685-the-new-dcf-and-foster-parenting.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>The new DCF and Foster Parenting.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/10557739-women-in-politics-who-support-ct-paid-leave.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>Women in politics who support CT Paid Leave.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/10498706-the-story-of-one-man-s-life-through-organ-donation.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>The story of one man&#39;s life through organ donation.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/10403406-domestic-violence-a-survivor-s-story.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button> Domestic Violence a survivor&#39;s story.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/10318717-the-ct-lieutenant-governor-talks-about-the-importance-of-paid-leave.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>  The CT. Lieutenant Governor talks about the importance of Paid Leave.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/10246165-the-relationship-between-the-ywca-and-ct-paid-leave.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>The relationship between the YWCA and CT Paid Leave.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/10095636-connecticut-governor-ned-lamont-and-ct-paid-leave.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>Connecticut Governor Ned Lamont and CT Paid Leave.</button>
+                    </div>
+                </li>
+                <li>
+                    <span class="able-source"
+                          data-type="audio/mpeg"
+                          data-src="https://www.buzzsprout.com/1913346/10013017-the-rise-of-ct-paid-leave-s-ceo-andrea-barton-reeves-and-how-she-built-the-program.mp3"></span>
+                    <div class="episode-title">
+                        <img src="https://storage.buzzsprout.com/variants/ib130sibuy3fya2tta2olgqkt6gf/60854458c4d1acdf4e1c2f79c4137142d85d78e379bdafbd69bd34c85f5819ad.jpg"  alt="" class="thumbnail" />
+                        <button>The rise of CT Paid Leave&#39;s CEO, Andrea Barton Reeves and how she built the program</button>
+                    </div>
+                </li>
+        </ul>
+    </main>
+</div>
+            </div>
+            <div class="col-lg-4 col-12 cg-l-sidebar ">
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="margin-b-40"></div>
+
+                    
+                    
+                    
+                    
+                    
+                </main>
+            </div>
+        </div>
+        
+<div class="mt-5 footer d-md-block">
+
+            <div class="pre_footer_div d-flex justify-content-end">
+                    <div class="pre_footer_div_1 d-flex flex-column justify-content-center">
+                        <p class="text-center pre_footer_div_1_heading">Need More Help?</p>
+                        <div class="d-flex  justify-content-center">
+<a href="/resources-and-guides" title="More Resources" >                                    <button type="button" class=" mr-3 btn more_resources text-uppercase" aria-label="More Resources">More Resources</button>
+</a>                            <a href="/contactus" title="CONTACT US" >                                    <button type="button" class="btn contact_us text-uppercase" aria-label="CONTACT US">CONTACT US</button>
+</a>                        </div>
+                    </div>
+                
+                    <div class="pre_footer_div_2 d-flex flex-column  justify-content-center"
+                         style="background-image: url('https://www.ctpaidleave.org//-/media/ctpl/global/footer/footer_bg.png?sc_lang=en');">
+                        
+                        <h2 class="text-center pre_footer_div_2_heading">Sign up for our Newsletter</h2>
+<form class="validate" action="https://ctpaidleave.us2.list-manage.com/subscribe/post?u=fb4306b4c98fc9f99879d3760&amp;id=5c07f23451" method="post" id="mc-embedded-subscribe-form-287" name="mc-embedded-subscribe-form" target="_blank">
+    <div id="mc_embed_signup_scroll-287">
+    <div class="slds-float_left slds-p-right_large slds-p-around_medium">
+    <input class="email slds-input" aria-label="email address" type="email" name="EMAIL" id="mce-EMAIL-287" placeholder="email address" style="max-width: 350px; min-width: 250px;" />
+
+    <input class="blueButton" type="submit" aria-label="Subscribe" name="subscribe" id="mc-embedded-subscribe-287" value="Subscribe" />
+    </div>
+    <div aria-hidden="true" style="position: absolute; left: -5000px;">
+    <input type="text" name="b_fb4306b4c98fc9f99879d3760_5c07f23451" tabindex="-1" />
+    </div>
+    </div>
+</form>
+                    </div>
+            </div>
+            <div class="footer_div">
+                <div class="container">
+                    <div class="footer-wrapper">
+<a href="/accessibility-and-privacy" title="Opens a link to the Ct Paid Leave&#39;s accessibility, privacy and disclaimer page" >Accessibility, Privacy and Disclaimer</a><a href="/resources-and-guides/frequently-asked-questions" title="Opens a link to the Ct Paid Leave&#39;s Frequently Asked Questions" >Frequently Asked Questions</a><a href="/how-ct-paid-leave-works/report-suspected-fraud" title="Opens a link to the Ct Paid Leave report suspected fraud page" >Report Suspected Fraud</a><a href="/sitemap" title="Opens a link to the CT Paid Leave&#39;s sitemap" >Sitemap</a>                    </div>
+                </div>
+            </div>
+        <div class="post_footer_div d-flex justify-content-between align-items-center py-2">
+                <div class="col-4">
+<a href="/" class="footer-branding" aria-label="CTPL" ><img src="https://www.ctpaidleave.org/-/media/ctpl/global/header/header_logo.png?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;h=69&amp;w=222&amp;la=en&amp;hash=646BCC01EF9EE8516FD42EF4EAD248AA" class="logo" alt="Return to Connecticut Paid Leave Home Page" /></a>                </div>
+
+            <div class="col-4">
+                <p class="copyright mb-0">&copy; 2024 Copyright CT Paid Leave Authority<br/>An official <a target="_blank" href="https://portal.ct.gov/government/departments-and-agencies/quasi-public-agencies" aria-label="Opens an external link to the State of Connecticut's list of quasi public agencies">State of Connecticut</a> website</p>
+            </div>
+                <div class="d-flex justify-content-center align-items-center" style="column-gap: 20px;">
+<a href="https://www.facebook.com/CTPaidLeave" rel="noopener noreferrer" title="This link will open up in a new window to Facebook" target="_blank" ><img src="https://www.ctpaidleave.org/-/media/ctpl/icons/social-media/facebook.png?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;h=22&amp;w=12&amp;la=en&amp;hash=1142FB88B6EC43168306EF1344BB82DF" alt="Facebook" /></a><a href="https://www.instagram.com/ctpaidleave/" rel="noopener noreferrer" title="This link will open up in a new window to Instagram" target="_blank" ><img src="https://www.ctpaidleave.org/-/media/ctpl/icons/social-media/instagram.png?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;h=20&amp;w=20&amp;la=en&amp;hash=888D5B2B0697CB4DAF3C7CD8496AFCD1" alt="Instagram" /></a><a href="https://www.youtube.com/channel/UCI77ghYG5cL60Zp307u4BRQ/featured?view_as=subscriber" rel="noopener noreferrer" title="This link will open up in a new window to you tube" target="_blank" ><img src="https://www.ctpaidleave.org/-/media/ctpl/icons/social-media/youtube.png?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;h=17&amp;w=22&amp;la=en&amp;hash=39827D06B4B6087EC52B3CFC7C8B91EF" alt="Youtube" /></a><a href="https://www.linkedin.com/company/ct-paid-leave/" rel="noopener noreferrer" title="This link will open up in a new window to linked in" target="_blank" ><img src="https://www.ctpaidleave.org/-/media/ctpl/icons/social-media/linkedin.png?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;h=20&amp;w=20&amp;la=en&amp;hash=0E618855C1E2AE3C7ACB0EBDCAA98378" alt="LinkedIn" /></a><a href="https://ctpaidleave.medium.com/" rel="noopener noreferrer" title="This link will open up in a new window to medium" target="_blank" ><img src="https://www.ctpaidleave.org/-/media/ctpl/icons/social-media/medium.png?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;h=16&amp;w=28&amp;la=en&amp;hash=0759BC7308473276FDB80D8167894B75" alt="Medium" /></a>                </div>
+        </div>
+</div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close img-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <img src="" id="image-src" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/ctpl-design-system/js/bundle.js?v=20240402234610"></script>
+</body>
+</html>

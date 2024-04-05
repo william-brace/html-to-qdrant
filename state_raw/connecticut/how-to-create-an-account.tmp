@@ -1,0 +1,1558 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- uat/version deploy -->
+    <link rel="shortcut icon" href="/ctpl-design-system/img/favicon.ico" type="image/x-icon" />
+    
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-54P36LD');</script>
+<!-- End Google Tag Manager -->
+    
+
+<title>How to create a ct.gov account</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="robots" content="index, follow" />
+<!-- FACEBOOK -->
+<meta property="og:description" content="" />
+<meta property="og:title" content="How to create a ct.gov account" />
+<meta property="og:url" content="/resources-and-guides/how-to-create-an-account" />
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="" />
+<!-- TWITTER -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:url" content="/resources-and-guides/how-to-create-an-account" />
+<meta name="twitter:title" content="How to create a ct.gov account" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:image" content="" />
+<!-- GSC Filters -->
+<meta name="pagetype" content="webpages" />
+
+
+
+
+<link rel="canonical" href="https://www.ctpaidleave.org/resources-and-guides/how-to-create-an-account" />
+
+
+
+<!-- <PageMap>
+       <DataObject type="PageData">
+          <Attribute name="type">webpages</Attribute>
+          <Attribute name="metatitle">How to create a ct.gov account</Attribute>
+       </DataObject>
+    </PageMap> -->
+
+    <!-- TODO:: Read the sitename from configuration -->
+    <meta property="og:site_name" content="CT.gov" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <link rel="stylesheet" href="/ctpl-design-system/css/global.css?v=20240402231641" />
+
+    
+
+    <script src="/assets/agencyscaffolding/js/acc-bundle.js?v=20240402231641"></script>
+
+    
+
+    <script>
+        /** Google search place holder code */
+        (function () {
+            var cx = '918e002fbe56a4fec';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+
+        var searchPlaceholder = false;
+        function initiatePlaceholder() {
+            var dmvHomeSearchEl = document.getElementById('gsc-i-id2');
+
+            if (dmvHomeSearchEl) {
+                searchPlaceholder = true;
+                dmvHomeSearchEl.placeholder = '';
+            }
+            var dmvHomeSearchEl1 = document.getElementById('gsc-i-id1');
+            if (dmvHomeSearchEl1) {
+                searchPlaceholder = true;
+                dmvHomeSearchEl1.placeholder = 'Search Portal';
+            }
+            if (searchPlaceholder === false) {
+                setTimeout(initiatePlaceholder, 300);
+            }
+
+
+        }
+        setTimeout(initiatePlaceholder, 300);
+
+        /** Google search place holder code */
+    </script>
+
+    
+<meta name="VIcurrentDateTime" content="638477303332881506" />
+<script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script>
+
+
+</head>
+<body>
+    <a class="show-on-focus skip-link" href="#mainContent">Skip to Content</a>
+
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54P36LD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    
+
+    <div class="page-wrap ctgov ctpl-l-theme--primary">
+
+        
+
+
+
+    <div class="ctpl-c-header-top ctpl-c-header-top--size ctpl-c-header-top--color ">
+
+        <div class="ctpl-c-header__topleft dropdown">
+            <a class="ctpl-c-language" aria-label="Change Language" href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://www.ctpaidleave.org/-/media/ctpl/icons/icon-globe.svg?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;la=en&amp;hash=1981EA4901E9C55D3D041B968EB59FCD" class="globe" alt="" />
+                LANGUAGE
+            </a>
+            <ul class="ctpl-c-language__dropdown-menu dropdown-menu notranslate">
+                    <li><a class="ctpl-c-language__dropdown-item dropdown-item" href="#" data-language="ar">Arabic</a></li>
+                    <li><a class="ctpl-c-language__dropdown-item dropdown-item" href="#" data-language="zh-CN">Chinese (Simplified)</a></li>
+                    <li><a class="ctpl-c-language__dropdown-item dropdown-item" href="#" data-language="en_US">English</a></li>
+                    <li><a class="ctpl-c-language__dropdown-item dropdown-item" href="#" data-language="fr">French</a></li>
+                    <li><a class="ctpl-c-language__dropdown-item dropdown-item" href="#" data-language="it">Italian</a></li>
+                    <li><a class="ctpl-c-language__dropdown-item dropdown-item" href="#" data-language="pl">Polish</a></li>
+                    <li><a class="ctpl-c-language__dropdown-item dropdown-item" href="#" data-language="pt">Portuguese</a></li>
+                    <li><a class="ctpl-c-language__dropdown-item dropdown-item" href="#" data-language="ru">Russian</a></li>
+                    <li><a class="ctpl-c-language__dropdown-item dropdown-item" href="#" data-language="es">Spanish</a></li>
+            </ul>
+        </div>
+        <div class="ctpl-c-search">
+            <div class="ctpl-c-search__input d-none">
+                <div class="gcse-searchbox-only" enableAutoComplete="true" data-resultsUrl="https://www.ctpaidleave.org/search" data-enableHistory="true" data-autoCompleteMaxCompletions="5" data-autoCompleteMatchType='any' data-defaultToRefinement="CTPL"></div>
+                <a class="ctpl-c-search__close-btn" aria-label="Close Search Box" href="javascript:void(0);">
+                    &times;
+                </a>
+            </div>
+            <a class="ctpl-c-search__btn" aria-label="Uses Google Custom Search to Search the CT Paid Leave website" href="javascript:void(0);">
+                <img src="https://www.ctpaidleave.org/-/media/ctpl/icons/icon-magnifying-glass.svg?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;la=en&amp;hash=C97A687E327377384C4D45A3604F3962" class="ctpl-c-search__icon" alt="Click to search" />
+                SEARCH
+            </a>
+        </div>
+    </div>
+    <div class="google_translate ml-auto d-flex">
+        <div id="google_translate_element"> </div>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </div>
+    <div class="header-navigation-main">
+        <div class="ctpl-c-header-main ctpl-c-header-main--size ctpl-c-header-main--color ">
+<a href="/" class="" aria-label="CTPL" ><img src="https://www.ctpaidleave.org/-/media/ctpl/global/header/header_logo.png?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;h=69&amp;w=222&amp;la=en&amp;hash=646BCC01EF9EE8516FD42EF4EAD248AA" class="logo" alt="Return to Connecticut Paid Leave Home Page" /></a>
+            <div class="header-main_right">
+
+
+                    <script>
+                        function setCookie(cName, cValue, expDays, domain) {
+                            let date = new Date();
+                            date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+                            const expires = "expires=" + date.toUTCString();
+                            document.cookie = cName + "=" + cValue + "; " + expires + "; path=/; Domain=" + domain + "; Secure; SameSite=None";
+                        }
+                        setCookie("CTPL_user_name", "", 1, ".ctpaidleave.org");
+                    </script>
+
+                    <div id="signUpDiv" class="create_account d-flex align-items-center">
+                        <a target="_self" aria-label="Create An Account With CT.gov" href="/resources-and-guides/how-to-create-an-account">
+                            <img src="https://www.ctpaidleave.org/-/media/ctpl/global/header/create_account.png?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;h=16&amp;w=21&amp;la=en&amp;hash=1CFFFAA8F12B97643C9630ED0FA47B07" alt="" />
+                            <span>Create An Account With CT.gov</span>
+                        </a>
+                    </div>
+
+                    <div class="register_business d-flex align-items-center">
+                        <a target="_self" aria-label="register your business" href="/for-businesses-and-employers/register-your-business">
+                            <img src="https://www.ctpaidleave.org/-/media/ctpl/global/header/register_business.png?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;h=16&amp;w=13&amp;la=en&amp;hash=2FD0393C6A8AEF52D978D6E6A39DF0EA" alt="" />
+                            <span>register your business</span>
+                        </a>
+                    </div>
+
+                    <div class="ctpl-c-signin">
+
+
+
+
+                        <a style="display:none;" id="signInLink" target="_self" type="button" href="/login?ReturnUrl=/resources-and-guides/how-to-create-an-account" class="ctpl-c-signin__btn" aria-label="Sign in">
+                            <img src="https://www.ctpaidleave.org/-/media/ctpl/icons/header/icon-user-white.svg?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;la=en&amp;hash=44CF0FF6D3EF310AAD368D9459603C7F" class="ctpl-c-signin__btn-icon" alt="" />
+                            Sign in
+                        </a>
+
+
+                        <div style="display:none;" id="signInTray" class="ctpl-c-signin__tray">
+                            <a class="ctpl-c-signin__dropdown" href="javascript:void(0);" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="/-/media/ctpl/user_icon.png?h=16&amp;w=14&amp;la=en&amp;hash=D6ED9730469C3463F564B05894BA69D8" class="ctpl-c-signin__dropdown-icon" alt="" />
+                                &nbsp;Hello,
+                                <span id="signInTray_name" class="ctpl-c-signin__username notranslate">
+                                    
+                                </span>
+                            </a>
+                            <ul class="ctpl-c-signin__dropdown-menu dropdown-menu ">
+                                    <li>
+                                        <a class="ctpl-c-signin__dropdown-item dropdown-item" aria-label="Aflac Portal" href="https://mygrouplifedisability.aflac.com/personal/s/login/?expid=ctpl" target="">
+                                            Aflac Portal
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a class="ctpl-c-signin__dropdown-item dropdown-item" aria-label="My Account for Business" href="https://service.ctpaidleave.org/s/my-account" target="">
+                                            My Account for Business
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a class="ctpl-c-signin__dropdown-item dropdown-item" aria-label="Resume Business Registrations" href="https://service.ctpaidleave.org/s/my-account#Resume" target="">
+                                            Resume Business Registrations
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a class="ctpl-c-signin__dropdown-item dropdown-item" aria-label="User Settings" href="https://login.ct.gov/ctidentity/profile?goto=https://www.ctpaidleave.org" target="">
+                                            User Settings
+                                        </a>
+                                    </li>
+                                                                                                    <li>
+                                        <a class="ctpl-c-signin__dropdown-item dropdown-item" aria-label="Sign Out" href="/logout?ReturnUrl=/resources-and-guides/how-to-create-an-account" target="">
+                                            
+                                            Sign Out
+                                        </a>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+
+            </div>
+
+                <script>
+                    function isNullOrEmpty(str) {
+                        return !str || str.trim().length === 0;
+                    }
+
+                    var parsedName = '';
+                    var signInLink = document.getElementById('signInLink');
+                    var signInTray = document.getElementById('signInTray');
+
+                    if (!isNullOrEmpty(parsedName)) {
+                        signInTray.style.display = 'block';
+                    }
+                    else {
+                        signInLink.style.display = 'flex';
+                    }
+
+                </script>
+
+            <div class="mobile-header">
+                    <div class="">
+                        <a href="/login" aria-label="Sign in" style="text-decoration: none;">
+                            <button type="button" class="btn button-tablet d-flex align-items-center">
+                                <img src="https://www.ctpaidleave.org/-/media/ctpl/icons/header/icon-user-white.svg?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;la=en&amp;hash=44CF0FF6D3EF310AAD368D9459603C7F" class="" alt="" />
+                            </button>
+                        </a>
+                    </div>
+                    <a id="hamburger" aria-label="Open Menu" style="cursor:pointer">
+                        <img src="/-/media/ctpl/icons/header/hamburger-menu.svg?sc_lang=en&amp;la=en&amp;hash=275B96E7C5FABB4027F8FE3A1659E96F" class="hamburger_menu" alt="Open or Close the menu" />
+                    </a>
+                    <a id="cross" aria-label="Close Menu" style="display:none;cursor:pointer">
+                        <img src="/-/media/ctpl/icons/header/cross.svg?sc_lang=en&amp;la=en&amp;hash=494E764596D1778631C2AF1F5C8C8C7D" class="hamburger_menu" alt="Close" />
+                    </a>
+            </div>
+        </div>
+
+        <nav class="ctpl-c-main-nav" role="navigation" aria-label="Main Navigation">
+            <div class="custom-navbar ">
+                <div class="container-fluid">
+
+                    <div class="ctpl-c-header-mobile-menu-content">
+                        <div id="initial_div" class="header-btns" style="display: none;">
+                            <div class="create_account align-items-center">
+                                    <a href="/resources-and-guides/how-to-create-an-account" aria-label="Create An Account With CT.gov" target="">
+                                        <img src="/-/media/ctpl/global/header/create_account.png?sc_lang=en&amp;h=16&amp;w=21&amp;la=en&amp;hash=697B8457BB2BCE490BE5A787EBA2F17D" alt="" />
+                                        <span></span>
+                                    </a>
+                            </div>
+                            <div class="register_business align-items-center">
+                                <a href="/for-businesses-and-employers/register-your-business" aria-label="register your business" target="">
+                                    <img src="/-/media/ctpl/global/header/register_business.png?sc_lang=en&amp;h=16&amp;w=13&amp;la=en&amp;hash=B1C792E59D4AAF53E7C2729DD7DF86B5" alt="" />
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        
+    <ul class="nav_items" id="initial_div_nav">
+                <li class="nav-item mb-0 has-dropdown">
+                    <a class="nav-link text-white d-lg-block d-md-none d-none d-flex align-items-center" aria-haspopup="true" aria-expanded="false">
+                        How CT Paid Leave Works
+                    </a>
+                    <a class="nav-link d-lg-none nav-link-mobile d-block align-items-center ctpl-c-header-mobile-menu-content-items" data-target="nav_0">
+                        How CT Paid Leave Works
+                    </a>
+                    <img src="-/media/5EA6ECE54BB9464A98AC71CCF5BC2FAC.ashx" alt="Greater" class="greaterthen_symbol" />
+
+                    <div class="dropdown-menu d-xsm-none">
+                        <ul class="dropdown-inner-menu" aria-labelledby="navbarDropdown">
+                            <li class="dropdown-item">
+                                <a class="dropdown-item" href="/how-ct-paid-leave-works">
+                                    How CT Paid Leave Works
+                                </a>
+                            </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/how-ct-paid-leave-works/ct-paid-leave-and-fmla">CT Paid Leave and FMLA</a>
+
+                                    </li>
+                                    <li class="dropdown-item has-dropdown">
+
+                                        <a class="dropdown-item" href="/how-ct-paid-leave-works/coverage-and-eligibility">Coverage and Eligibility</a>
+
+                                            <i class="fa fa-plus plus-menu icon-menu" aria-hidden="true"></i>
+                                            <i class="fa fa-minus minus-menu icon-menu" aria-hidden="true"></i>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarSubDropdown">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/how-ct-paid-leave-works/coverage-and-eligibility/eligibility-questionnaire">
+                                                                Eligibility Questionnaire
+                                                            </a>
+                                                        </li>
+                                            </ul>
+                                    </li>
+                                    <li class="dropdown-item has-dropdown">
+
+                                        <a class="dropdown-item" href="/how-ct-paid-leave-works/qualifying-reasons">Qualifying Reasons</a>
+
+                                            <i class="fa fa-plus plus-menu icon-menu" aria-hidden="true"></i>
+                                            <i class="fa fa-minus minus-menu icon-menu" aria-hidden="true"></i>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarSubDropdown">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/how-ct-paid-leave-works/qualifying-reasons/my-own-serious-health-condition">
+                                                                I am Experiencing my Own Serious Health Condition
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/how-ct-paid-leave-works/qualifying-reasons/i-m-starting-or-expanding-my-family">
+                                                                I am Starting or Expanding my Family
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/how-ct-paid-leave-works/qualifying-reasons/caring-for-a-family-member">
+                                                                I Need to Care for a Family Member
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/how-ct-paid-leave-works/qualifying-reasons/military-family">
+                                                                CT Paid Leave for Military Families
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/how-ct-paid-leave-works/qualifying-reasons/family-violence-leave">
+                                                                CT Paid Leave for Family Violence
+                                                            </a>
+                                                        </li>
+                                            </ul>
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/how-ct-paid-leave-works/contributions">Contributions</a>
+
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/how-ct-paid-leave-works/report-suspected-fraud">Report Suspected Fraud</a>
+
+                                    </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item mb-0 has-dropdown">
+                    <a class="nav-link text-white d-lg-block d-md-none d-none d-flex align-items-center" aria-haspopup="true" aria-expanded="false">
+                        Claims
+                    </a>
+                    <a class="nav-link d-lg-none nav-link-mobile d-block align-items-center ctpl-c-header-mobile-menu-content-items" data-target="nav_12">
+                        Claims
+                    </a>
+                    <img src="-/media/5EA6ECE54BB9464A98AC71CCF5BC2FAC.ashx" alt="Greater" class="greaterthen_symbol" />
+
+                    <div class="dropdown-menu d-xsm-none">
+                        <ul class="dropdown-inner-menu" aria-labelledby="navbarDropdown">
+                            <li class="dropdown-item">
+                                <a class="dropdown-item" href="/claims">
+                                    Claims
+                                </a>
+                            </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/claims/before-you-apply">Before You Apply</a>
+
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/claims/how-to-apply">How to Apply</a>
+
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/claims/after-you-apply">After You Apply</a>
+
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/claims/application-document-checklist">Application Document Checklist</a>
+
+                                    </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item mb-0 has-dropdown">
+                    <a class="nav-link text-white d-lg-block d-md-none d-none d-flex align-items-center" aria-haspopup="true" aria-expanded="false">
+                        For Businesses and Employers
+                    </a>
+                    <a class="nav-link d-lg-none nav-link-mobile d-block align-items-center ctpl-c-header-mobile-menu-content-items" data-target="nav_17">
+                        For Businesses and Employers
+                    </a>
+                    <img src="-/media/5EA6ECE54BB9464A98AC71CCF5BC2FAC.ashx" alt="Greater" class="greaterthen_symbol" />
+
+                    <div class="dropdown-menu d-xsm-none">
+                        <ul class="dropdown-inner-menu" aria-labelledby="navbarDropdown">
+                            <li class="dropdown-item">
+                                <a class="dropdown-item" href="/for-businesses-and-employers">
+                                    For Businesses and Employers
+                                </a>
+                            </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/for-businesses-and-employers/i-am-an-employer">I am an Employer</a>
+
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/for-businesses-and-employers/a-sole-proprietor">I am a Sole Proprietor or Self-employed Individual</a>
+
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/for-businesses-and-employers/tpas">I am a Third-Party Administrator</a>
+
+                                    </li>
+                                    <li class="dropdown-item has-dropdown">
+
+                                        <a class="dropdown-item" href="/for-businesses-and-employers/register-your-business">Register Your Business</a>
+
+                                            <i class="fa fa-plus plus-menu icon-menu" aria-hidden="true"></i>
+                                            <i class="fa fa-minus minus-menu icon-menu" aria-hidden="true"></i>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarSubDropdown">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/for-businesses-and-employers/register-your-business/employers">
+                                                                How to Register as an Employer with CT Paid Leave
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/for-businesses-and-employers/register-your-business/sole-proprietors">
+                                                                How to Register as a Sole Proprietor/Self-Employed Individual with CT Paid Leave
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/for-businesses-and-employers/register-your-business/register-your-business-tpa">
+                                                                How to Register as a Third-Party Administrator with CT Paid Leave
+                                                            </a>
+                                                        </li>
+                                            </ul>
+                                    </li>
+                                    <li class="dropdown-item has-dropdown">
+
+                                        <a class="dropdown-item" href="/for-businesses-and-employers/private-plans">Private Plans</a>
+
+                                            <i class="fa fa-plus plus-menu icon-menu" aria-hidden="true"></i>
+                                            <i class="fa fa-minus minus-menu icon-menu" aria-hidden="true"></i>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarSubDropdown">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/for-businesses-and-employers/private-plans/how-to-apply-for-a-private-plan">
+                                                                How to Apply for a Private Plan
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/for-businesses-and-employers/private-plans/administer-approved-private-plans">
+                                                                Administer Approved Private Plans
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/for-businesses-and-employers/private-plans/termination-of-a-private-plan">
+                                                                Termination of Private Plans
+                                                            </a>
+                                                        </li>
+                                            </ul>
+                                    </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item mb-0 has-dropdown">
+                    <a class="nav-link text-white d-lg-block d-md-none d-none d-flex align-items-center" aria-haspopup="true" aria-expanded="false">
+                        Remit Contributions
+                    </a>
+                    <a class="nav-link d-lg-none nav-link-mobile d-block align-items-center ctpl-c-header-mobile-menu-content-items" data-target="nav_29">
+                        Remit Contributions
+                    </a>
+                    <img src="-/media/5EA6ECE54BB9464A98AC71CCF5BC2FAC.ashx" alt="Greater" class="greaterthen_symbol" />
+
+                    <div class="dropdown-menu d-xsm-none">
+                        <ul class="dropdown-inner-menu" aria-labelledby="navbarDropdown">
+                            <li class="dropdown-item">
+                                <a class="dropdown-item" href="/remit-contributions">
+                                    Remit Contributions
+                                </a>
+                            </li>
+                                    <li class="dropdown-item has-dropdown">
+
+                                        <a class="dropdown-item" href="/remit-contributions/batch-process">Batch Contribution Process</a>
+
+                                            <i class="fa fa-plus plus-menu icon-menu" aria-hidden="true"></i>
+                                            <i class="fa fa-minus minus-menu icon-menu" aria-hidden="true"></i>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarSubDropdown">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/remit-contributions/batch-process/sftp-access">
+                                                                SFTP Server Access
+                                                            </a>
+                                                        </li>
+                                            </ul>
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/remit-contributions/online-portal-process">Online Portal Process</a>
+
+                                    </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item mb-0 has-dropdown">
+                    <a class="nav-link text-white d-lg-block d-md-none d-none d-flex align-items-center" aria-haspopup="true" aria-expanded="false">
+                        Resources and Guides
+                    </a>
+                    <a class="nav-link d-lg-none nav-link-mobile d-block align-items-center ctpl-c-header-mobile-menu-content-items" data-target="nav_33">
+                        Resources and Guides
+                    </a>
+                    <img src="-/media/5EA6ECE54BB9464A98AC71CCF5BC2FAC.ashx" alt="Greater" class="greaterthen_symbol" />
+
+                    <div class="dropdown-menu d-xsm-none">
+                        <ul class="dropdown-inner-menu" aria-labelledby="navbarDropdown">
+                            <li class="dropdown-item">
+                                <a class="dropdown-item" href="/resources-and-guides">
+                                    Resources and Guides
+                                </a>
+                            </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/resources-and-guides/webinars-and-events">Webinars and Events</a>
+
+                                    </li>
+                                    <li class="dropdown-item has-dropdown">
+
+                                        <a class="dropdown-item" href="/resources-and-guides/frequently-asked-questions">Frequently Asked Questions</a>
+
+                                            <i class="fa fa-plus plus-menu icon-menu" aria-hidden="true"></i>
+                                            <i class="fa fa-minus minus-menu icon-menu" aria-hidden="true"></i>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarSubDropdown">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/resources-and-guides/frequently-asked-questions/glossary-of-terms">
+                                                                Glossary of Terms
+                                                            </a>
+                                                        </li>
+                                            </ul>
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/resources-and-guides/paid-leave-podcast">Paid Leave Podcast</a>
+
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/resources-and-guides/paid-leave-spotlight">Paid Leave Spotlight</a>
+
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/resources-and-guides/how-to-create-an-account">Create An Account With CT.gov </a>
+
+                                    </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item mb-0 has-dropdown">
+                    <a class="nav-link text-white d-lg-block d-md-none d-none d-flex align-items-center" aria-haspopup="true" aria-expanded="false">
+                        About Us
+                    </a>
+                    <a class="nav-link d-lg-none nav-link-mobile d-block align-items-center ctpl-c-header-mobile-menu-content-items" data-target="nav_40">
+                        About Us
+                    </a>
+                    <img src="-/media/5EA6ECE54BB9464A98AC71CCF5BC2FAC.ashx" alt="Greater" class="greaterthen_symbol" />
+
+                    <div class="dropdown-menu d-xsm-none">
+                        <ul class="dropdown-inner-menu" aria-labelledby="navbarDropdown">
+                            <li class="dropdown-item">
+                                <a class="dropdown-item" href="/about-us">
+                                    About Us
+                                </a>
+                            </li>
+                                    <li class="dropdown-item has-dropdown">
+
+                                        <a class="dropdown-item" href="/about-us/board-of-directors">Board of Directors</a>
+
+                                            <i class="fa fa-plus plus-menu icon-menu" aria-hidden="true"></i>
+                                            <i class="fa fa-minus minus-menu icon-menu" aria-hidden="true"></i>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarSubDropdown">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/about-us/board-of-directors/board-of-directors-meetings">
+                                                                Board of Directors Meetings
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/about-us/board-of-directors/finance-and-audit-committee-meetings">
+                                                                Finance and Audit Committee Meetings
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/about-us/board-of-directors/outreach-and-engagement-committee-meetings">
+                                                                Outreach and Engagement Committee Meetings
+                                                            </a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item" href="/about-us/board-of-directors/policy-and-personnel-meetings">
+                                                                Policy and Personnel Committee Meetings
+                                                            </a>
+                                                        </li>
+                                            </ul>
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/about-us/law-and-policies">Law and Policies</a>
+
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/about-us/news-and-media">News and Media</a>
+
+                                    </li>
+                                    <li class="dropdown-item ">
+
+                                        <a class="dropdown-item" href="/about-us/information-for-legislators">Information for Legislators</a>
+
+                                    </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item mb-0">
+                    <a class="nav-link text-white d-flex align-items-center" href="/contactus">
+                        Contact Us
+                    </a>
+                </li>
+    </ul>
+            <div class="ctpl-c-header-mobile-menu-content2" id="nav_0">
+            <div class="ctpl-c-header-mobile-menu-content2-back back-mobile" data-close="nav_0">
+                <img src="-/media/145A0C026C154BD49F75A96611C47D44.ashx" alt="Back" class="back_icon" />
+                <span class="back">Back</span>
+            </div>
+            <div class="ctpl-c-header-mobile-menu-content2-back-sub-div">
+                <a href="/how-ct-paid-leave-works">
+                    <p class="ctpl-c-header-mobile-menu-content-items">
+                        How CT Paid Leave Works
+                    </p>
+                </a>
+                            <a href="/how-ct-paid-leave-works/ct-paid-leave-and-fmla">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    CT Paid Leave and FMLA
+                                </p>
+                            </a>
+                            <a href="/how-ct-paid-leave-works/coverage-and-eligibility">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    <span>
+                                        Coverage and Eligibility
+                                    </span>
+                                    <img src="-/media/23EB353D178B40639BADB5383B826D6E.ashx" alt="Back" class="plus_mobile" data-target="subnav_2" />
+                                    <img src="-/media/DF17515FE24242B6BEB984310FB2714A.ashx" alt="Back" class="minus_mobile" data-target="subnav_2" />
+                                </p>
+                            </a>
+                            <div class="ctpl-c-qualifying-reasons-div" id="subnav_2">
+                                <ul style="list-style: none;padding-left:0px;">
+                                            <li>
+                                                <a href="/how-ct-paid-leave-works/coverage-and-eligibility/eligibility-questionnaire">
+                                                    Eligibility Questionnaire
+                                                </a>
+                                            </li>
+                                </ul>
+                            </div>
+                            <a href="/how-ct-paid-leave-works/qualifying-reasons">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    <span>
+                                        Qualifying Reasons
+                                    </span>
+                                    <img src="-/media/23EB353D178B40639BADB5383B826D6E.ashx" alt="Back" class="plus_mobile" data-target="subnav_4" />
+                                    <img src="-/media/DF17515FE24242B6BEB984310FB2714A.ashx" alt="Back" class="minus_mobile" data-target="subnav_4" />
+                                </p>
+                            </a>
+                            <div class="ctpl-c-qualifying-reasons-div" id="subnav_4">
+                                <ul style="list-style: none;padding-left:0px;">
+                                            <li>
+                                                <a href="/how-ct-paid-leave-works/qualifying-reasons/my-own-serious-health-condition">
+                                                    I am Experiencing my Own Serious Health Condition
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/how-ct-paid-leave-works/qualifying-reasons/i-m-starting-or-expanding-my-family">
+                                                    I am Starting or Expanding my Family
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/how-ct-paid-leave-works/qualifying-reasons/caring-for-a-family-member">
+                                                    I Need to Care for a Family Member
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/how-ct-paid-leave-works/qualifying-reasons/military-family">
+                                                    CT Paid Leave for Military Families
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/how-ct-paid-leave-works/qualifying-reasons/family-violence-leave">
+                                                    CT Paid Leave for Family Violence
+                                                </a>
+                                            </li>
+                                </ul>
+                            </div>
+                            <a href="/how-ct-paid-leave-works/contributions">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    Contributions
+                                </p>
+                            </a>
+                            <a href="/how-ct-paid-leave-works/report-suspected-fraud">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    Report Suspected Fraud
+                                </p>
+                            </a>
+            </div>  
+        </div>
+            <div class="ctpl-c-header-mobile-menu-content2" id="nav_12">
+            <div class="ctpl-c-header-mobile-menu-content2-back back-mobile" data-close="nav_12">
+                <img src="-/media/145A0C026C154BD49F75A96611C47D44.ashx" alt="Back" class="back_icon" />
+                <span class="back">Back</span>
+            </div>
+            <div class="ctpl-c-header-mobile-menu-content2-back-sub-div">
+                <a href="/claims">
+                    <p class="ctpl-c-header-mobile-menu-content-items">
+                        Claims
+                    </p>
+                </a>
+                            <a href="/claims/before-you-apply">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    Before You Apply
+                                </p>
+                            </a>
+                            <a href="/claims/how-to-apply">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    How to Apply
+                                </p>
+                            </a>
+                            <a href="/claims/after-you-apply">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    After You Apply
+                                </p>
+                            </a>
+                            <a href="/claims/application-document-checklist">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    Application Document Checklist
+                                </p>
+                            </a>
+            </div>  
+        </div>
+            <div class="ctpl-c-header-mobile-menu-content2" id="nav_17">
+            <div class="ctpl-c-header-mobile-menu-content2-back back-mobile" data-close="nav_17">
+                <img src="-/media/145A0C026C154BD49F75A96611C47D44.ashx" alt="Back" class="back_icon" />
+                <span class="back">Back</span>
+            </div>
+            <div class="ctpl-c-header-mobile-menu-content2-back-sub-div">
+                <a href="/for-businesses-and-employers">
+                    <p class="ctpl-c-header-mobile-menu-content-items">
+                        For Businesses and Employers
+                    </p>
+                </a>
+                            <a href="/for-businesses-and-employers/i-am-an-employer">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    I am an Employer
+                                </p>
+                            </a>
+                            <a href="/for-businesses-and-employers/a-sole-proprietor">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    I am a Sole Proprietor or Self-employed Individual
+                                </p>
+                            </a>
+                            <a href="/for-businesses-and-employers/tpas">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    I am a Third-Party Administrator
+                                </p>
+                            </a>
+                            <a href="/for-businesses-and-employers/register-your-business">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    <span>
+                                        Register Your Business
+                                    </span>
+                                    <img src="-/media/23EB353D178B40639BADB5383B826D6E.ashx" alt="Back" class="plus_mobile" data-target="subnav_21" />
+                                    <img src="-/media/DF17515FE24242B6BEB984310FB2714A.ashx" alt="Back" class="minus_mobile" data-target="subnav_21" />
+                                </p>
+                            </a>
+                            <div class="ctpl-c-qualifying-reasons-div" id="subnav_21">
+                                <ul style="list-style: none;padding-left:0px;">
+                                            <li>
+                                                <a href="/for-businesses-and-employers/register-your-business/employers">
+                                                    How to Register as an Employer with CT Paid Leave
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/for-businesses-and-employers/register-your-business/sole-proprietors">
+                                                    How to Register as a Sole Proprietor/Self-Employed Individual with CT Paid Leave
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/for-businesses-and-employers/register-your-business/register-your-business-tpa">
+                                                    How to Register as a Third-Party Administrator with CT Paid Leave
+                                                </a>
+                                            </li>
+                                </ul>
+                            </div>
+                            <a href="/for-businesses-and-employers/private-plans">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    <span>
+                                        Private Plans
+                                    </span>
+                                    <img src="-/media/23EB353D178B40639BADB5383B826D6E.ashx" alt="Back" class="plus_mobile" data-target="subnav_25" />
+                                    <img src="-/media/DF17515FE24242B6BEB984310FB2714A.ashx" alt="Back" class="minus_mobile" data-target="subnav_25" />
+                                </p>
+                            </a>
+                            <div class="ctpl-c-qualifying-reasons-div" id="subnav_25">
+                                <ul style="list-style: none;padding-left:0px;">
+                                            <li>
+                                                <a href="/for-businesses-and-employers/private-plans/how-to-apply-for-a-private-plan">
+                                                    How to Apply for a Private Plan
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/for-businesses-and-employers/private-plans/administer-approved-private-plans">
+                                                    Administer Approved Private Plans
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/for-businesses-and-employers/private-plans/termination-of-a-private-plan">
+                                                    Termination of Private Plans
+                                                </a>
+                                            </li>
+                                </ul>
+                            </div>
+            </div>  
+        </div>
+            <div class="ctpl-c-header-mobile-menu-content2" id="nav_29">
+            <div class="ctpl-c-header-mobile-menu-content2-back back-mobile" data-close="nav_29">
+                <img src="-/media/145A0C026C154BD49F75A96611C47D44.ashx" alt="Back" class="back_icon" />
+                <span class="back">Back</span>
+            </div>
+            <div class="ctpl-c-header-mobile-menu-content2-back-sub-div">
+                <a href="/remit-contributions">
+                    <p class="ctpl-c-header-mobile-menu-content-items">
+                        Remit Contributions
+                    </p>
+                </a>
+                            <a href="/remit-contributions/batch-process">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    <span>
+                                        Batch Contribution Process
+                                    </span>
+                                    <img src="-/media/23EB353D178B40639BADB5383B826D6E.ashx" alt="Back" class="plus_mobile" data-target="subnav_30" />
+                                    <img src="-/media/DF17515FE24242B6BEB984310FB2714A.ashx" alt="Back" class="minus_mobile" data-target="subnav_30" />
+                                </p>
+                            </a>
+                            <div class="ctpl-c-qualifying-reasons-div" id="subnav_30">
+                                <ul style="list-style: none;padding-left:0px;">
+                                            <li>
+                                                <a href="/remit-contributions/batch-process/sftp-access">
+                                                    SFTP Server Access
+                                                </a>
+                                            </li>
+                                </ul>
+                            </div>
+                            <a href="/remit-contributions/online-portal-process">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    Online Portal Process
+                                </p>
+                            </a>
+            </div>  
+        </div>
+            <div class="ctpl-c-header-mobile-menu-content2" id="nav_33">
+            <div class="ctpl-c-header-mobile-menu-content2-back back-mobile" data-close="nav_33">
+                <img src="-/media/145A0C026C154BD49F75A96611C47D44.ashx" alt="Back" class="back_icon" />
+                <span class="back">Back</span>
+            </div>
+            <div class="ctpl-c-header-mobile-menu-content2-back-sub-div">
+                <a href="/resources-and-guides">
+                    <p class="ctpl-c-header-mobile-menu-content-items">
+                        Resources and Guides
+                    </p>
+                </a>
+                            <a href="/resources-and-guides/webinars-and-events">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    Webinars and Events
+                                </p>
+                            </a>
+                            <a href="/resources-and-guides/frequently-asked-questions">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    <span>
+                                        Frequently Asked Questions
+                                    </span>
+                                    <img src="-/media/23EB353D178B40639BADB5383B826D6E.ashx" alt="Back" class="plus_mobile" data-target="subnav_35" />
+                                    <img src="-/media/DF17515FE24242B6BEB984310FB2714A.ashx" alt="Back" class="minus_mobile" data-target="subnav_35" />
+                                </p>
+                            </a>
+                            <div class="ctpl-c-qualifying-reasons-div" id="subnav_35">
+                                <ul style="list-style: none;padding-left:0px;">
+                                            <li>
+                                                <a href="/resources-and-guides/frequently-asked-questions/glossary-of-terms">
+                                                    Glossary of Terms
+                                                </a>
+                                            </li>
+                                </ul>
+                            </div>
+                            <a href="/resources-and-guides/paid-leave-podcast">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    Paid Leave Podcast
+                                </p>
+                            </a>
+                            <a href="/resources-and-guides/paid-leave-spotlight">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    Paid Leave Spotlight
+                                </p>
+                            </a>
+                            <a href="/resources-and-guides/how-to-create-an-account">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    Create An Account With CT.gov 
+                                </p>
+                            </a>
+            </div>  
+        </div>
+            <div class="ctpl-c-header-mobile-menu-content2" id="nav_40">
+            <div class="ctpl-c-header-mobile-menu-content2-back back-mobile" data-close="nav_40">
+                <img src="-/media/145A0C026C154BD49F75A96611C47D44.ashx" alt="Back" class="back_icon" />
+                <span class="back">Back</span>
+            </div>
+            <div class="ctpl-c-header-mobile-menu-content2-back-sub-div">
+                <a href="/about-us">
+                    <p class="ctpl-c-header-mobile-menu-content-items">
+                        About Us
+                    </p>
+                </a>
+                            <a href="/about-us/board-of-directors">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    <span>
+                                        Board of Directors
+                                    </span>
+                                    <img src="-/media/23EB353D178B40639BADB5383B826D6E.ashx" alt="Back" class="plus_mobile" data-target="subnav_41" />
+                                    <img src="-/media/DF17515FE24242B6BEB984310FB2714A.ashx" alt="Back" class="minus_mobile" data-target="subnav_41" />
+                                </p>
+                            </a>
+                            <div class="ctpl-c-qualifying-reasons-div" id="subnav_41">
+                                <ul style="list-style: none;padding-left:0px;">
+                                            <li>
+                                                <a href="/about-us/board-of-directors/board-of-directors-meetings">
+                                                    Board of Directors Meetings
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/about-us/board-of-directors/finance-and-audit-committee-meetings">
+                                                    Finance and Audit Committee Meetings
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/about-us/board-of-directors/outreach-and-engagement-committee-meetings">
+                                                    Outreach and Engagement Committee Meetings
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/about-us/board-of-directors/policy-and-personnel-meetings">
+                                                    Policy and Personnel Committee Meetings
+                                                </a>
+                                            </li>
+                                </ul>
+                            </div>
+                            <a href="/about-us/law-and-policies">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    Law and Policies
+                                </p>
+                            </a>
+                            <a href="/about-us/news-and-media">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    News and Media
+                                </p>
+                            </a>
+                            <a href="/about-us/information-for-legislators">
+                                <p class="ctpl-c-header-mobile-menu-content-items extra-margin">
+                                    Information for Legislators
+                                </p>
+                            </a>
+            </div>  
+        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    document.querySelectorAll('a[href^="/login?ReturnUrl="]').forEach(link => {
+                        link.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const returnUrl = new URL(link.href).searchParams.get('ReturnUrl');
+                            document.cookie = `ReturnUrl=${returnUrl}; path=/`;
+                            window.location.href = '/login';
+                        });
+                    });
+                });
+
+                function getCookie(name) {
+                    const value = `; ${document.cookie}`;
+                    const parts = value.split(`; ${name}=`);
+                    if (parts.length === 2) return parts.pop().split(';').shift();
+                }
+
+                window.onload = () => {
+                    const returnUrl = getCookie('ReturnUrl');
+                    if (returnUrl) {
+                        document.cookie = 'ReturnUrl=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+                        window.location.href = decodeURIComponent(returnUrl);
+                    }
+                };
+            </script>
+    </div>
+
+
+
+    <div class="ctpl-c-hero-section" style="background-image:url(&#39;/-/media/ctpl/background-images/blue-header-bg.png?sc_lang=en&#39;);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 colsection">
+                      <div class="before-you-apply-section">
+                        <div class="hero-text-container ">
+                            <h1 class="heading_section">
+                                Create An Account With CT.gov
+                            </h1>
+                                <p class="para_section">
+                                    Before you can file a claim for income replacement benefits or register your business with CT Paid Leave Authority to remit the required contributions, you must first create an account with CT.gov.
+                                </p>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="image-section">
+                <img src="/-/media/ctpl/pages/create-a-ctgov-account/create-a-ctgov-account-hero-v2.jpg?sc_lang=en&amp;h=365&amp;w=708&amp;la=en&amp;hash=5F82F52DB20BFA1BACB0830A36ABD155" alt="Woman typing on a laptop" />
+        </div>
+
+     </div>
+
+
+        <div>
+            <div class="master-template">
+                
+    <div class="breadcrumb-section d-none d-lg-flex">
+        <div class="container">
+            <nav class="breadcrumbnav" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item"><a href="/resources-and-guides">Resources and Guides</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Create An Account With CT.gov </li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+                <main id="mainContent">
+                    
+
+<div class=content-block-section>
+    <div class="container" >
+        <div class="row">
+            <div class="col-lg-12 col-12">
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="margin-b-40"></div>
+
+
+
+            <div class="ctpl-c-video-block">
+               <div class="container">
+                  <div class="ctpl-c-video-block_content">
+                    <div class="row flex-row-reverse">
+                        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                            <div class="ctpl-c-video-block_content-texts ctpl-c-video-block_content-texts-rmbg mb-4 mb-lg-0">
+                                <div class="ctpl-c-video-block_content_wrapper">
+                                    <p class="ctpl-c-video-block_content-texts-header">
+                                        To learn how to create your CT.gov account, you may watch this short video or follow our Step-by-Step written instructions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 d-flex ctpl-c-video-block_content-video">
+                            <img src="/-/media/ctpl/pages/create-a-ctgov-account/create-a-ctgov-account-video-image-782x390.png?sc_lang=en&amp;h=390&amp;w=782&amp;la=en&amp;hash=D297D1210ECECD2E2A9CA539C5AE8BD3" class="video_img" alt="Woman scrolling on a laptop" />
+                            <div class="ctpl-c-video-block_content-video-overlay d-flex justify-content-center align-items-center">
+                                <div class="ctpl-c-video-block_content-video-overlay-play-icon-wrapper"
+                                     data-bs-toggle="modal" data-bs-target="#video-85abce2377644dc2a3b3da65d211d20b-223">
+                                    <i class="fa fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        <div class="modal fade" id="video-85abce2377644dc2a3b3da65d211d20b-223" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content px-3 py-3">
+                    <div class="ctpl-c-close-icon-wrapper">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uVzMeKzS-JQ?si=kLTN9NTTJ1VbZLYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    
+
+                </div>
+            </div>
+        </div>
+
+
+                    
+
+<div class=content-block-section>
+    <div class="container" >
+        <div class="row">
+            <div class="col-lg-12 col-12">
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="margin-b-40"></div>
+
+
+<div class=content-block-section>
+    <div class="container" >
+        <div class="row">
+            <div class="col-lg-12 col-12">
+                
+
+
+    <article class="richtext-content " >
+        <div class="twoCol-pageTitle__item">
+<h2>Step-by-Step</h2>
+<p>Creating a CT.gov account will provide you with a single identity that can be used to access
+programs managed by the state, including CT Paid Leave. If you already have a CT.gov
+account, you should not create a new one. Instead, <a rel="noopener noreferrer" href="https://www.ctpaidleave.org/login?ReturnUrl=/Resources-and-Guides/How-to-create-an-account" target="_blank">SIGN IN</a> with your existing credentials.</p>
+</div>
+    </article>
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="margin-b-40"></div>
+
+                    
+
+<div class=content-block-section>
+    <div class="container" >
+        <div class="row">
+            <div class="col-lg-12 col-12">
+                
+
+    <!-- Grouped tile -->
+    <div class="grouped-tile__item   grouped-tile__item--img  grouped-tile__item--noBg" id="id_8d11">
+        <div class="grouped-tile__icon">
+            <img src="/-/media/ctpl/icons/blue-svg/group-20-with-heart.svg?sc_lang=en&amp;la=en&amp;hash=62D8688F8A3F5EA07B219E1F9458A90F" alt="" />
+        </div>
+                <div class="grouped-tile__row" id="optn1e22">
+                    <div class="grouped-tile__col">
+                        <h3>Go to CT.gov creation page</h3>
+                        <p>When you click the "Create CT.gov Account" button below, the form will open in a new browser tab, enabling you to view the instructional video or follow the written instructions while completing the account creation process.&nbsp;</p>
+<p><a class="btn btn--primary" href="https://login.ct.gov/ctidentity/registration?goto=https://www.ctpaidleave.org" target="_blank">CREATE CT.GOV ACCOUNT</a></p>
+                    </div>
+                    <div class="grouped-tile__col">
+                        <div class="grouped-tile__docs  grouped-tile__docs--noBg">
+                                <!-- document item -->
+                                <div class="grouped-tile__docItem">
+                                    <div class="grouped-tile__docDetails">
+                                        <p></p>
+                                        <div class="grouped-tile__docType">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- // document item -->
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <!-- // Grouped tile -->
+
+
+
+
+    <!-- Grouped tile -->
+    <div class="grouped-tile__item   grouped-tile__item--img  grouped-tile__item--noBg" id="id_5190">
+        <div class="grouped-tile__icon">
+            <img src="/-/media/ctpl/icons/blue-svg/group-23-with-heart.svg?sc_lang=en&amp;la=en&amp;hash=41A47E77BDC93027F02972E0F8386608" alt="" />
+        </div>
+                <div class="grouped-tile__row" id="optn3c7f">
+                    <div class="grouped-tile__col">
+                        <h3>Complete the CT.gov account sign up form and click "Sign up for a CT.gov account" </h3>
+                        <ul>
+    <li>The username cannot be changed once your account is created, so choose the username carefully and write it down for future reference.</li>
+    <li>When signing in, you will be able to enter either your username or email address along with your password.</li>
+</ul>
+                    </div>
+                    <div class="grouped-tile__col">
+                        <div class="grouped-tile__docs  grouped-tile__docs--noBg">
+                                <!-- document item -->
+                                <div class="grouped-tile__docItem">
+                                        <div class="grouped-tile__docImg">
+                                            <a href="javascript:void(0)" class="grouped-tile__iconMaximize play-btn" data-bs-toggle="modal" data-bs-target="#myModal" data-src="/-/media/ctpl/pages/create-a-ctgov-account/sign-up-for-a-ct-gov-account.png?sc_lang=en" aria-label="Screenshot of sign up for a CT.gov account page">
+                                                <img src="/-/media/ctpl/pages/create-a-ctgov-account/sign-up-for-a-ct-gov-account.png?sc_lang=en&amp;h=884&amp;w=577&amp;la=en&amp;hash=FA206A8019CB9694AEE35320129F68DE" alt="Screenshot of sign up for a CT.gov account page" />
+                                            </a>
+                                        </div>
+                                    <div class="grouped-tile__docDetails">
+                                        <p></p>
+                                        <div class="grouped-tile__docType">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- // document item -->
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <!-- // Grouped tile -->
+
+
+
+
+    <!-- Grouped tile -->
+    <div class="grouped-tile__item   grouped-tile__item--img  grouped-tile__item--noBg" id="id_0102">
+        <div class="grouped-tile__icon">
+            <img src="/-/media/ctpl/icons/blue-svg/group-34-with-heart.svg?sc_lang=en&amp;la=en&amp;hash=68541A6FFDAD7592F08CFCA5FF45AA39" alt="" />
+        </div>
+                <div class="grouped-tile__row" id="optn83ce">
+                    <div class="grouped-tile__col">
+                        <h3>Review information and submit</h3>
+                        <ul>
+    <li>Review the information on the summary screen. If any changes need to be made, click on the "Go back” link and adjust.</li>
+    <li>If no changes are needed, click in the reCAPTCHA box verifying "I'm not a robot".</li>
+    <li>Click on “Submit”</li>
+</ul>
+                    </div>
+                    <div class="grouped-tile__col">
+                        <div class="grouped-tile__docs  grouped-tile__docs--noBg">
+                                <!-- document item -->
+                                <div class="grouped-tile__docItem">
+                                        <div class="grouped-tile__docImg">
+                                            <a href="javascript:void(0)" class="grouped-tile__iconMaximize play-btn" data-bs-toggle="modal" data-bs-target="#myModal" data-src="/-/media/ctpl/pages/create-a-ctgov-account/inkedsign-up-summary-screen.jpg?sc_lang=en" aria-label="Screenshot showing CT.gov sign up summary">
+                                                <img src="/-/media/ctpl/pages/create-a-ctgov-account/inkedsign-up-summary-screen.jpg?sc_lang=en&amp;h=768&amp;w=547&amp;la=en&amp;hash=DB9C0EDA6202D503F41EFF55970F7AB1" alt="Screenshot showing CT.gov sign up summary" />
+                                            </a>
+                                        </div>
+                                    <div class="grouped-tile__docDetails">
+                                        <p></p>
+                                        <div class="grouped-tile__docType">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- // document item -->
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <!-- // Grouped tile -->
+
+
+
+
+    <!-- Grouped tile -->
+    <div class="grouped-tile__item   grouped-tile__item--img  grouped-tile__item--noBg" id="id_1b51">
+        <div class="grouped-tile__icon">
+            <img src="/-/media/ctpl/icons/blue-svg/group-26-with-heart.svg?sc_lang=en&amp;la=en&amp;hash=56DCD05B76AA2447692CA7371F3D4608" alt="" />
+        </div>
+                <div class="grouped-tile__row" id="optn7cdc">
+                    <div class="grouped-tile__col">
+                        <h3>Check your email</h3>
+                        <ul>
+    <li>Do not close the browser with the Sign up - Verification.</li>
+    <li>CT.gov will send you an email from do-not-reply-account@notification.ct.gov with an eight-digit verification code to verify your email address.&nbsp;</li>
+    <li>It may take a few minutes to arrive. If you do not see the email in your inbox, make sure to check your spam folder, or other inbox folders such as promotions.</li>
+    <li>The code is valid for 15 minutes.<br>
+    <div>&nbsp;</div>
+    </li>
+</ul>
+                    </div>
+                    <div class="grouped-tile__col">
+                        <div class="grouped-tile__docs  grouped-tile__docs--noBg">
+                                <!-- document item -->
+                                <div class="grouped-tile__docItem">
+                                        <div class="grouped-tile__docImg">
+                                            <a href="javascript:void(0)" class="grouped-tile__iconMaximize play-btn" data-bs-toggle="modal" data-bs-target="#myModal" data-src="/-/media/ctpl/pages/create-a-ctgov-account/verification-code-emil.png?sc_lang=en" aria-label="Screenshot showing verification code email when signing up for a CT.gov account">
+                                                <img src="/-/media/ctpl/pages/create-a-ctgov-account/verification-code-emil.png?sc_lang=en&amp;h=636&amp;w=1183&amp;la=en&amp;hash=7DF3DDD390E38FF58EFD1B5A2F5C1C71" alt="Screenshot showing verification code email when signing up for a CT.gov account" />
+                                            </a>
+                                        </div>
+                                    <div class="grouped-tile__docDetails">
+                                        <p></p>
+                                        <div class="grouped-tile__docType">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- // document item -->
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <!-- // Grouped tile -->
+
+
+
+
+    <!-- Grouped tile -->
+    <div class="grouped-tile__item   grouped-tile__item--img  grouped-tile__item--noBg" id="id_01ab">
+        <div class="grouped-tile__icon">
+            <img src="/-/media/ctpl/icons/blue-svg/group-18-with-heart.svg?sc_lang=en&amp;la=en&amp;hash=9F3B06FB81384E18757C5D7DEF41F3C9" alt="" />
+        </div>
+                <div class="grouped-tile__row" id="optnfbde">
+                    <div class="grouped-tile__col">
+                        <h3>Enter verification code</h3>
+                        <p>Enter the 8-digit code into the verification code boxes on your screen and click "Verify." </p>
+<p>
+You will see a "Success" message indicating that your CT.gov account has been successfully created.
+</p>
+<ul>
+    <li>
+    Please note that each time you sign in, you will receive a new 8-digit verification code that you will need to enter to access your account. After your initial account verification, you will have the option to request this code either from email or SMS text messaging. </li>
+    <li>
+    This extra step helps us to protect your confidential personal identification information.
+    </li>
+</ul>
+                    </div>
+                    <div class="grouped-tile__col">
+                        <div class="grouped-tile__docs  grouped-tile__docs--noBg">
+                                <!-- document item -->
+                                <div class="grouped-tile__docItem">
+                                        <div class="grouped-tile__docImg">
+                                            <a href="javascript:void(0)" class="grouped-tile__iconMaximize play-btn" data-bs-toggle="modal" data-bs-target="#myModal" data-src="/-/media/ctpl/pages/create-a-ctgov-account/inkedsign-up-verification-screen.jpg?sc_lang=en" aria-label="Screenshot showing CT.gov sign up verification code screen">
+                                                <img src="/-/media/ctpl/pages/create-a-ctgov-account/inkedsign-up-verification-screen.jpg?sc_lang=en&amp;h=617&amp;w=514&amp;la=en&amp;hash=1714D9169DE23F9DBE420E417F2F136C" alt="Screenshot showing CT.gov sign up verification code screen" />
+                                            </a>
+                                        </div>
+                                    <div class="grouped-tile__docDetails">
+                                        <p></p>
+                                        <div class="grouped-tile__docType">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- // document item -->
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <!-- // Grouped tile -->
+
+
+
+
+    <!-- Grouped tile -->
+    <div class="grouped-tile__item   grouped-tile__item--img  grouped-tile__item--noBg" id="id_61fa">
+        <div class="grouped-tile__icon">
+            <img src="/-/media/ctpl/icons/blue-svg/group-7-with-heart.svg?sc_lang=en&amp;la=en&amp;hash=8F2DF2C521979D1B3285D11D36DDBEA3" alt="" />
+        </div>
+                <div class="grouped-tile__row" id="optnd320">
+                    <div class="grouped-tile__col">
+                        <h3>Sign in to your new CT.gov account</h3>
+                        <ul>
+    <li>Click on the “SIGN IN” link to sign into the account you just created.</li>
+    <li>Enter the username or email address and password you used when creating your CT.gov account.</li>
+    <li>Click "LOG IN".</li>
+</ul>
+                    </div>
+                    <div class="grouped-tile__col">
+                        <div class="grouped-tile__docs  grouped-tile__docs--noBg">
+                                <!-- document item -->
+                                <div class="grouped-tile__docItem">
+                                        <div class="grouped-tile__docImg">
+                                            <a href="javascript:void(0)" class="grouped-tile__iconMaximize play-btn" data-bs-toggle="modal" data-bs-target="#myModal" data-src="/-/media/ctpl/pages/create-a-ctgov-account/success.png?sc_lang=en" aria-label="Screenshot showing successful sign up for a CT.gov account">
+                                                <img src="/-/media/ctpl/pages/create-a-ctgov-account/success.png?sc_lang=en&amp;h=494&amp;w=622&amp;la=en&amp;hash=BAB4DF5CCBD06599F6F3DAABBB08B3AF" alt="Screenshot showing successful sign up for a CT.gov account" />
+                                            </a>
+                                        </div>
+                                    <div class="grouped-tile__docDetails">
+                                        <p></p>
+                                        <div class="grouped-tile__docType">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- // document item -->
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <!-- // Grouped tile -->
+
+
+
+
+    <!-- Grouped tile -->
+    <div class="grouped-tile__item   grouped-tile__item--img  grouped-tile__item--noBg" id="id_b8eb">
+        <div class="grouped-tile__icon">
+            <img src="/-/media/ctpl/icons/blue-svg/group-30-with-heart.svg?sc_lang=en&amp;la=en&amp;hash=2FA31C193FAC892BFCF232BD76340931" alt="" />
+        </div>
+                <div class="grouped-tile__row" id="optna1f7">
+                    <div class="grouped-tile__col">
+                        <h3>Log in to CT Paid Leave</h3>
+                        <ul>
+    <li>Once you click LOG IN, you will automatically be redirected back to the CT Paid Leave site. </li>
+    <li>
+    You will know you are signed in as the blue button in the upper right-hand corner of the screen at ctpaidleave.org that previously read “SIGN IN” will now show the name on the account you are logged into.</li>
+</ul>
+                    </div>
+                    <div class="grouped-tile__col">
+                        <div class="grouped-tile__docs  grouped-tile__docs--noBg">
+                                <!-- document item -->
+                                <div class="grouped-tile__docItem">
+                                    <div class="grouped-tile__docDetails">
+                                        <p></p>
+                                        <div class="grouped-tile__docType">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- // document item -->
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <!-- // Grouped tile -->
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="margin-b-40"></div>
+
+                    
+                    
+                    
+                    
+                </main>
+            </div>
+        </div>
+        
+<div class="mt-5 footer d-md-block">
+
+            <div class="pre_footer_div d-flex justify-content-end">
+                    <div class="pre_footer_div_1 d-flex flex-column justify-content-center">
+                        <p class="text-center pre_footer_div_1_heading">Need More Help?</p>
+                        <div class="d-flex  justify-content-center">
+<a href="/resources-and-guides" title="More Resources" >                                    <button type="button" class=" mr-3 btn more_resources text-uppercase" aria-label="More Resources">More Resources</button>
+</a>                            <a href="/contactus" title="CONTACT US" >                                    <button type="button" class="btn contact_us text-uppercase" aria-label="CONTACT US">CONTACT US</button>
+</a>                        </div>
+                    </div>
+                
+                    <div class="pre_footer_div_2 d-flex flex-column  justify-content-center"
+                         style="background-image: url('https://www.ctpaidleave.org//-/media/ctpl/global/footer/footer_bg.png?sc_lang=en');">
+                        
+                        <h2 class="text-center pre_footer_div_2_heading">Sign up for our Newsletter</h2>
+<form class="validate" action="https://ctpaidleave.us2.list-manage.com/subscribe/post?u=fb4306b4c98fc9f99879d3760&amp;id=5c07f23451" method="post" id="mc-embedded-subscribe-form-287" name="mc-embedded-subscribe-form" target="_blank">
+    <div id="mc_embed_signup_scroll-287">
+    <div class="slds-float_left slds-p-right_large slds-p-around_medium">
+    <input class="email slds-input" aria-label="email address" type="email" name="EMAIL" id="mce-EMAIL-287" placeholder="email address" style="max-width: 350px; min-width: 250px;" />
+
+    <input class="blueButton" type="submit" aria-label="Subscribe" name="subscribe" id="mc-embedded-subscribe-287" value="Subscribe" />
+    </div>
+    <div aria-hidden="true" style="position: absolute; left: -5000px;">
+    <input type="text" name="b_fb4306b4c98fc9f99879d3760_5c07f23451" tabindex="-1" />
+    </div>
+    </div>
+</form>
+                    </div>
+            </div>
+            <div class="footer_div">
+                <div class="container">
+                    <div class="footer-wrapper">
+<a href="/accessibility-and-privacy" title="Opens a link to the Ct Paid Leave&#39;s accessibility, privacy and disclaimer page" >Accessibility, Privacy and Disclaimer</a><a href="/resources-and-guides/frequently-asked-questions" title="Opens a link to the Ct Paid Leave&#39;s Frequently Asked Questions" >Frequently Asked Questions</a><a href="/how-ct-paid-leave-works/report-suspected-fraud" title="Opens a link to the Ct Paid Leave report suspected fraud page" >Report Suspected Fraud</a><a href="/sitemap" title="Opens a link to the CT Paid Leave&#39;s sitemap" >Sitemap</a>                    </div>
+                </div>
+            </div>
+        <div class="post_footer_div d-flex justify-content-between align-items-center py-2">
+                <div class="col-4">
+<a href="/" class="footer-branding" aria-label="CTPL" ><img src="https://www.ctpaidleave.org/-/media/ctpl/global/header/header_logo.png?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;h=69&amp;w=222&amp;la=en&amp;hash=646BCC01EF9EE8516FD42EF4EAD248AA" class="logo" alt="Return to Connecticut Paid Leave Home Page" /></a>                </div>
+
+            <div class="col-4">
+                <p class="copyright mb-0">&copy; 2024 Copyright CT Paid Leave Authority<br/>An official <a target="_blank" href="https://portal.ct.gov/government/departments-and-agencies/quasi-public-agencies" aria-label="Opens an external link to the State of Connecticut's list of quasi public agencies">State of Connecticut</a> website</p>
+            </div>
+                <div class="d-flex justify-content-center align-items-center" style="column-gap: 20px;">
+<a href="https://www.facebook.com/CTPaidLeave" rel="noopener noreferrer" title="This link will open up in a new window to Facebook" target="_blank" ><img src="https://www.ctpaidleave.org/-/media/ctpl/icons/social-media/facebook.png?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;h=22&amp;w=12&amp;la=en&amp;hash=1142FB88B6EC43168306EF1344BB82DF" alt="Facebook" /></a><a href="https://www.instagram.com/ctpaidleave/" rel="noopener noreferrer" title="This link will open up in a new window to Instagram" target="_blank" ><img src="https://www.ctpaidleave.org/-/media/ctpl/icons/social-media/instagram.png?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;h=20&amp;w=20&amp;la=en&amp;hash=888D5B2B0697CB4DAF3C7CD8496AFCD1" alt="Instagram" /></a><a href="https://www.youtube.com/channel/UCI77ghYG5cL60Zp307u4BRQ/featured?view_as=subscriber" rel="noopener noreferrer" title="This link will open up in a new window to you tube" target="_blank" ><img src="https://www.ctpaidleave.org/-/media/ctpl/icons/social-media/youtube.png?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;h=17&amp;w=22&amp;la=en&amp;hash=39827D06B4B6087EC52B3CFC7C8B91EF" alt="Youtube" /></a><a href="https://www.linkedin.com/company/ct-paid-leave/" rel="noopener noreferrer" title="This link will open up in a new window to linked in" target="_blank" ><img src="https://www.ctpaidleave.org/-/media/ctpl/icons/social-media/linkedin.png?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;h=20&amp;w=20&amp;la=en&amp;hash=0E618855C1E2AE3C7ACB0EBDCAA98378" alt="LinkedIn" /></a><a href="https://ctpaidleave.medium.com/" rel="noopener noreferrer" title="This link will open up in a new window to medium" target="_blank" ><img src="https://www.ctpaidleave.org/-/media/ctpl/icons/social-media/medium.png?as=0&amp;dmc=0&amp;iar=0&amp;thn=0&amp;udi=0&amp;sc_lang=en&amp;h=16&amp;w=28&amp;la=en&amp;hash=0759BC7308473276FDB80D8167894B75" alt="Medium" /></a>                </div>
+        </div>
+</div>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close img-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <img src="" id="image-src" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/ctpl-design-system/js/bundle.js?v=20240402231641"></script>
+</body>
+</html>
