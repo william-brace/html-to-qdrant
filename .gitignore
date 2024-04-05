@@ -1,2 +1,4 @@
 .env
 .venv
+state_raw/
+state_vectors/
