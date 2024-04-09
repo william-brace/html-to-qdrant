@@ -1,14 +1,12 @@
 import jsonlines
+from openai import OpenAI
 import openai
-import os
 from dotenv import load_dotenv
 from qdrant_client import QdrantClient
 import time
 
-# Load environment variables from .env file
-load_dotenv()
+openai_client = OpenAI()
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 COLLECTION_NAME = "new-jersey-test"
 
 # Load data from train.jsonl file
@@ -19,23 +17,18 @@ def load_data(file_path):
             data.append(item)
     return data
 
-# Initialize OpenAI API
-def init_openai(api_key):
-    openai.api_key = api_key
-    return "text-embedding-ada-002"
-
 # Initialize Qdrant Client and Collection
 def init_qdrant( collection_name):
-    client = QdrantClient(host="localhost", port=6333)
+    qclient = QdrantClient(host="localhost", port=6333)
     # Check if the collection exists, if not, create it
-    client.create_collection(
+    qclient.create_collection(
     collection_name=collection_name,
     vectors_config={
         "size": 1536, 
         "distance": "Cosine"  
     }
 )
-    return client, collection_name
+    return qclient, collection_name
 
 # Create embeddings and populate Qdrant collection
 def create_and_index_embeddings(data, model, client, collection_name):
@@ -52,18 +45,19 @@ def create_and_index_embeddings(data, model, client, collection_name):
 
         text_batch = [item["text"] for item in data[start_index:start_index+batch_size]]
         try:
-            res = openai.Embedding.create(input=text_batch, engine=model)
-            embeddings = [embedding["embedding"] for embedding in res["data"]]
+            res = openai_client.embeddings.create(input=text_batch, model=model)
+            # Adjusted line to correctly access embeddings
+            embeddings = [embedding.embedding for embedding in res.data]
             points = [{"id": start_index + i, "vector": embeddings[i], "payload": data[start_index + i]} for i in range(len(embeddings))]
             client.upsert(collection_name=collection_name, points=points)
             last_request_time = time.time()
-        except openai.error.RateLimitError as e:
+        except openai.RateLimitError as e:
             print(f"Rate limit reached, waiting a bit longer...")
             time.sleep(5)  # Wait a bit longer if rate limit is reached
             continue  # Retry the current batch
 
 if __name__ == "__main__":
     train_data = load_data("train.jsonl")
-    MODEL = init_openai(OPENAI_API_KEY)
+    MODEL = "text-embedding-ada-002"
     qdrant_client, collection_name = init_qdrant(COLLECTION_NAME)
     create_and_index_embeddings(train_data, MODEL, qdrant_client, collection_name)

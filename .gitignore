@@ -2,3 +2,5 @@
 .venv
 state_raw/
 state_vectors/
+website/
+websites/
