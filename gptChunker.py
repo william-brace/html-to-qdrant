@@ -22,15 +22,6 @@ def clean_html(html_content):
         print(f"Error cleaning HTML: {e}")
         return ""
     
-def strip_markdown_headers(text):
-    """
-    Strips Markdown header formatting from a text string.
-    """
-    # Pattern to match Markdown headers
-    pattern = r'^#+\s'
-    # Using re.sub() with the MULTILINE flag to ensure we match patterns at the start of each line
-    return re.sub(pattern, '', text, flags=re.MULTILINE)
-
 def tiktoken_len(text):
     try:
         tokens = tokenizer.encode(text, disallowed_special=())
@@ -39,7 +30,7 @@ def tiktoken_len(text):
         print(f"Error calculating token length: {e}")
         return 0
 
-def split_text_in_half(text, max_tokens=4000):
+def split_text_in_half(text, max_tokens=3970):
     try:
         if tiktoken_len(text) <= max_tokens:
             return [text]
@@ -73,9 +64,20 @@ def gpt_convert_to_markdown(html_content):
         markdown_content = ""
         for chunk in chunks:
             response = client.chat.completions.create(
-                model="gpt-3.5-turbo-0125",
+                model="gpt-4-turbo",
                 messages=[
-                    {"role": "system", "content": f"Please convert the following content into a structured Markdown format, using '#' for the topic, '##' for subtopics, and '###' for sections containing facts or information:\n\n{chunk}\n\nMarkdown:"},
+                    {"role": "system", "content": f"""
+    Given the cleaned HTML text below, please carefully analyze and extract the most crucial information, facts, and contextual details. Format your response in Markdown, using headers for categorization and bullet points or numbered lists to detail key points and facts. The goal is to transform the text into a structured, informative Markdown document that serves as an ideal input for a Q&A vector database, focusing on accuracy, detail, and relevance for semantic search capabilities.
+.
+
+    ---
+
+    {chunk}
+
+    ---
+
+    Markdown:
+    """},
                 ]
             )
             markdown_content += response.choices[0].message.content
@@ -94,7 +96,7 @@ def process_html_files(folder_path):
             ("##", "Header 2"),
             ("###", "Header 3"),
         ]
-        markdown_splitter = MarkdownHeaderTextSplitter(headers_to_split_on=headers_to_split_on, strip_headers=False)
+        markdown_splitter = MarkdownHeaderTextSplitter(headers_to_split_on=headers_to_split_on, strip_headers=True)
 
         documents = []
 
@@ -115,16 +117,21 @@ def process_html_files(folder_path):
                 markdown_splits = markdown_splitter.split_text(markdown_content)
 
                 for i, split in enumerate(markdown_splits):
-                    ## this is where you should remove the markdown formatting 
-                    split.page_content = strip_markdown_headers(split.page_content)
                     blob = TextBlob(split.page_content)
                     noun_phrases = blob.noun_phrases
                     unique_noun_phrases = list(set(noun_phrases))
 
+                    # Extract headers into 'topics' list and move 'keywords' into 'metadata'
+                    topics = [value for key, value in split.metadata.items() if key.startswith('Header')]
+                    for key in list(split.metadata.keys()):
+                        if key.startswith('Header'):
+                            del split.metadata[key]
+                    split.metadata['topics'] = topics
+                    split.metadata['keywords'] = unique_noun_phrases
+
                     documents.append({
                         'id': f"{hashlib.md5(file_path.encode('utf-8')).hexdigest()[:12]}-{i}",
                         'text': split.page_content,
-                        'keywords': unique_noun_phrases,
                         'metadata': split.metadata
                     })
 
@@ -142,7 +149,7 @@ def process_html_files(folder_path):
         return documents
     except Exception as e:
         print(f"Error processing HTML files: {e}")
-        return []
+        return []  
 
-folder_path = "websites"
-documents = process_html_files(folder_path)
+folder_path = "websites"  
+documents = process_html_files(folder_path)  

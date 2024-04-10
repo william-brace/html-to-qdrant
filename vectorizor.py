@@ -1,7 +1,6 @@
 import jsonlines
 from openai import OpenAI
 import openai
-from dotenv import load_dotenv
 from qdrant_client import QdrantClient
 import time
 
