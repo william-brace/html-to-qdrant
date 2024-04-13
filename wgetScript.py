@@ -86,7 +86,6 @@ for link in linksNY:
     # Construct the wget command
     wget_command = ['wget'] + wget_options + [link]
     
-    # Execute the wget command using subprocess
     subprocess.run(wget_command, check=True)
     
     print(f'Downloaded: {link}')
