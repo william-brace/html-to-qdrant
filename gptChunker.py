@@ -118,7 +118,6 @@ def process_html_files(folder_path):
                     noun_phrases = blob.noun_phrases
                     unique_noun_phrases = list(set(noun_phrases))
 
-                    # Extract headers into 'topics' list and move 'keywords' into 'metadata'
                     topics = [value for key, value in split.metadata.items() if key.startswith('Header')]
                     for key in list(split.metadata.keys()):
                         if key.startswith('Header'):
