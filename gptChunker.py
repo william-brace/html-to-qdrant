@@ -70,7 +70,6 @@ def gpt_convert_to_markdown(html_content):
     ---
     {chunk}
     ---
-
     Markdown:
     """},
                 ]
