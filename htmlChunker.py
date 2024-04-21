@@ -14,7 +14,6 @@ def clean_html(html_content):
     return cleaned_text
 
 def process_html_files(folder_path):
-    # Get all files in the folder
     all_files = os.listdir(folder_path)
     # Filter out HTML files
     html_files = [file for file in all_files if file.endswith('.html')]
