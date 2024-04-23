@@ -6,7 +6,6 @@ from bs4 import BeautifulSoup
 from textblob import TextBlob
 
 def clean_html(html_content):
-    # Use Beautiful Soup to remove HTML tags
     soup = BeautifulSoup(html_content, "html.parser")
     text = soup.get_text(separator=" ", strip=True)
     cleaned_text = text.replace('\n', ' ')
