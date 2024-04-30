@@ -62,7 +62,6 @@ def process_pdf_files(folder_path):
                 }
             })
 
-            # Delete the PDF file after processing (optional)
             # os.remove(file_path)
 
         except Exception as e:
