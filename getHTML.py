@@ -5,4 +5,6 @@ from links import linksCO, linksNY
 # for link in linksCO:
 #     wget.download(link, 'websites')
 
-wget.download('https://www.abetterbalance.org/all-family-leave-laws.pdf', 'websites')
+wget.download('https://paidleave.wa.gov/get-ready-to-apply/', 'websites')
+
+

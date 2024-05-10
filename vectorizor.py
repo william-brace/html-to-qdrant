@@ -32,7 +32,7 @@ def init_qdrant( collection_name):
 # Create embeddings and populate Qdrant collection
 def create_and_index_embeddings(data, model, client, collection_name):
     last_request_time = None
-    request_interval = 0.5  # Adjust based on your calculations
+    request_interval = 0.5 
     batch_size = 32
 
     for start_index in range(0, len(data), batch_size):
@@ -45,14 +45,14 @@ def create_and_index_embeddings(data, model, client, collection_name):
         text_batch = [item["text"] for item in data[start_index:start_index+batch_size]]
         try:
             res = openai_client.embeddings.create(input=text_batch, model=model)
-            # Adjusted line to correctly access embeddings
+
             embeddings = [embedding.embedding for embedding in res.data]
             points = [{"id": start_index + i, "vector": embeddings[i], "payload": data[start_index + i]} for i in range(len(embeddings))]
             client.upsert(collection_name=collection_name, points=points)
             last_request_time = time.time()
         except openai.RateLimitError as e:
             print(f"Rate limit reached, waiting a bit longer...")
-            time.sleep(5)  # Wait a bit longer if rate limit is reached
+            time.sleep(5)  # rate limit 
             continue  # Retry the current batch
 
 if __name__ == "__main__":
