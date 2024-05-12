@@ -230,6 +230,26 @@ linksWA = [
     "https://paidleave.wa.gov/help-center/healthcare-providers/certification-of-serious-health-condition-form/"
 ]
 
+linksDC = [
+    "https://dcpaidfamilyleave.dc.gov/",
+    "https://does.pflbas.dc.gov/vosnet/default.aspx",
+    "https://dcpaidfamilyleave.dc.gov/employers/",
+    "https://dcpaidfamilyleave.dc.gov/tax-calculators/",
+    "https://dcpaidfamilyleave.dc.gov/how-to-apply-for-benefits/",
+    "https://dcpaidfamilyleave.dc.gov/before-you-apply/",
+    "https://dcpaidfamilyleave.dc.gov/workers/",
+    "https://dcpaidfamilyleave.dc.gov/self-employed/",
+    "https://dcpaidfamilyleave.dc.gov/healthcare-providers/",
+    "https://dcpaidfamilyleave.dc.gov/family-leave/",
+    "https://dcpaidfamilyleave.dc.gov/medical-leave/",
+    "https://dcpaidfamilyleave.dc.gov/parental-leave/",
+    "https://dcpaidfamilyleave.dc.gov/prenatal-leave/",
+    "https://dcpaidfamilyleave.dc.gov/benefits-calculator/",
+    "https://dcpaidfamilyleave.dc.gov/announcements/12-weeks-parental-leave/"
+]
+
+
+
 
 # New Jersey CLI: wget -r -np -nd -A.html,.txt,.tmp -P websites https://www.nj.gov/labor/myleavebenefits/
 # Oregon CLI: wget -r -np -nd -A.txt,.tmp -P websites https://paidleave.oregon.gov/
