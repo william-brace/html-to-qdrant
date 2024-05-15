@@ -13,9 +13,11 @@ tokenizer = tiktoken.get_encoding('cl100k_base')
 
 def clean_html(html_content):
     try:
+        print("Cleaning HTML content...")
         soup = BeautifulSoup(html_content, "html.parser")
         text = soup.get_text(separator=" ", strip=True)
         cleaned_text = text.replace('\n', ' ').replace('\n\n', ' ')
+        print("HTML content cleaned successfully.")
         return cleaned_text
     except Exception as e:
         print(f"Error cleaning HTML: {e}")
@@ -23,15 +25,19 @@ def clean_html(html_content):
     
 def tiktoken_len(text):
     try:
+        print("Calculating token length...")
         tokens = tokenizer.encode(text, disallowed_special=())
+        print(f"Token length: {len(tokens)}")
         return len(tokens)
     except Exception as e:
         print(f"Error calculating token length: {e}")
         return 0
 
-def split_text_in_half(text, max_tokens=3970):
+def split_text_in_half(text, max_tokens=3900):
     try:
+        print("Splitting text into halves...")
         if tiktoken_len(text) <= max_tokens:
+            print("Text length is within the maximum token limit.")
             return [text]
 
         chunks = []
@@ -52,6 +58,7 @@ def split_text_in_half(text, max_tokens=3970):
         result = []
         for chunk in chunks:
             result.extend(split_text_in_half(chunk, max_tokens))
+        print(f"Text split into {len(result)} chunks.")
         return result
     except Exception as e:
         print(f"Error splitting text: {e}")
@@ -59,11 +66,12 @@ def split_text_in_half(text, max_tokens=3970):
 
 def gpt_convert_to_markdown(html_content):
     try:
+        print("Converting HTML content to Markdown...")
         chunks = split_text_in_half(html_content)
         markdown_content = ""
         for chunk in chunks:
             response = client.chat.completions.create(
-                model="gpt-4-turbo",
+                model="gpt-4o",
                 messages=[
                     {"role": "system", "content": f"""
     Given the cleaned HTML text below, please carefully analyze and extract the most crucial information, facts, and contextual details. Format your response in Markdown, using headers for categorization and bullet points or numbered lists to detail key points and facts. The goal is to transform the text into a structured, informative, detailed and context-rich Markdown document that serves as an ideal input for a Q&A vector database, focusing on accuracy, detail, and relevance for semantic search capabilities.
@@ -75,6 +83,7 @@ def gpt_convert_to_markdown(html_content):
                 ]
             )
             markdown_content += response.choices[0].message.content
+        print("Conversion to Markdown completed.")
         return markdown_content.strip()
     except Exception as e:
         print(f"Error converting to Markdown: {e}")
@@ -82,8 +91,10 @@ def gpt_convert_to_markdown(html_content):
 
 def process_html_files(folder_path):
     try:
+        print(f"Processing HTML files in folder: {folder_path}")
         all_files = os.listdir(folder_path)
         html_files = [file for file in all_files if file.endswith('.txt')]
+        print(f"Found {len(html_files)} HTML files.")
 
         headers_to_split_on = [
             ("#", "Header 1"),
@@ -97,6 +108,7 @@ def process_html_files(folder_path):
         for html_file in tqdm(html_files):
             try:
                 file_path = os.path.join(folder_path, html_file)
+                print(f"Processing file: {file_path}")
                 with open(file_path, 'r') as f:
                     content = f.read()
 
@@ -128,7 +140,7 @@ def process_html_files(folder_path):
                         'metadata': split.metadata
                     })
 
-                os.remove(file_path)
+                print(f"File {html_file} processed successfully.")
             except Exception as e:
                 print(f"Error processing file {html_file}: {e}")
 
@@ -139,6 +151,7 @@ def process_html_files(folder_path):
             for doc in documents:
                 f.write(json.dumps(doc) + '\n')
 
+        print("All documents processed and saved successfully.")
         return documents
     except Exception as e:
         print(f"Error processing HTML files: {e}")

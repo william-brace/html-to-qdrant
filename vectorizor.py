@@ -6,7 +6,7 @@ import time
 
 openai_client = OpenAI()
 
-COLLECTION_NAME = "general"
+COLLECTION_NAME = "ca-pfl"
 
 # Load data from train.jsonl file
 def load_data(file_path):
