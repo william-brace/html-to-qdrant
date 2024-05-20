@@ -354,6 +354,10 @@ linksCT = [
     "https://portal.ct.gov/dolui/fmla-faqs"
 ]
 
+gen = [
+  "https://www.newamerica.org/better-life-lab/briefs/explainer-paid-leave-benefits-and-funding-in-the-united-states/#:~:text=As%20of%20January%202024%2C%2013,leave%20benefits%20available%20to%20workers."
+]
+
 
 # New Jersey CLI: wget -r -np -nd -A.html,.txt,.tmp -P websites https://www.nj.gov/labor/myleavebenefits/
 # Oregon CLI: wget -r -np -nd -A.txt,.tmp -P websites https://paidleave.oregon.gov/

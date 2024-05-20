@@ -55,7 +55,7 @@ def process_pdf_files(folder_path):
             for i, chunk in enumerate(chunks):
                 documents.append({
                 'id': f'{uid}-{i}',
-                'pageContent': chunk,  # Use the key 'pageContent' instead of 'text'
+                'text': chunk,  # Use the key 'pageContent' instead of 'text'
                 'metadata': {
                     'txtPath': file_path  # Store the file path as 'txtPath' in metadata
                     # You can add other metadata fields if needed, similar to how 'loc' is in TypeScript
