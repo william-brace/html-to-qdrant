@@ -3,6 +3,7 @@ from openai import OpenAI
 import openai
 from qdrant_client import QdrantClient
 import time
+from ragas.llms.prompt import Prompt
 
 openai_client = OpenAI()
 
