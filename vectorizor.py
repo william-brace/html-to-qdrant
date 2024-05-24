@@ -17,7 +17,7 @@ def load_data(file_path):
             data.append(item)
     return data
 
-# Initialize Qdrant Client and Collection
+# Initialize Qdrant Client and Collectign
 def init_qdrant( collection_name):
     qclient = QdrantClient(host="localhost", port=6333)
     # Check if the collection exists, if not, create it
