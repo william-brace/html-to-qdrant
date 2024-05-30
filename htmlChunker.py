@@ -69,7 +69,6 @@ def process_html_files(folder_path):
                     'metadata': split.metadata
                 })
 
-    # Save the documents to a JSONL file
     with open('train.jsonl', 'w') as f:
         for doc in documents:
             f.write(json.dumps(doc) + '\n')
