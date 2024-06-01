@@ -11,8 +11,6 @@ import requests
 #     output_path = os.path.join("websites", filename)
 #     wget.download(link, out=output_path)
 
-# wget.download('https://paidleave.wa.gov/get-ready-to-apply/', 'websites')
-
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
