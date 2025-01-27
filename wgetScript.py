@@ -19,7 +19,6 @@ linksNY = [
     'https://paidfamilyleave.ny.gov/bonding-leave-birth-child',
     'https://paidfamilyleave.ny.gov/bonding-leave-adoption-child',
     'https://paidfamilyleave.ny.gov/bonding-leave-fostering-child',
-    'https://paidfamilyleave.ny.gov/2024',
     'https://paidfamilyleave.ny.gov/employer-responsibilities-and-resources',
     'https://paidfamilyleave.ny.gov/handling-requests',
     'https://paidfamilyleave.ny.gov/public-employers',
@@ -33,6 +32,7 @@ linksNY = [
     'https://paidfamilyleave.ny.gov/public-employers',
     'https://paidfamilyleave.ny.gov/self-employed-individuals',
     'https://paidfamilyleave.ny.gov/out-state-employers',
+    'https://paidfamilyleave.ny.gov/2025'
 ]
 
 linksCO = [

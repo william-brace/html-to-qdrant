@@ -74,7 +74,7 @@ def gpt_convert_to_markdown(html_content):
                 model="gpt-4o",
                 messages=[
                     {"role": "system", "content": f"""
-    Given the cleaned HTML text below, please carefully analyze and extract the most crucial information, facts, and contextual details. Format your response in Markdown, using headers for categorization and bullet points or numbered lists to detail key points and facts. The goal is to transform the text into a structured, informative, detailed and context-rich Markdown document that serves as an ideal input for a Q&A vector database, focusing on accuracy, detail, and relevance for semantic search capabilities.
+    Given the cleaned HTML text below, please carefully analyze and extract the most crucial information, facts, and contextual details. As much as possible. Format your response in Markdown, using headers for categorization and bullet points or numbered lists to detail key points and facts. The goal is to transform the text into a structured, informative, detailed and context-rich Markdown document that serves as an ideal input for a Q&A vector database, focusing on accuracy, detail, and relevance for semantic search capabilities. It is crucial that the markdown that you give is rich with detail so that when the vectors with the relevant information is searched for it is easy and accurate. Give precedencence to the most updated information for this year. 
     ---
     {chunk}
     ---

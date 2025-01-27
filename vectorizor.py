@@ -7,7 +7,7 @@ from ragas.llms.prompt import Prompt
 
 openai_client = OpenAI()
 
-COLLECTION_NAME = "dc-pfl"
+COLLECTION_NAME = "ny-pfl-2025"
 
 # Load data from train.jsonl file
 def load_data(file_path):
@@ -28,6 +28,7 @@ def init_qdrant( collection_name):
         "distance": "Cosine"  
     }
 )
+    print("Connection Established")
     return qclient, collection_name
 
 # Create embeddings and populate Qdrant collection
