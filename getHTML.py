@@ -11,7 +11,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
-
+import subprocess
+import argparse
 
 # for file_number, link in enumerate(linksRI):
     
@@ -80,41 +81,94 @@ def setup_driver():
     chrome_options.add_argument('--disable-dev-shm-usage')
     return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
-# Iterate through each state's links
-driver = None
-try:
-    for links, state_code in state_links:
-        # Create state-specific directory if it doesn't exist
-        directory = f'websites-{state_code.lower()}'
-        if not os.path.exists(directory):
-            os.makedirs(directory)
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--states', nargs='+', help='List of state codes to process')
+    return parser.parse_args()
+
+def run_wget_command(command: str) -> bool:
+    """Execute wget command and return success status"""
+    try:
+        subprocess.run(command, shell=True, check=True)
+        print(f"✅ Successfully executed wget command: {command}")
+        return True
+    except subprocess.CalledProcessError as e:
+        print(f"❌ Error executing wget command: {str(e)}")
+        return False
+
+def main():
+    args = parse_args()
+    
+    # Special handling for NJ and OR using wget commands
+    wget_commands = {
+        'nj': 'wget -r -np -nd -A.html,.txt,.tmp -P websites-nj https://www.nj.gov/labor/myleavebenefits/',
+        'or': 'wget -r -np -nd -A.txt,.tmp -P websites-or https://paidleave.oregon.gov/'
+    }
+    
+    # If states are provided via command line, use those instead of default
+    if args.states:
+        state_links = []
+        state_map = {
+            'co': (linksCO, "CO"),
+            'ny': (linksNY, "NY"),
+            'ma': (linksMA, "MA"),
+            'ca': (linksCA, "CA"),
+            'wa': (linksWA, "WA"),
+            'ri': (linksRI, "RI"),
+            'dc': (linksDC, "DC"),
+            'ct': (linksCT, "CT"),
+            'general': (gen, "general")
+        }
         
-        print(f"\nProcessing {state_code}...")
-        
-        # Download files for current state
-        for file_number, link in enumerate(links):
-            filename = f'pfl{str(file_number)}.html'
-            output_path = os.path.join(directory, filename)
+        for state in args.states:
+            state_lower = state.lower()
+            # Handle wget commands for NJ and OR
+            if state_lower in wget_commands:
+                if not run_wget_command(wget_commands[state_lower]):
+                    print(f"Failed to process {state.upper()} using wget")
+                continue
             
-            # Try simple requests approach first
-            try:
-                download_with_requests(link, output_path, state_code, filename)
+            # Handle other states using existing method
+            if state_lower in state_map:
+                state_links.append(state_map[state_lower])
+    
+    driver = None
+    try:
+        for links, state_code in state_links:
+            # Create state-specific directory if it doesn't exist
+            directory = f'websites-{state_code.lower()}'
+            if not os.path.exists(directory):
+                os.makedirs(directory)
+            
+            print(f"\nProcessing {state_code}...")
+            
+            # Download files for current state
+            for file_number, link in enumerate(links):
+                filename = f'pfl{str(file_number)}.html'
+                output_path = os.path.join(directory, filename)
                 
-            except (requests.exceptions.RequestException, Exception) as err:
-                print(f"******* REQUESTS method failed for {state_code}/{filename}: {err}")
-                print("Trying Selenium...")
-                
-                # Initialize driver only if needed
-                if driver is None:
-                    driver = setup_driver()
-                
+                # Try simple requests approach first
                 try:
-                    download_with_selenium(driver, link, output_path, state_code, filename)
-                except Exception as selenium_err:
-                    print(f"******* SELENIUM method failed failed for {state_code}/{filename}: {selenium_err}")
+                    download_with_requests(link, output_path, state_code, filename)
+                    
+                except (requests.exceptions.RequestException, Exception) as err:
+                    print(f"******* REQUESTS method failed for {state_code}/{filename}: {err}")
+                    print("Trying Selenium...")
+                    
+                    # Initialize driver only if needed
+                    if driver is None:
+                        driver = setup_driver()
+                    
+                    try:
+                        download_with_selenium(driver, link, output_path, state_code, filename)
+                    except Exception as selenium_err:
+                        print(f"******* SELENIUM method failed failed for {state_code}/{filename}: {selenium_err}")
 
-finally:
-    if driver:
-        driver.quit()
+    finally:
+        if driver:
+            driver.quit()
 
-print("\nAll downloads completed.") 
+    print("\nAll downloads completed.")
+
+if __name__ == "__main__":
+    main() 

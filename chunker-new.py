@@ -4,20 +4,32 @@ from tqdm.auto import tqdm
 import hashlib
 import json
 from textblob import TextBlob
+import argparse
 
-# Define the state directories to process
-state_dirs = [
-    "cleaned_websites-co",
-    "cleaned_websites-ny",
-    "cleaned_websites-ma",
-    "cleaned_websites-ca",
-    "cleaned_websites-wa",
-    "cleaned_websites-ri",
-    "cleaned_websites-dc",
-    "cleaned_websites-ct",
-    "cleaned_websites-nj",
-    "cleaned_websites-or"
-]
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--states', nargs='+', help='List of state codes to process')
+    return parser.parse_args()
+
+def get_state_dirs(states=None):
+    default_state_dirs = [
+        "cleaned_websites-co",
+        "cleaned_websites-ny",
+        "cleaned_websites-ma",
+        "cleaned_websites-ca",
+        "cleaned_websites-wa",
+        "cleaned_websites-ri",
+        "cleaned_websites-dc",
+        "cleaned_websites-ct",
+        "cleaned_websites-nj",
+        "cleaned_websites-or",
+        "cleaned_websites-general"  # Add general directory
+    ]
+    
+    if not states:
+        return default_state_dirs
+    
+    return [f"cleaned_websites-{state.lower()}" for state in states]
 
 # Initialize the text splitter with a chunk size of 500 characters and an overlap of 50 characters
 text_splitter = RecursiveCharacterTextSplitter(
@@ -69,7 +81,7 @@ def process_state_files(folder_path):
         print(f"Error processing directory: {e}")
         return []
 
-def process_all_states():
+def process_all_states(state_dirs):
     try:
         print("Starting to process all state directories...")
         
@@ -99,5 +111,10 @@ def process_all_states():
     except Exception as e:
         print(f"Error processing states: {e}")
 
-# Process all states
-process_all_states()
+def main():
+    args = parse_args()
+    state_dirs = get_state_dirs(args.states)
+    process_all_states(state_dirs)
+
+if __name__ == "__main__":
+    main()
