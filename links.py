@@ -16,7 +16,7 @@ linksNY = [
     'https://paidfamilyleave.ny.gov/bonding-leave-birth-child',
     'https://paidfamilyleave.ny.gov/bonding-leave-adoption-child',
     'https://paidfamilyleave.ny.gov/bonding-leave-fostering-child',
-    'https://paidfamilyleave.ny.gov/2024',
+    'https://paidfamilyleave.ny.gov/2025',
     'https://paidfamilyleave.ny.gov/employer-responsibilities-and-resources',
     'https://paidfamilyleave.ny.gov/handling-requests',
     'https://paidfamilyleave.ny.gov/public-employers',
@@ -30,6 +30,10 @@ linksNY = [
     'https://paidfamilyleave.ny.gov/public-employers',
     'https://paidfamilyleave.ny.gov/self-employed-individuals',
     'https://paidfamilyleave.ny.gov/out-state-employers',
+    # prenatal leave links
+    'https://www.ny.gov/programs/new-york-state-paid-prenatal-leave',
+    'https://www.ny.gov/new-york-state-paid-prenatal-leave/information-employees',
+    'https://www.ny.gov/new-york-state-paid-prenatal-leave/information-employers'
 ]
 
 linksCO = [
@@ -153,7 +157,6 @@ linksRI = [
     "https://dlt.ri.gov/regulation-and-safety/labor-standards/legal-holidays",
     "https://dlt.ri.gov/regulation-and-safety/labor-standards/paid-sick-and-safe-leave",
     "https://dlt.ri.gov/regulation-and-safety/labor-standards/minimum-wage",
-    "https://dlt.ri.gov/regulation-and-safety/labor-standards/labor-standards-faq",
     "https://dlt.ri.gov/be-aware-scams",
     "https://dlt.ri.gov/individuals/unemployment-insurance/electronic-payment-card",
     "https://dlt.ri.gov/individuals/temporary-disability-caregiver-insurance/tditci-fraud",
@@ -175,6 +178,7 @@ linksRI = [
     "https://dlt.ri.gov/individuals/unemployment-insurance/work-search-requirement",
     "https://dlt.ri.gov/individuals/unemployment-insurance/returning-work",
     "https://dlt.ri.gov/individuals/unemployment-insurance/unemployment-insurance-faq"
+    "https://dlt.ri.gov/individuals/temporary-disability-caregiver-insurance/claimants/temporary-disability-tdi-faq"
 ]
 
 linksWA = [
@@ -355,10 +359,13 @@ linksCT = [
 ]
 
 gen = [
-  "https://www.newamerica.org/better-life-lab/briefs/explainer-paid-leave-benefits-and-funding-in-the-united-states/#:~:text=As%20of%20January%202024%2C%2013,leave%20benefits%20available%20to%20workers."
+  "https://www.newamerica.org/better-life-lab/briefs/explainer-paid-leave-benefits-and-funding-in-the-united-states/"
 ]
 
 
-# New Jersey CLI: wget -r -np -nd -A.html,.txt,.tmp -P websites https://www.nj.gov/labor/myleavebenefits/
-# Oregon CLI: wget -r -np -nd -A.txt,.tmp -P websites https://paidleave.oregon.gov/
+# New Jersey CLI: wget -r -np -nd -A.html,.txt,.tmp -P websites-nj https://www.nj.gov/labor/myleavebenefits/
+# Oregon CLI: wget -r -np -nd -A.txt,.tmp -P websites-or https://paidleave.oregon.gov/
+
+
+
 # Connecticut CLI: wget -r -np -nd -R.png,.svg,.jpg,.jpeg,.css,.pdf,.ttf,.js,.docx,.woff2,.woff,.eot,.ashx,.xlsx,.ico -P websites https://www.ctpaidleave.org/

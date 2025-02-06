@@ -6,43 +6,97 @@ This project consists of multiple components designed to download website conten
 
 ### Components
 
-1. **Web Downloader**: Uses `wget` to recursively download website content into a specified folder. This step focuses on acquiring the raw HTML, text, and temporary files necessary for further processing.
+1. **Orchestrator (`orchestrator.py`)**: The main script that coordinates the entire pipeline. It sequentially runs:
+   - `getHTML.py`: Downloads website content
+   - `cleaner.py`: Cleans HTML into text
+   - `chunker-new.py`: Segments text into chunks
+   - `vectorizor.py`: Creates and stores embeddings
 
-    ```
-    wget -r -np -nd -A.html,.txt,.tmp -P websites {url}
-    ```
+   The orchestrator can be configured to:
+   - Process specific states (e.g., ["ny", "ca", "general"])
+   - Overwrite existing vector collections
+   - Handle errors and provide progress feedback
 
-2. **Cleaner (`cleaner.py`)**: A Python script that cleans and normalizes the downloaded HTML files, stripping them of HTML tags and other non-textual content, then saves the clean text to a new file.
+2. **Web Downloader (`getHTML.py`)**: Downloads website content using either direct links or wget commands:
+   - Uses predefined links from `links.py` for most states
+   - Uses wget commands for NJ and OR websites
+   - Creates state-specific directories (e.g., `websites-ny`, `websites-ca`)
 
-3. **Chunkers (`chunker.py`, `htmlChunker.py`, `gptChunker.py`, `slidingChunker.py`)**: These scripts are various implementations for breaking down large text files into smaller, more manageable chunks. The methods vary from simple text splitting to more complex strategies involving HTML header tags and GPT-powered markdown conversion.
+3. **Cleaner (`cleaner.py`)**: Processes the downloaded HTML files:
+   - Removes HTML tags and extracts clean text
+   - Handles different character encodings
+   - Outputs to state-specific cleaned directories (e.g., `cleaned_websites-ny`)
 
-4. **Vectorizer (`vectorizer.py`)**: This script loads the processed text data, generates embeddings using OpenAI's models, and indexes these embeddings into a Qdrant vector database for efficient search and retrieval.
+4. **Chunker (`chunker-new.py`)**: The primary chunking implementation that:
+   - Splits text into 500-character chunks with 50-character overlap
+   - Extracts keywords using TextBlob
+   - Generates unique IDs for each chunk
+   - Saves results as JSONL files in `chunker-new-results` directory
+
+5. **Vectorizer (`vectorizor.py`)**: Creates embeddings and manages Qdrant collections:
+   - Uses OpenAI's embedding model
+   - Creates state-specific collections in Qdrant
+   - Supports overwriting or appending to existing collections
 
 ### Requirements
 
--  Dependencies listed in `requirements.txt`
+- Dependencies listed in `requirements.txt`
   
-  ```
-  run pip install -r requirements.txt 
-  ```
+```bash
+pip install -r requirements.txt
+```
 
 ### Setup
 
 1. **Install Dependencies**:
-    - Ensure you have Python 3.x installed on your system.
-    - Install the required Python packages by running `pip install -r requirements.txt`.
+    - Ensure you have Python 3.x installed
+    - Install required packages: `pip install -r requirements.txt`
 
 2. **Environment Variables**:
-    - Create a `.env` file at the root of the project directory.
-    - Add your OpenAI API key and any other required environment variables as specified in the scripts.
+    - Create a `.env` file in the project root
+    - Add your OpenAI API key: `OPENAI_API_KEY=your_key_here`
 
-3. **Running the Project**:
-    - Start by downloading the website content using the `wget` command.
-    - Run the `cleaner.py` script to clean and normalize the downloaded content.
-    - Choose a chunking strategy and run the corresponding script to segment the data.
-    - Finally, run the `vectorizer.py` script to generate embeddings and index them into Qdrant.
+3. **Running the Pipeline**:
 
-### Usage
+   Using the orchestrator (recommended):
+   ```python
+   # In orchestrator.py, configure your settings:
+   states_to_process = ["ny", "ca", "general"]  # States to process
+   overwrite_vectors = True  # Whether to overwrite existing collections
+   
+   # Run the orchestrator
+   python orchestrator.py
+   ```
 
-The scripts are designed to be run sequentially, starting from downloading the website content to indexing the processed data into Qdrant. Each script can be executed individually as per the requirements of the pipeline stage.
+   Or run scripts individually:
+   ```bash
+   python getHTML.py --states ny ca
+   python cleaner.py --states ny ca
+   python chunker-new.py --states ny ca
+   python vectorizor.py --states ny ca --overwrite
+   ```
+
+### Directory Structure
+
+The pipeline creates the following directory structure:
+```
+project/
+├── websites-{state}/          # Raw downloaded HTML
+├── cleaned_websites-{state}/  # Cleaned text files
+├── chunker-new-results/       # Chunked JSONL files
+└── vector_db/                 # Qdrant storage (default location)
+```
+
+### Legacy Components
+
+The project includes alternative chunking implementations (`chunker.py`, `htmlChunker.py`, `gptChunker.py`, `slidingChunker.py`) that were used in earlier versions. While these remain available, the current pipeline uses `chunker-new.py`, which provides a balanced approach to text segmentation with keyword extraction.
+
+### Notes
+
+- The orchestrator provides the most streamlined way to run the entire pipeline
+- Each script can still be run independently if needed
+- Use the `--states` parameter to process specific states
+- Use `--overwrite` with vectorizor.py to replace existing collections
+- The general collection is named `general-pfl-new-chunker-2025`
+- State-specific collections are named `{state}-pfl-new-chunker-2025`
 
