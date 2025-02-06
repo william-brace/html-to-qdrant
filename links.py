@@ -16,7 +16,7 @@ linksNY = [
     'https://paidfamilyleave.ny.gov/bonding-leave-birth-child',
     'https://paidfamilyleave.ny.gov/bonding-leave-adoption-child',
     'https://paidfamilyleave.ny.gov/bonding-leave-fostering-child',
-    'https://paidfamilyleave.ny.gov/2024',
+    'https://paidfamilyleave.ny.gov/2024', # 'https://paidfamilyleave.ny.gov/2025'
     'https://paidfamilyleave.ny.gov/employer-responsibilities-and-resources',
     'https://paidfamilyleave.ny.gov/handling-requests',
     'https://paidfamilyleave.ny.gov/public-employers',
@@ -30,6 +30,7 @@ linksNY = [
     'https://paidfamilyleave.ny.gov/public-employers',
     'https://paidfamilyleave.ny.gov/self-employed-individuals',
     'https://paidfamilyleave.ny.gov/out-state-employers',
+    # 'https://www.ny.gov/programs/new-york-state-paid-prenatal-leave'
 ]
 
 linksCO = [
@@ -359,6 +360,6 @@ gen = [
 ]
 
 
-# New Jersey CLI: wget -r -np -nd -A.html,.txt,.tmp -P websites https://www.nj.gov/labor/myleavebenefits/
-# Oregon CLI: wget -r -np -nd -A.txt,.tmp -P websites https://paidleave.oregon.gov/
+# New Jersey CLI: wget -r -np -nd -A.html,.txt,.tmp -P websites-nj https://www.nj.gov/labor/myleavebenefits/
+# Oregon CLI: wget -r -np -nd -A.txt,.tmp -P websites-or https://paidleave.oregon.gov/
 # Connecticut CLI: wget -r -np -nd -R.png,.svg,.jpg,.jpeg,.css,.pdf,.ttf,.js,.docx,.woff2,.woff,.eot,.ashx,.xlsx,.ico -P websites https://www.ctpaidleave.org/
