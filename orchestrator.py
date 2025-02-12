@@ -3,8 +3,34 @@ import os
 import time
 from typing import List
 import sys
+import argparse
 
-def run_script(script_name: str, description: str, states: List[str] = None, overwrite: bool = False) -> bool:
+# Define all available states
+ALL_STATES = ["ny", "nj", "or", "co", "ct", "ca", "ma", "wa", "ri", "dc", "general"]
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description='Process PFL data pipeline',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog='''
+Examples:
+  python orchestrator.py --states ny --collection-name "{state}-pfl-2025"
+  python orchestrator.py --states ny ca wa --collection-name "{state}-chunk-links"
+  python orchestrator.py --all --collection-name "{state}-pfl-data" --overwrite
+        '''
+    )
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument('--states', nargs='+', choices=ALL_STATES,
+                      help='List of state codes to process (e.g., ny ca wa)')
+    group.add_argument('--all', action='store_true',
+                      help='Process all available states')
+    parser.add_argument('--overwrite', action='store_true',
+                      help='Overwrite existing vector collections')
+    parser.add_argument('--collection-name', required=True, type=str,
+                      help='Collection name format with {state} placeholder (e.g., "{state}-pfl-2025")')
+    return parser.parse_args()
+
+def run_script(script_name: str, description: str, states: List[str] = None, overwrite: bool = False, collection_name: str = None) -> bool:
     """
     Run a Python script and handle its execution.
     Returns True if successful, False otherwise.
@@ -19,6 +45,8 @@ def run_script(script_name: str, description: str, states: List[str] = None, ove
             cmd.extend(['--states'] + states)
         if overwrite and script_name == "vectorizor.py":
             cmd.append('--overwrite')
+        if collection_name:
+            cmd.extend(['--collection-name', collection_name])
         
         result = subprocess.run(cmd, check=True)
         if result.returncode == 0:
@@ -47,6 +75,13 @@ def check_required_files(files: List[str]) -> bool:
     return True
 
 def main():
+    args = parse_args()
+    
+    # Validate collection name format
+    if '{state}' not in args.collection_name:
+        print("❌ Error: Collection name must contain {state} placeholder")
+        return
+    
     # Define the scripts to run in order
     scripts = [
         ("getHTML.py", "Scraping HTML files from websites"),
@@ -55,9 +90,8 @@ def main():
         ("vectorizor.py", "Vectorizing chunks and storing in vector database")
     ]
     
-    # Optional: Define specific states to process (comment out to use defaults)
-    states_to_process = ["or"]  # Example states
-    overwrite_vectors = True  # Set to True to overwrite existing collections
+    # Get states to process
+    states_to_process = ALL_STATES if args.all else args.states
     
     # Check if all required scripts exist
     if not check_required_files([script[0] for script in scripts]):
@@ -68,7 +102,7 @@ def main():
     
     # Run each script in sequence
     for script_name, description in scripts:
-        if not run_script(script_name, description, states_to_process, overwrite_vectors):
+        if not run_script(script_name, description, states_to_process, args.overwrite, args.collection_name):
             print("\n❌ Pipeline failed. Stopping execution.")
             return
         

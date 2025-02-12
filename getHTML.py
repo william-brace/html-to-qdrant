@@ -61,6 +61,8 @@ def download_with_requests(link, output_path, state_code, filename):
     response = requests.get(link, headers=headers)
     response.raise_for_status()
     with open(output_path, 'w', encoding='utf-8') as file:
+        # Write both the content and the source URL
+        file.write(f"<!--SOURCE_URL:{link}-->\n")
         file.write(response.text)
     print(f"Downloaded (requests): {state_code}/{filename}")
 
@@ -70,6 +72,8 @@ def download_with_selenium(driver, link, output_path, state_code, filename):
     time.sleep(2)  # Wait for page to load
     html_content = driver.page_source
     with open(output_path, 'w', encoding='utf-8') as file:
+        # Write both the content and the source URL
+        file.write(f"<!--SOURCE_URL:{link}-->\n")
         file.write(html_content)
     print(f"Downloaded (selenium): {state_code}/{filename}")
 
@@ -84,12 +88,68 @@ def setup_driver():
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--states', nargs='+', help='List of state codes to process')
+    parser.add_argument('--collection-name', required=True,
+                       help='Collection name format with {state} placeholder')
     return parser.parse_args()
 
-def run_wget_command(command: str) -> bool:
+def get_directory_name(collection_name: str, state_code: str) -> str:
+    """Generate directory name based on collection name format"""
+    return f"websites-{collection_name.format(state=state_code.lower())}"
+
+def run_wget_command(command: str, base_url: str) -> bool:
     """Execute wget command and return success status"""
     try:
-        subprocess.run(command, shell=True, check=True)
+        # Run wget command with --save-headers to preserve response headers
+        # which include the final URL after any redirects
+        modified_command = command.replace('wget', 'wget --save-headers')
+        subprocess.run(modified_command, shell=True, check=True)
+        
+        # After wget completes, process downloaded files
+        output_dir = command.split(' -P ')[1].split(' ')[0]  # Extract output directory
+        for file in os.listdir(output_dir):
+            if file.endswith(('.html', '.txt', '.tmp')):
+                file_path = os.path.join(output_dir, file)
+                try:
+                    # Read current content with headers
+                    with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+                        content = f.read()
+                    
+                    # Extract the actual URL from wget headers
+                    # wget saves the URL in a header like "Location: http://..."
+                    actual_url = None
+                    header_end = content.find('\n\n')  # Headers are separated from content by double newline
+                    if header_end != -1:
+                        headers = content[:header_end]
+                        # Try to find the final URL from headers
+                        for line in headers.split('\n'):
+                            if line.startswith('Location: '):
+                                actual_url = line[10:].strip()
+                                break
+                        # If no Location header, try to find the original URL
+                            elif line.startswith('--'):  # wget request line
+                                parts = line.split(' ')
+                                if len(parts) > 1:
+                                    actual_url = parts[1].strip()
+                                    break
+                        
+                        # Remove headers from content
+                        content = content[header_end + 2:]
+                    
+                    # If we couldn't find the URL in headers, construct it from the filename
+                    if not actual_url:
+                        # Remove common wget suffixes and construct URL
+                        clean_filename = file.replace('.html', '').replace('.tmp', '').replace('.txt', '')
+                        actual_url = f"{base_url.rstrip('/')}/{clean_filename}"
+                    
+                    # Write content back with the actual source URL
+                    with open(file_path, 'w', encoding='utf-8') as f:
+                        f.write(f"<!--SOURCE_URL:{actual_url}-->\n")
+                        f.write(content)
+                
+                except Exception as e:
+                    print(f"Warning: Error processing file {file}: {str(e)}")
+                    continue
+        
         print(f"✅ Successfully executed wget command: {command}")
         return True
     except subprocess.CalledProcessError as e:
@@ -101,8 +161,10 @@ def main():
     
     # Special handling for NJ and OR using wget commands
     wget_commands = {
-        'nj': 'wget -r -np -nd -A.html,.txt,.tmp -P websites-nj https://www.nj.gov/labor/myleavebenefits/',
-        'or': 'wget -r -np -nd -A.txt,.tmp -P websites-or https://paidleave.oregon.gov/'
+        'nj': (lambda dir_name: f'wget -r -np -nd -A.html,.txt,.tmp -P {dir_name} https://www.nj.gov/labor/myleavebenefits/',
+               'https://www.nj.gov/labor/myleavebenefits/'),
+        'or': (lambda dir_name: f'wget -r -np -nd -A.txt,.tmp -P {dir_name} https://paidleave.oregon.gov/',
+               'https://paidleave.oregon.gov/')
     }
     
     # If states are provided via command line, use those instead of default
@@ -124,7 +186,7 @@ def main():
             state_lower = state.lower()
             # Handle wget commands for NJ and OR
             if state_lower in wget_commands:
-                if not run_wget_command(wget_commands[state_lower]):
+                if not run_wget_command(wget_commands[state_lower][0](get_directory_name(args.collection_name, state)), wget_commands[state_lower][1]):
                     print(f"Failed to process {state.upper()} using wget")
                 continue
             
@@ -136,7 +198,7 @@ def main():
     try:
         for links, state_code in state_links:
             # Create state-specific directory if it doesn't exist
-            directory = f'websites-{state_code.lower()}'
+            directory = get_directory_name(args.collection_name, state_code)
             if not os.path.exists(directory):
                 os.makedirs(directory)
             
