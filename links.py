@@ -362,6 +362,75 @@ gen = [
   "https://www.newamerica.org/better-life-lab/briefs/explainer-paid-leave-benefits-and-funding-in-the-united-states/"
 ]
 
+linksNJ = [
+
+    # HOME
+    'https://www.nj.gov/labor/myleavebenefits/',
+
+    # # TDI
+    'https://www.nj.gov/labor/myleavebenefits/worker/tdi/',
+    'https://www.nj.gov/labor/myleavebenefits/worker/resources/waiting-week.shtml',
+    'https://www.nj.gov/labor/myleavebenefits/worker/resources/appeals.shtml',
+    'https://www.nj.gov/labor/myleavebenefits/help/faq/tdi.shtml',
+    'https://www.nj.gov/labor/myleavebenefits/worker/resources/formlookup.shtml',
+    'https://www.nj.gov/labor/myleavebenefits/employer/index.shtml?open=TDI',
+    'https://www.nj.gov/labor/myleavebenefits/help/faq/emp.shtml'
+
+    # FLI
+    'https://www.nj.gov/labor/myleavebenefits/worker/fli/',
+    'https://www.nj.gov/labor/myleavebenefits/help/faq/fli.shtml',
+    'https://www.nj.gov/labor/myleavebenefits/worker/resources/FLDU_2020.shtml',
+
+    # Maternity
+    'https://www.nj.gov/labor/myleavebenefits/worker/maternity/',
+    'https://www.nj.gov/labor/myleavebenefits/help/faq/mat.shtml',
+    'https://www.nj.gov/labor/myleavebenefits/worker/resources/complications.shtml',
+    
+    # General
+    'https://www.nj.gov/labor/myleavebenefits/worker/resources/debitcard.shtml',
+    'https://www.nj.gov/labor/myleavebenefits/worker/resources/approvedmedicalpractitioners.shtml',
+    'https://www.nj.gov/labor/myleavebenefits/worker/resources/supportaccordian.shtml',
+    'https://www.nj.gov/labor/myleavebenefits/worker/resources/jobprotection.shtml',
+    'https://www.nj.gov/labor/myleavebenefits/worker/resources/keepingnjsafe.shtml',
+    'https://www.nj.gov/labor/myleavebenefits/worker/resources/unemployed_apply.shtml',
+    'https://www.nj.gov/labor/myleavebenefits/worker/resources/DDU_2020.shtml',
+    'https://www.nj.gov/labor/myleavebenefits/employer/resources/toolkit_employer.shtml'
+
+
+]
+
+
+linksOR = [
+    # employees
+    'https://paidleave.oregon.gov/',
+    'https://paidleave.oregon.gov/employees/overview.html',
+    'https://paidleave.oregon.gov/employees/applying-for-family-leave.html',
+    'https://paidleave.oregon.gov/employees/applying-for-medical-leave.html',
+    'https://paidleave.oregon.gov/employees/applying-for-safe-leave.html',
+    'https://paidleave.oregon.gov/employees/what-to-expect',
+
+    # Employers
+    'https://paidleave.oregon.gov/employers-overview/',
+    'https://paidleave.oregon.gov/employers/what-employers-need-to-do.html',
+    'https://paidleave.oregon.gov/employers/small-employers.html',
+    'https://paidleave.oregon.gov/employers/tribal-governments.html',
+    'https://paidleave.oregon.gov/employers/toolkits/',
+    'https://paidleave.oregon.gov/employers/contributions-calculator.html',
+    'https://paidleave.oregon.gov/employer/plans/',
+
+    # Self-Employed
+    'https://paidleave.oregon.gov/self-employed/overview.html',
+    'https://paidleave.oregon.gov/self-employed/how-to-choose-paid-leave.html',
+    
+    # General
+    'https://paidleave.oregon.gov/resources/common-questions.html',
+    'https://paidleave.oregon.gov/resources/forms-and-checklists.html',
+    'https://paidleave.oregon.gov/resources/appeals.html',
+    'https://paidleave.oregon.gov/resources/resources.html',
+    'https://paidleave.oregon.gov/contact-paid-leave-oregon',
+    'https://paidleave.oregon.gov/providers/health-care-and-service-providers.html'
+]
+
 
 # New Jersey CLI: wget -r -np -nd -A.html,.txt,.tmp -P websites-nj https://www.nj.gov/labor/myleavebenefits/
 # Oregon CLI: wget -r -np -nd -A.txt,.tmp -P websites-or https://paidleave.oregon.gov/

@@ -17,6 +17,8 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--states', nargs='+', help='List of state codes to process')
     parser.add_argument('--overwrite', action='store_true', help='Overwrite existing collections')
+    parser.add_argument('--collection-name', required=True,
+                       help='Collection name format with {state} placeholder')
     return parser.parse_args()
 
 def get_state_codes(states=None):
@@ -89,6 +91,10 @@ def create_and_index_embeddings(data, model, client, collection_name):
             time.sleep(5)  # rate limit 
             continue  # Retry the current batch
 
+def get_collection_name(name_format: str, state: str) -> str:
+    """Generate collection name based on format and state"""
+    return name_format.format(state=state.lower())
+
 if __name__ == "__main__":
     args = parse_args()
     MODEL = "text-embedding-ada-002"
@@ -98,8 +104,8 @@ if __name__ == "__main__":
     STATE_CODES = get_state_codes(args.states)
     
     for state in STATE_CODES:
-        input_file = f"chunker-new-results/chunker-new-{state}.jsonl"
-        collection_name = f"general-pfl-new-chunker-2025" if state == "general" else f"{state}-pfl-new-chunker-2025"
+        collection_name = get_collection_name(args.collection_name, state)
+        input_file = f"chunker-new-results/chunks-{collection_name}.jsonl"
         
         print(f"\nProcessing state: {state}")
         print(f"Loading data from: {input_file}")

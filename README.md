@@ -56,35 +56,78 @@ pip install -r requirements.txt
     - Create a `.env` file in the project root
     - Add your OpenAI API key: `OPENAI_API_KEY=your_key_here`
 
-3. **Running the Pipeline**:
+3. **Running the Pipeline**
 
-   Using the orchestrator (recommended):
-   ```python
-   # In orchestrator.py, configure your settings:
-   states_to_process = ["ny", "ca", "general"]  # States to process
-   overwrite_vectors = True  # Whether to overwrite existing collections
-   
-   # Run the orchestrator
-   python orchestrator.py
-   ```
+The pipeline can be run using either the orchestrator (recommended) or individual scripts. All scripts now use consistent command-line arguments.
 
-   Or run scripts individually:
-   ```bash
-   python getHTML.py --states ny ca
-   python cleaner.py --states ny ca
-   python chunker-new.py --states ny ca
-   python vectorizor.py --states ny ca --overwrite
-   ```
+#### Using the Orchestrator
+
+The orchestrator requires two main arguments:
+- `--states` or `--all`: Specify states to process
+- `--collection-name`: Collection name format with {state} placeholder
+- Optional: `--overwrite`: Flag to overwrite existing vector collections
+
+Available states: "ny", "nj", "or", "co", "ct", "ca", "ma", "wa", "ri", "dc", "general"
+
+Examples:
+```bash
+# Process specific states
+python orchestrator.py --states ny ca wa --collection-name "{state}-pfl-2025"
+
+# Process all available states
+python orchestrator.py --all --collection-name "{state}-chunk-links"
+
+# Process specific states and overwrite existing collections
+python orchestrator.py --states ny nj --collection-name "{state}-pfl-data" --overwrite
+```
+
+#### Running Scripts Individually
+
+Each script requires at minimum:
+- `--states`: List of state codes to process
+- `--collection-name`: Collection name format with {state} placeholder
+
+1. **Download HTML (`getHTML.py`)**:
+```bash
+python getHTML.py --states ny ca --collection-name "{state}-pfl-2025"
+```
+
+2. **Clean HTML (`cleaner.py`)**:
+```bash
+python cleaner.py --states ny ca --collection-name "{state}-pfl-2025"
+```
+
+3. **Chunk Text (`chunker-new.py`)**:
+```bash
+python chunker-new.py --states ny ca --collection-name "{state}-pfl-2025"
+```
+
+4. **Vectorize Chunks (`vectorizor.py`)**:
+```bash
+# Without overwriting existing collections
+python vectorizor.py --states ny ca --collection-name "{state}-pfl-2025"
+
+# With overwriting existing collections
+python vectorizor.py --states ny ca --collection-name "{state}-pfl-2025" --overwrite
+```
 
 ### Directory Structure
 
-The pipeline creates the following directory structure:
+The pipeline creates directories based on the collection name format:
 ```
 project/
-├── websites-{state}/          # Raw downloaded HTML
-├── cleaned_websites-{state}/  # Cleaned text files
-├── chunker-new-results/       # Chunked JSONL files
-└── vector_db/                 # Qdrant storage (default location)
+├── websites-{collection-name}/          # Raw downloaded HTML
+├── cleaned_websites-{collection-name}/  # Cleaned text files
+├── chunker-new-results/                 # Chunked JSONL files
+│   └── chunks-{collection-name}.jsonl
+└── vector_db/                           # Qdrant storage (default location)
+```
+
+For example, with `--collection-name "{state}-pfl-2025"`, you'll get:
+```
+websites-ny-pfl-2025/
+cleaned_websites-ny-pfl-2025/
+chunker-new-results/chunks-ny-pfl-2025.jsonl
 ```
 
 ### Legacy Components
