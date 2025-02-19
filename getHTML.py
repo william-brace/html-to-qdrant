@@ -1,5 +1,5 @@
 # import wget 
-from links import linksCO, linksNY, linksMA, linksCA, linksWA, linksRI, linksDC, linksCT, gen 
+from links import linksCA, linksCO, linksNY, linksMA, linksWA, linksRI, linksDC, linksCT, gen, linksNJ, linksOR
 # import wget
 import os
 import requests
@@ -13,6 +13,7 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 import subprocess
 import argparse
+from bs4 import BeautifulSoup
 
 # for file_number, link in enumerate(linksRI):
     
@@ -47,6 +48,15 @@ headers = {
     'Cache-Control': 'max-age=0'
 }
 
+# Define elements to remove for each state
+ELEMENTS_TO_REMOVE = {
+    'nj': [
+        '.footer',
+        '.sonj-nav'
+    ],
+    # Add configurations for other states as needed
+}
+
 def create_session():
     session = requests.Session()
     retry = Retry(total=3, backoff_factor=0.5, status_forcelist=[500, 502, 503, 504])
@@ -56,14 +66,41 @@ def create_session():
     session.headers.update(headers)
     return session
 
+def remove_elements(html_content, state_code):
+    """Remove specified elements from HTML content using BeautifulSoup"""
+    if state_code not in ELEMENTS_TO_REMOVE:
+        print(f"No elements to remove for state {state_code}")
+        return html_content
+        
+    soup = BeautifulSoup(html_content, 'html.parser')
+    print(f"Processing removals for state {state_code}")
+    
+    for selector in ELEMENTS_TO_REMOVE[state_code]:
+        print(f"Attempting to remove elements matching: {selector}")
+        # Handle different types of selectors
+        if selector.startswith('.'):  # Class selector
+            class_name = selector[1:]  # Remove the leading dot
+            elements = soup.find_all(class_=class_name)
+        elif selector.startswith('#'):  # ID selector
+            elements = soup.find_all(id=selector[1:])
+        else:  # Tag name or custom selector
+            elements = soup.select(selector)
+            
+        print(f"Found {len(elements)} matching elements")
+        for element in elements:
+            print(f"Removing element: {element.name} with classes: {element.get('class', [])}")
+            element.decompose()
+    
+    return str(soup)
+
 def download_with_requests(link, output_path, state_code, filename):
     """Attempt to download page using requests library"""
     response = requests.get(link, headers=headers)
     response.raise_for_status()
+    content = remove_elements(response.text, state_code)
     with open(output_path, 'w', encoding='utf-8') as file:
-        # Write both the content and the source URL
         file.write(f"<!--SOURCE_URL:{link}-->\n")
-        file.write(response.text)
+        file.write(content)
     print(f"Downloaded (requests): {state_code}/{filename}")
 
 def download_with_selenium(driver, link, output_path, state_code, filename):
@@ -71,10 +108,11 @@ def download_with_selenium(driver, link, output_path, state_code, filename):
     driver.get(link)
     time.sleep(2)  # Wait for page to load
     html_content = driver.page_source
+    
+    content = remove_elements(html_content, state_code)
     with open(output_path, 'w', encoding='utf-8') as file:
-        # Write both the content and the source URL
         file.write(f"<!--SOURCE_URL:{link}-->\n")
-        file.write(html_content)
+        file.write(content)
     print(f"Downloaded (selenium): {state_code}/{filename}")
 
 def setup_driver():
@@ -96,76 +134,75 @@ def get_directory_name(collection_name: str, state_code: str) -> str:
     """Generate directory name based on collection name format"""
     return f"websites-{collection_name.format(state=state_code.lower())}"
 
-def run_wget_command(command: str, base_url: str) -> bool:
+def run_wget_command(command: str, original_url: str, state_code: str) -> bool:
     """Execute wget command and return success status"""
     try:
-        # Run wget command with --save-headers to preserve response headers
-        # which include the final URL after any redirects
-        modified_command = command.replace('wget', 'wget --save-headers')
-        subprocess.run(modified_command, shell=True, check=True)
+        print(f"Executing wget command: {command}")  # Debug logging
         
-        # After wget completes, process downloaded files
-        output_dir = command.split(' -P ')[1].split(' ')[0]  # Extract output directory
-        for file in os.listdir(output_dir):
-            if file.endswith(('.html', '.txt', '.tmp')):
-                file_path = os.path.join(output_dir, file)
-                try:
-                    # Read current content with headers
-                    with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
-                        content = f.read()
-                    
-                    # Extract the actual URL from wget headers
-                    # wget saves the URL in a header like "Location: http://..."
-                    actual_url = None
-                    header_end = content.find('\n\n')  # Headers are separated from content by double newline
-                    if header_end != -1:
-                        headers = content[:header_end]
-                        # Try to find the final URL from headers
-                        for line in headers.split('\n'):
-                            if line.startswith('Location: '):
-                                actual_url = line[10:].strip()
-                                break
-                        # If no Location header, try to find the original URL
-                            elif line.startswith('--'):  # wget request line
-                                parts = line.split(' ')
-                                if len(parts) > 1:
-                                    actual_url = parts[1].strip()
-                                    break
-                        
-                        # Remove headers from content
-                        content = content[header_end + 2:]
-                    
-                    # If we couldn't find the URL in headers, construct it from the filename
-                    if not actual_url:
-                        # Remove common wget suffixes and construct URL
-                        clean_filename = file.replace('.html', '').replace('.tmp', '').replace('.txt', '')
-                        actual_url = f"{base_url.rstrip('/')}/{clean_filename}"
-                    
-                    # Write content back with the actual source URL
-                    with open(file_path, 'w', encoding='utf-8') as f:
-                        f.write(f"<!--SOURCE_URL:{actual_url}-->\n")
-                        f.write(content)
+        # Run wget command
+        subprocess.run(command, shell=True, check=True)
+        
+        # Get output directory and filename from the command
+        output_path = command.split(' -O ')[1].split(' ')[0]
+        print(f"Output path: {output_path}")  # Debug logging
+        
+        # Process only the specific output file
+        if os.path.exists(output_path):
+            try:
+                with open(output_path, 'r', encoding='utf-8', errors='ignore') as f:
+                    content = f.read()
                 
-                except Exception as e:
-                    print(f"Warning: Error processing file {file}: {str(e)}")
-                    continue
-        
-        print(f"✅ Successfully executed wget command: {command}")
-        return True
+                # Apply element removal
+                content = remove_elements(content, state_code.lower())
+                
+                # Write content with original URL
+                with open(output_path, 'w', encoding='utf-8') as f:
+                    f.write(f"<!--SOURCE_URL:{original_url}-->\n")
+                    f.write(content)
+                
+                print(f"Successfully processed file: {output_path}")  # Debug logging
+                return True
+                
+            except Exception as e:
+                print(f"Error processing file {output_path}: {str(e)}")
+                return False
+        else:
+            print(f"Output file not found: {output_path}")
+            return False
+            
     except subprocess.CalledProcessError as e:
         print(f"❌ Error executing wget command: {str(e)}")
         return False
 
+def download_state_with_wget(links: list, state_code: str, directory: str):
+    """Download state-specific links using wget"""
+    print(f"\nProcessing {state_code} using wget...")
+    
+    for idx, link in enumerate(links):
+        filename = f'pfl{str(idx)}.html'
+        output_path = os.path.join(directory, filename)
+        
+        # Check if file already exists and skip if it does
+        if os.path.exists(output_path):
+            print(f"⏭️ File already exists: {filename}")
+            continue
+            
+        wget_command = f'wget --no-check-certificate --content-disposition -P {directory} -O {os.path.join(directory, filename)} "{link}"'
+        
+        if not run_wget_command(wget_command, link, state_code):
+            print(f"Failed to download {link}")
+            continue
+        
+        print(f"✅ Successfully downloaded: {filename}")
+        
+        # Add a small delay between downloads
+        time.sleep(1)
+
 def main():
     args = parse_args()
     
-    # Special handling for NJ and OR using wget commands
-    wget_commands = {
-        'nj': (lambda dir_name: f'wget -r -np -nd -A.html,.txt,.tmp -P {dir_name} https://www.nj.gov/labor/myleavebenefits/',
-               'https://www.nj.gov/labor/myleavebenefits/'),
-        'or': (lambda dir_name: f'wget -r -np -nd -A.txt,.tmp -P {dir_name} https://paidleave.oregon.gov/',
-               'https://paidleave.oregon.gov/')
-    }
+    # Define states that should use wget
+    wget_states = {'nj', 'or'}  # Add any states that need wget
     
     # If states are provided via command line, use those instead of default
     if args.states:
@@ -179,21 +216,32 @@ def main():
             'ri': (linksRI, "RI"),
             'dc': (linksDC, "DC"),
             'ct': (linksCT, "CT"),
+            'nj': (linksNJ, "NJ"),
+            'or': (linksOR, "OR"),
             'general': (gen, "general")
         }
         
         for state in args.states:
             state_lower = state.lower()
-            # Handle wget commands for NJ and OR
-            if state_lower in wget_commands:
-                if not run_wget_command(wget_commands[state_lower][0](get_directory_name(args.collection_name, state)), wget_commands[state_lower][1]):
-                    print(f"Failed to process {state.upper()} using wget")
-                continue
             
-            # Handle other states using existing method
+            # Create state-specific directory
             if state_lower in state_map:
-                state_links.append(state_map[state_lower])
-    
+                directory = get_directory_name(args.collection_name, state_map[state_lower][1])
+                if not os.path.exists(directory):
+                    os.makedirs(directory)
+                
+                # Use wget for specified states
+                if state_lower in wget_states:
+                    download_state_with_wget(
+                        state_map[state_lower][0],
+                        state_map[state_lower][1],
+                        directory
+                    )
+                else:
+                    # Use existing method for other states
+                    state_links.append(state_map[state_lower])
+
+    # Process remaining states with original method
     driver = None
     try:
         for links, state_code in state_links:
@@ -204,27 +252,24 @@ def main():
             
             print(f"\nProcessing {state_code}...")
             
-            # Download files for current state
+            # Original download logic for non-wget states
             for file_number, link in enumerate(links):
                 filename = f'pfl{str(file_number)}.html'
                 output_path = os.path.join(directory, filename)
                 
-                # Try simple requests approach first
                 try:
                     download_with_requests(link, output_path, state_code, filename)
-                    
                 except (requests.exceptions.RequestException, Exception) as err:
                     print(f"******* REQUESTS method failed for {state_code}/{filename}: {err}")
                     print("Trying Selenium...")
                     
-                    # Initialize driver only if needed
                     if driver is None:
                         driver = setup_driver()
                     
                     try:
                         download_with_selenium(driver, link, output_path, state_code, filename)
                     except Exception as selenium_err:
-                        print(f"******* SELENIUM method failed failed for {state_code}/{filename}: {selenium_err}")
+                        print(f"******* SELENIUM method failed for {state_code}/{filename}: {selenium_err}")
 
     finally:
         if driver:
