@@ -1,5 +1,5 @@
 .env
-.venv
+venv/
 state_raw/
 state_vectors/
 website/
