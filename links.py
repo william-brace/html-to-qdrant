@@ -177,8 +177,9 @@ linksRI = [
     "https://dlt.ri.gov/individuals/unemployment-insurance/partial-benefits-part-time-work",
     "https://dlt.ri.gov/individuals/unemployment-insurance/work-search-requirement",
     "https://dlt.ri.gov/individuals/unemployment-insurance/returning-work",
-    "https://dlt.ri.gov/individuals/unemployment-insurance/unemployment-insurance-faq"
-    "https://dlt.ri.gov/individuals/temporary-disability-caregiver-insurance/claimants/temporary-disability-tdi-faq"
+    "https://dlt.ri.gov/individuals/unemployment-insurance/unemployment-insurance-faq",
+    "https://dlt.ri.gov/individuals/temporary-disability-caregiver-insurance/claimants/temporary-disability-tdi-faq",
+    "https://www.abetterbalance.org/family-leave-laws/rhode-island/"
 ]
 
 linksWA = [
@@ -202,45 +203,23 @@ linksWA = [
     "https://paidleave.wa.gov/voluntary-plans/",
     "https://paidleave.wa.gov/voluntary-plans-employer-list/",
     "https://paidleave.wa.gov/question/family-member-definition/",
-    "https://paidleave.wa.gov/question/what-is-medical-leave/",
     "https://paidleave.wa.gov/question/what-is-the-postnatal-period/",
-    "https://paidleave.wa.gov/help-center/individuals-and-families/qualifying-for-paid-leave/",
-    "https://paidleave.wa.gov/help-center/individuals-and-families/paid-sick-days-fmla-unemployment-and-other-programs/",
     "https://paidleave.wa.gov/help-center/individuals-and-families/your-rights/",
     "https://paidleave.wa.gov/help-center/individuals-and-families/military-families/",
-    "https://paidleave.wa.gov/help-center/individuals-and-families/costs-premiums/",
-    "https://paidleave.wa.gov/help-center/individuals-and-families/applying-for-leave/",
-    "https://paidleave.wa.gov/help-center/individuals-and-families/after-you-apply-for-leave/",
-    "https://paidleave.wa.gov/help-center/individuals-and-families/technical-support/",
     "https://paidleave.wa.gov/help-center/individuals-and-families/filing-weekly-claims/",
     "https://paidleave.wa.gov/help-center/individuals-and-families/covid-19/",
-    "https://paidleave.wa.gov/help-center/individuals-and-families/while-on-leave/",
     "https://paidleave.wa.gov/help-center/individuals-and-families/payments/",
     "https://paidleave.wa.gov/help-center/individuals-and-families/new-parents/",
-    "https://paidleave.wa.gov/help-center/employers/premiums/",
     "https://paidleave.wa.gov/help-center/employers/reporting-and-paying-premiums/",
     "https://paidleave.wa.gov/help-center/employers/employer-account-technical-support/",
-    "https://paidleave.wa.gov/help-center/employers/employer-agents/",
-    "https://paidleave.wa.gov/help-center/employers/small-businesses/",
-    "https://paidleave.wa.gov/help-center/employers/voluntary-plans/",
-    "https://paidleave.wa.gov/help-center/employers/hr-resources/",
-    "https://paidleave.wa.gov/help-center/employers/collective-bargaining-agreements/",
-    "https://paidleave.wa.gov/help-center/employers/how-paid-leave-works/",
-    "https://paidleave.wa.gov/help-center/self-employed/how-self-employed-paid-leave-works/",
-    "https://paidleave.wa.gov/help-center/self-employed/who-can-opt-in/",
-    "https://paidleave.wa.gov/help-center/self-employed/technical-assistance/",
-    "https://paidleave.wa.gov/help-center/healthcare-providers/roles-and-responsibilities/",
-    "https://paidleave.wa.gov/help-center/healthcare-providers/how-paid-leave-works-healthcare-providers/",
-    "https://paidleave.wa.gov/help-center/healthcare-providers/certification-of-serious-health-condition-form/"
+    "https://paidleave.wa.gov/help-center/employers/how-paid-leave-works/"
 ]
 
 linksDC = [
     "https://dcpaidfamilyleave.dc.gov/",
-    "https://does.pflbas.dc.gov/vosnet/default.aspx",
     "https://dcpaidfamilyleave.dc.gov/employers/",
     "https://dcpaidfamilyleave.dc.gov/tax-calculators/",
     "https://dcpaidfamilyleave.dc.gov/how-to-apply-for-benefits/",
-    "https://dcpaidfamilyleave.dc.gov/before-you-apply/",
     "https://dcpaidfamilyleave.dc.gov/workers/",
     "https://dcpaidfamilyleave.dc.gov/self-employed/",
     "https://dcpaidfamilyleave.dc.gov/healthcare-providers/",
@@ -249,7 +228,13 @@ linksDC = [
     "https://dcpaidfamilyleave.dc.gov/parental-leave/",
     "https://dcpaidfamilyleave.dc.gov/prenatal-leave/",
     "https://dcpaidfamilyleave.dc.gov/benefits-calculator/",
-    "https://dcpaidfamilyleave.dc.gov/announcements/12-weeks-parental-leave/"
+
+    # new nina links
+    "https://edpm.dc.gov/issuances/family-and-medical-leave/",
+    "https://dcpaidfamilyleave.dc.gov/engage/",
+    "https://dcpaidfamilyleave.dc.gov/parental-leave/#",
+
+
 ]
 
 linksMA = [
@@ -320,7 +305,6 @@ linksMA = [
 ]
 
 linksCT = [
-    "https://www.ssa.gov/benefits/retirement/planner/maxtax.html",
     "https://www.ctpaidleave.org/for-businesses-and-employers/a-sole-proprietor?language=en_US",
     "https://www.ctpaidleave.org/for-businesses-and-employers/private-plans?language=en_US",
     "https://www.ctpaidleave.org/how-ct-paid-leave-works/contributions?language=en_US",
@@ -367,7 +351,7 @@ linksNJ = [
     # HOME
     'https://www.nj.gov/labor/myleavebenefits/',
 
-    # # TDI
+    # TDI
     'https://www.nj.gov/labor/myleavebenefits/worker/tdi/',
     'https://www.nj.gov/labor/myleavebenefits/worker/resources/waiting-week.shtml',
     'https://www.nj.gov/labor/myleavebenefits/worker/resources/appeals.shtml',
@@ -395,6 +379,14 @@ linksNJ = [
     'https://www.nj.gov/labor/myleavebenefits/worker/resources/unemployed_apply.shtml',
     'https://www.nj.gov/labor/myleavebenefits/worker/resources/DDU_2020.shtml',
     'https://www.nj.gov/labor/myleavebenefits/employer/resources/toolkit_employer.shtml'
+
+
+    # New nina links
+    "https://www.nj.gov/labor/myleavebenefits/worker/resources/alternate_base_year.shtml",
+    "https://www.nj.gov/labor/myleavebenefits/help/faq/debit.shtml"
+    "https://www.nj.gov/labor/myleavebenefits/help/faq/med.shtml",
+    "https://www.nj.gov/labor/myleavebenefits/help/contact/",
+    "https://www.nj.gov/labor/myleavebenefits/worker/maternity/timeline-welcome.shtml",
 
 
 ]
