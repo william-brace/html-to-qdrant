@@ -7,8 +7,12 @@ import tiktoken
 from textblob import TextBlob
 from bs4 import BeautifulSoup
 from openai import OpenAI
+from dotenv import load_dotenv  # Add this import
 
-client = OpenAI()
+# Load environment variables from .env file
+load_dotenv()
+
+client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 tokenizer = tiktoken.get_encoding('cl100k_base')
 
 def clean_html(html_content):
@@ -101,7 +105,7 @@ def process_html_files(folder_path):
             ("##", "Header 2"),
             ("###", "Header 3"),
         ]
-        markdown_splitter = MarkdownHeaderTextSplitter(headers_to_split_on=headers_to_split_on, strip_headers=True)
+        markdown_splitter = MarkdownHeaderTextSplitter(headers_to_split_on=headers_to_split_on)
 
         documents = []
 
@@ -147,7 +151,7 @@ def process_html_files(folder_path):
         if not documents:
             raise Exception("No documents were generated")
 
-        with open('train.jsonl', 'w') as f:
+        with open('train-co.jsonl', 'w') as f:
             for doc in documents:
                 f.write(json.dumps(doc) + '\n')
 
@@ -157,5 +161,46 @@ def process_html_files(folder_path):
         print(f"Error processing HTML files: {e}")
         return []  
 
-folder_path = "websites"  
-documents = process_html_files(folder_path)
+# Define the state directories to process
+state_dirs = [
+    "cleaned_websites-co",
+    "cleaned_websites-ny",
+    "cleaned_websites-ma",
+    "cleaned_websites-ca",
+    "cleaned_websites-wa",
+    "cleaned_websites-ri",
+    "cleaned_websites-dc",
+    "cleaned_websites-ct",
+    "cleaned_websites-nj",
+    "cleaned_websites-or"
+]
+
+def process_all_states():
+    try:
+        print("Starting to process all state directories...")
+        all_documents = []
+        
+        for state_dir in state_dirs:
+            if not os.path.exists(state_dir):
+                print(f"Skipping {state_dir} - directory not found")
+                continue
+                
+            print(f"\nProcessing state directory: {state_dir}")
+            state_documents = process_html_files(state_dir)
+            all_documents.extend(state_documents)
+            
+            # Save state-specific documents
+            output_file = f'train-{state_dir.split("-")[1]}.jsonl'
+            with open(output_file, 'w') as f:
+                for doc in state_documents:
+                    f.write(json.dumps(doc) + '\n')
+            print(f"Saved {len(state_documents)} documents to {output_file}")
+            
+        print(f"\nAll states processed. Total documents: {len(all_documents)}")
+        return all_documents
+    except Exception as e:
+        print(f"Error processing states: {e}")
+        return []
+
+# Replace the direct function call with the new process_all_states function
+documents = process_all_states()
