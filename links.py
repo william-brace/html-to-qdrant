@@ -358,7 +358,7 @@ linksNJ = [
     'https://www.nj.gov/labor/myleavebenefits/help/faq/tdi.shtml',
     'https://www.nj.gov/labor/myleavebenefits/worker/resources/formlookup.shtml',
     'https://www.nj.gov/labor/myleavebenefits/employer/index.shtml?open=TDI',
-    'https://www.nj.gov/labor/myleavebenefits/help/faq/emp.shtml'
+    'https://www.nj.gov/labor/myleavebenefits/help/faq/emp.shtml',
 
     # FLI
     'https://www.nj.gov/labor/myleavebenefits/worker/fli/',
@@ -378,17 +378,21 @@ linksNJ = [
     'https://www.nj.gov/labor/myleavebenefits/worker/resources/keepingnjsafe.shtml',
     'https://www.nj.gov/labor/myleavebenefits/worker/resources/unemployed_apply.shtml',
     'https://www.nj.gov/labor/myleavebenefits/worker/resources/DDU_2020.shtml',
-    'https://www.nj.gov/labor/myleavebenefits/employer/resources/toolkit_employer.shtml'
+    'https://www.nj.gov/labor/myleavebenefits/employer/resources/toolkit_employer.shtml',
 
 
     # New nina links
     "https://www.nj.gov/labor/myleavebenefits/worker/resources/alternate_base_year.shtml",
-    "https://www.nj.gov/labor/myleavebenefits/help/faq/debit.shtml"
+    "https://www.nj.gov/labor/myleavebenefits/help/faq/debit.shtml",
     "https://www.nj.gov/labor/myleavebenefits/help/faq/med.shtml",
     "https://www.nj.gov/labor/myleavebenefits/help/contact/",
     "https://www.nj.gov/labor/myleavebenefits/worker/maternity/timeline-welcome.shtml",
 
 
+    # Job Protection
+    "https://www.nj.gov/labor/myleavebenefits/worker/job-protection-information/",
+    "https://www.nj.gov/labor/myleavebenefits/worker/job-protection-information/checker.shtml?step=q1",
+    "https://www.nj.gov/labor/myleavebenefits/worker/job-protection-information/welcome.shtml"
 ]
 
 
