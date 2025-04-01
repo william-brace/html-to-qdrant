@@ -94,6 +94,7 @@ def remove_elements(html_content, state_code):
     
     # Remove elements by selectors
     for selector in ELEMENTS_TO_REMOVE[state_code.lower()]:
+        print(f"Attempting to remove elements matching: {selector}")
         try:
             # Handle different types of selectors
             if selector.startswith('.'):  # Class selector
@@ -104,7 +105,9 @@ def remove_elements(html_content, state_code):
             else:  # Tag name
                 elements = soup.find_all(selector)
                 
+            print(f"Found {len(elements)} matching elements")
             for element in elements:
+                print(f"Removing element: {element.name} with classes: {element.get('class', [])}")
                 element.decompose()
         except Exception as e:
             print(f"Error removing selector {selector}: {str(e)}")
