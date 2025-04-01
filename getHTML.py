@@ -67,6 +67,10 @@ ELEMENTS_TO_REMOVE = {
         '.footer',
         '.sonj-nav'
     ],
+    'co': [
+        'footer',  # This should target just the footer element
+        '.global__footer-color'  # This targets the footer color container
+    ]
     # Add configurations for other states as needed
 }
 
@@ -81,28 +85,32 @@ def create_session():
 
 def remove_elements(html_content, state_code):
     """Remove specified elements from HTML content using BeautifulSoup"""
-    if state_code not in ELEMENTS_TO_REMOVE:
+    if state_code.lower() not in ELEMENTS_TO_REMOVE:
         print(f"No elements to remove for state {state_code}")
         return html_content
         
     soup = BeautifulSoup(html_content, 'html.parser')
     print(f"Processing removals for state {state_code}")
     
-    for selector in ELEMENTS_TO_REMOVE[state_code]:
+    # Remove elements by selectors
+    for selector in ELEMENTS_TO_REMOVE[state_code.lower()]:
         print(f"Attempting to remove elements matching: {selector}")
-        # Handle different types of selectors
-        if selector.startswith('.'):  # Class selector
-            class_name = selector[1:]  # Remove the leading dot
-            elements = soup.find_all(class_=class_name)
-        elif selector.startswith('#'):  # ID selector
-            elements = soup.find_all(id=selector[1:])
-        else:  # Tag name or custom selector
-            elements = soup.select(selector)
-            
-        print(f"Found {len(elements)} matching elements")
-        for element in elements:
-            print(f"Removing element: {element.name} with classes: {element.get('class', [])}")
-            element.decompose()
+        try:
+            # Handle different types of selectors
+            if selector.startswith('.'):  # Class selector
+                class_name = selector[1:]  # Remove the leading dot
+                elements = soup.find_all(class_=lambda c: c and class_name in c.split())
+            elif selector.startswith('#'):  # ID selector
+                elements = soup.find_all(id=selector[1:])
+            else:  # Tag name
+                elements = soup.find_all(selector)
+                
+            print(f"Found {len(elements)} matching elements")
+            for element in elements:
+                print(f"Removing element: {element.name} with classes: {element.get('class', [])}")
+                element.decompose()
+        except Exception as e:
+            print(f"Error removing selector {selector}: {str(e)}")
     
     return str(soup)
 
