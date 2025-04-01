@@ -70,7 +70,9 @@ linksCO = [
   "https://famli.colorado.gov/health-care-providers",
   "https://famli.colorado.gov/health-care-providers/health-care-providers-faqs",
   "https://famli.colorado.gov/health-care-providers/my-famli-user-guide-for-health-care-providers",
-  "https://famli.colorado.gov/proposed/adopted-rules"
+  "https://famli.colorado.gov/proposed/adopted-rules",
+  "https://famli.colorado.gov/individuals-and-families/local-government-employees",
+  "https://famli.colorado.gov/news-article/colorados-new-average-weekly-wage-and-how-it-affects-famli-claims"
 ]
 
 linksCA = [
