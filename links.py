@@ -72,7 +72,8 @@ linksCO = [
   "https://famli.colorado.gov/health-care-providers/my-famli-user-guide-for-health-care-providers",
   "https://famli.colorado.gov/proposed/adopted-rules",
   "https://famli.colorado.gov/individuals-and-families/local-government-employees",
-  "https://famli.colorado.gov/news-article/colorados-new-average-weekly-wage-and-how-it-affects-famli-claims"
+  "https://famli.colorado.gov/news-article/colorados-new-average-weekly-wage-and-how-it-affects-famli-claims",
+  "https://famli.colorado.gov/individuals-and-families/local-government-employees"
 ]
 
 linksCA = [
@@ -394,7 +395,10 @@ linksNJ = [
     # Job Protection
     "https://www.nj.gov/labor/myleavebenefits/worker/job-protection-information/",
     "https://www.nj.gov/labor/myleavebenefits/worker/job-protection-information/checker.shtml?step=q1",
-    "https://www.nj.gov/labor/myleavebenefits/worker/job-protection-information/welcome.shtml"
+    "https://www.nj.gov/labor/myleavebenefits/worker/job-protection-information/welcome.shtml",
+
+    # New Links
+    "https://nj.gov/labor/myleavebenefits/worker/resources/fldu.shtml"
 ]
 
 
