@@ -21,12 +21,27 @@ from selenium.webdriver.support import expected_conditions as EC
 import certifi
 import ssl
 import urllib3
+import sys
+import io
+import codecs
 
 # Disable SSL verification warnings
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # Create unverified context and set as default
 ssl._create_default_https_context = ssl._create_unverified_context
+
+# Ensure we're using UTF-8 for all I/O operations
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
+
+# Force Python to use UTF-8 for file operations
+def open_utf8(file, mode='r', **kwargs):
+    """Open a file with UTF-8 encoding explicitly"""
+    if 'b' not in mode:  # Only set encoding for text mode
+        kwargs['encoding'] = 'utf-8'
+        kwargs.setdefault('errors', 'replace')
+    return open(file, mode, **kwargs)
 
 # for file_number, link in enumerate(linksRI):
     
@@ -116,13 +131,84 @@ def remove_elements(html_content, state_code):
 
 def download_with_requests(link, output_path, state_code, filename):
     """Attempt to download page using requests library"""
-    response = requests.get(link, headers=headers)
-    response.raise_for_status()
-    content = remove_elements(response.text, state_code)
-    with open(output_path, 'w', encoding='utf-8') as file:
+    # Special handling for NJ websites
+    if state_code.lower() == 'nj':
+        try:
+            print(f"Using specialized NJ download for {filename}")
+            
+            # Use curl instead of requests for NJ sites
+            import subprocess
+            curl_cmd = [
+                'curl', '-L', '-s', 
+                '-H', 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                '-H', 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                '-H', 'Accept-Language: en-US,en;q=0.5',
+                '-H', 'Accept-Charset: UTF-8,*;q=0.8',
+                link
+            ]
+            
+            try:
+                # Try curl first
+                result = subprocess.run(curl_cmd, capture_output=True, check=True)
+                content_bytes = result.stdout
+                print(f"Successfully downloaded with curl: {filename}")
+            except (subprocess.SubprocessError, FileNotFoundError):
+                # Fall back to requests if curl fails
+                print(f"Curl failed, falling back to requests for {filename}")
+                session = requests.Session()
+                session.headers.update({
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                    'Accept-Language': 'en-US,en;q=0.5',
+                    'Accept-Charset': 'UTF-8,*;q=0.8'
+                })
+                response = session.get(link, verify=False)
+                content_bytes = response.content
+            
+            # Try multiple encoding detection methods
+            encodings_to_try = ['utf-8', 'windows-1252', 'latin-1', 'cp1252']
+            
+            # First try chardet
+            try:
+                import chardet
+                detected = chardet.detect(content_bytes)
+                if detected['encoding'] and detected['confidence'] > 0.7:
+                    encodings_to_try.insert(0, detected['encoding'])
+                    print(f"Chardet detected encoding: {detected['encoding']} (confidence: {detected['confidence']})")
+            except ImportError:
+                pass
+            
+            # Try each encoding until one works without errors
+            content = None
+            for encoding in encodings_to_try:
+                try:
+                    content = content_bytes.decode(encoding)
+                    print(f"Successfully decoded with {encoding}")
+                    break
+                except UnicodeDecodeError:
+                    continue
+            
+            # If all decodings failed, use replace mode
+            if content is None:
+                content = content_bytes.decode('utf-8', errors='replace')
+                print(f"Forced UTF-8 decoding with replacement for {filename}")
+            
+        except Exception as e:
+            print(f"Error in NJ specialized download: {str(e)}")
+            raise
+    else:
+        # Normal handling for other states
+        response = requests.get(link, headers=headers)
+        response.raise_for_status()
+        content = response.text
+    
+    content = remove_elements(content, state_code)
+    
+    # Write with explicit UTF-8 encoding
+    with codecs.open(output_path, 'w', encoding='utf-8') as file:
         file.write(f"<!--SOURCE_URL:{link}-->\n")
         file.write(content)
-    print(f"Downloaded (requests): {state_code}/{filename}")
+    print(f"Downloaded and saved: {state_code}/{filename}")
 
 def setup_fast_driver():
     """Initialize quick headless driver for simple sites"""
@@ -159,6 +245,12 @@ def quick_selenium_download(driver, link, output_path, state_code, filename):
             "403 forbidden", "access denied"
         ]):
             raise Exception("Bot detection encountered")
+        
+        # Special handling for NJ to ensure proper encoding
+        if state_code.lower() == 'nj':
+            # Get page with UTF-8 encoding
+            driver.execute_script("document.charset='utf-8';")
+            html_content = driver.page_source
             
         content = remove_elements(html_content, state_code)
         with open(output_path, 'w', encoding='utf-8') as file:
@@ -272,8 +364,24 @@ def run_wget_command(command: str, original_url: str, state_code: str) -> bool:
         # Process only the specific output file
         if os.path.exists(output_path):
             try:
-                with open(output_path, 'r', encoding='utf-8', errors='ignore') as f:
-                    content = f.read()
+                # For NJ, use binary mode and detect encoding
+                if state_code.lower() == 'nj':
+                    with open(output_path, 'rb') as f:
+                        content_bytes = f.read()
+                    
+                    # Try to detect encoding
+                    try:
+                        from bs4 import UnicodeDammit
+                        dammit = UnicodeDammit(content_bytes)
+                        encoding = dammit.original_encoding or 'utf-8'
+                        content = content_bytes.decode(encoding, errors='replace')
+                    except:
+                        # Fallback to utf-8 with error replacement
+                        content = content_bytes.decode('utf-8', errors='replace')
+                else:
+                    # Normal handling for other states
+                    with open(output_path, 'r', encoding='utf-8', errors='ignore') as f:
+                        content = f.read()
                 
                 # Apply element removal
                 content = remove_elements(content, state_code.lower())
@@ -311,7 +419,29 @@ def download_state_with_wget(links: list, state_code: str, directory: str):
         if os.path.exists(output_path):
             print(f"⏭️ File already exists: {filename}")
             continue
-            
+        
+        # For NJ, skip wget entirely and use specialized methods
+        if state_code.lower() == 'nj':
+            print(f"Using specialized download for NJ: {filename}")
+            try:
+                download_with_requests(link, output_path, state_code, filename)
+                print(f"✅ Successfully downloaded with specialized method: {filename}")
+                continue
+            except Exception as req_err:
+                print(f"Specialized download failed for {state_code}/{filename}: {req_err}")
+                print("Trying Selenium as fallback...")
+                
+                try:
+                    if driver is None:
+                        driver = setup_stealth_driver()
+                    download_nj_with_selenium(driver, link, output_path, filename)
+                    print(f"✅ Successfully downloaded with Selenium: {filename}")
+                except Exception as selenium_err:
+                    print(f"❌ All download methods failed for {state_code}/{filename}")
+                    print(f"Final error: {selenium_err}")
+            continue
+        
+        # Normal wget handling for other states
         wget_command = f'wget --no-check-certificate --content-disposition -P {directory} -O {os.path.join(directory, filename)} "{link}"'
         
         # Try wget first
@@ -346,11 +476,54 @@ def download_state_with_wget(links: list, state_code: str, directory: str):
     if driver:
         driver.quit()
 
+def download_nj_with_selenium(driver, link, output_path, filename):
+    """Specialized Selenium download for NJ websites"""
+    try:
+        # Configure driver for NJ specifically
+        driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
+            "source": """
+            Object.defineProperty(navigator, 'webdriver', {
+                get: () => undefined
+            });
+            """
+        })
+        
+        # Load the page
+        driver.get(link)
+        
+        # Wait for page to load
+        wait = WebDriverWait(driver, 20)
+        wait.until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
+        
+        # Force UTF-8 encoding
+        driver.execute_script("document.charset='utf-8';")
+        
+        # Get page source
+        html_content = driver.page_source
+        
+        # No longer applying fix_encoding_issues
+        content = html_content
+        
+        # Write to file with explicit UTF-8 encoding
+        with codecs.open(output_path, 'w', encoding='utf-8') as file:
+            file.write(f"<!--SOURCE_URL:{link}-->\n")
+            file.write(content)
+        
+        print(f"Successfully downloaded with Selenium: {filename}")
+        return True
+    except Exception as e:
+        print(f"NJ Selenium download failed: {str(e)}")
+        raise
+
 def main():
+    # Print Python version info for debugging
+    print(f"Python version: {sys.version}")
+    print(f"Default encoding: {sys.getdefaultencoding()}")
+    
     args = parse_args()
     
     # Define states that should use wget
-    wget_states = {'nj', 'or', 'ri'}  # Add any states that need wget
+    wget_states = {'or', 'ri'}  # Remove 'nj' from wget states
     
     # If states are provided via command line, use those instead of default
     if args.states:
@@ -414,7 +587,10 @@ def main():
                         driver = setup_stealth_driver()
                     
                     try:
-                        download_with_selenium(driver, link, output_path, state_code, filename)
+                        if state_code.lower() == 'nj':
+                            download_nj_with_selenium(driver, link, output_path, filename)
+                        else:
+                            download_with_selenium(driver, link, output_path, state_code, filename)
                     except Exception as selenium_err:
                         print(f"******* SELENIUM method failed for {state_code}/{filename}: {selenium_err}")
 
